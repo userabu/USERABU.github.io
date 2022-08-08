@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-08-05T06:14:45.730Z</updated>
+  <updated>2022-08-08T00:43:56.300Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS总结</title>
+    <link href="http://example.com/2022/08/07/css.css%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>http://example.com/2022/08/07/css.css%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
+    <published>2022-08-07T11:46:05.638Z</published>
+    <updated>2022-08-08T00:43:56.300Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、CSS基础"><a href="#一、CSS基础" class="headerlink" title="一、CSS基础"></a>一、CSS基础</h2><h3 id="1-CSS选择器及其优先级"><a href="#1-CSS选择器及其优先级" class="headerlink" title="1. CSS选择器及其优先级"></a>1. CSS选择器及其优先级</h3><table><thead><tr><th align="left">选择器</th><th align="center">格式</th><th align="right">优先级权重</th></tr></thead><tbody><tr><td align="left">id选择器</td><td align="center">#id</td><td align="right">100</td></tr><tr><td align="left">类选择器</td><td align="center">#classname</td><td align="right">10</td></tr><tr><td align="left">属性选择器</td><td align="center">a[ref=“eee”]</td><td align="right">10</td></tr><tr><td align="left">伪类选择器</td><td align="center">li:last-child</td><td align="right">10</td></tr><tr><td align="left">标签选择器</td><td align="center">div</td><td align="right">1</td></tr><tr><td align="left">伪元素选择器</td><td align="center">li:after</td><td align="right">1</td></tr><tr><td align="left">相邻兄弟选择器</td><td align="center">h1+p</td><td align="right">0</td></tr><tr><td align="left">子选择器</td><td align="center">ul&gt;li</td><td align="right">0</td></tr><tr><td align="left">后代选择器</td><td align="center">li a</td><td align="right">0</td></tr><tr><td align="left">通配符选择器</td><td align="center">*</td><td align="right">0</td></tr></tbody></table><p>对于选择器的<strong>优先级</strong>：</p><blockquote><p>标签选择器、伪元素选择器：1<br>类选择器、伪类选择器、属性选择器：10<br>id 选择器：100<br>内联样式：1000</p></blockquote><p><strong>注意事项：</strong></p><blockquote><p>!important声明的样式的优先级最高；<br>如果优先级相同，则最后出现的样式生效；<br>继承得到的样式的优先级最低；<br>通用选择器（*）、子选择器（&gt;）和相邻同胞选择器（+）并不在这四个等级中，所以它们的权值都为 0 ；<br>样式表的来源不同时，优先级顺序为：内联样式 &gt; 内部样式 &gt; 外部样式 &gt; 浏览器用户自定义样式 &gt; 浏览器默认样式。</p></blockquote><h2 id="2-CSS中可继承与不可继承属性有哪些"><a href="#2-CSS中可继承与不可继承属性有哪些" class="headerlink" title="2. CSS中可继承与不可继承属性有哪些"></a>2. CSS中可继承与不可继承属性有哪些</h2><h3 id="一、无继承性的属性"><a href="#一、无继承性的属性" class="headerlink" title="一、无继承性的属性"></a>一、无继承性的属性</h3><ol><li><p><strong>display</strong>：规定元素应该生成的框的类型</p></li><li><p><strong>文本属性</strong>：</p><pre><code> vertical-align：垂直文本对齐 text-decoration：规定添加到文本的装饰 text-shadow：文本阴影效果 white-space：空白符的处理 unicode-bidi：设置文本的方向</code></pre></li><li><p><strong>盒子模型的属性</strong>：width、height、margin、border、padding</p></li><li><p><strong>背景属性</strong>：background、background-color、background-image、background-repeat、background-position、background-attachment</p></li><li><p><strong>定位属性</strong>：float、clear、position、top、right、bottom、left、min-width、min-height、max-width、max-height、overflow、clip、z-index</p></li><li><p><strong>生成内容属性</strong>：content、counter-reset、counter-increment</p></li><li><p><strong>轮廓样式属性</strong>：outline-style、outline-width、outline-color、outline</p></li><li><p><strong>页面样式属性</strong>：size、page-break-before、page-break-after</p></li><li><p><strong>声音样式属性</strong>：pause-before、pause-after、pause、cue-before、cue-after、cue、play-during</p></li></ol><h3 id="二、有继承性的属性"><a href="#二、有继承性的属性" class="headerlink" title="二、有继承性的属性"></a>二、有继承性的属性</h3><ol><li><p><strong>字体系列属性</strong></p><pre><code> font-family：字体系列 font-weight：字体的粗细 font-size：字体的大小 font-style：字体的风格</code></pre></li></ol><ol start="2"><li><p><strong>文本系列属性</strong></p><pre><code> text-indent：文本缩进 text-align：文本水平对齐 line-height：行高 word-spacing：单词之间的间距 letter-spacing：中文或者字母之间的间距 text-transform：控制文本大小写（就是uppercase、lowercase、capitalize这三个） color：文本颜色</code></pre></li></ol><ol start="3"><li><p><strong>元素可见性</strong></p><pre><code> visibility：控制元素显示隐藏</code></pre></li></ol><ol start="4"><li><p><strong>列表布局属性</strong></p><pre><code> list-style：列表风格，包括list-style-type、list-style-image等</code></pre></li><li><p><strong>光标属性</strong></p><pre><code> cursor：光标显示为何种形态</code></pre></li></ol><h2 id="3-display的属性值及其作用"><a href="#3-display的属性值及其作用" class="headerlink" title="3. display的属性值及其作用"></a>3. display的属性值及其作用</h2><table><thead><tr><th align="left">属性值</th><th align="left">作用</th></tr></thead><tbody><tr><td align="left">none</td><td align="left">元素不显示，并且会从文档流中移除。</td></tr><tr><td align="left">block</td><td align="left">块类型。默认宽度为父元素宽度，可设置宽高，换行显示。</td></tr><tr><td align="left">inline</td><td align="left">行内元素类型。默认宽度为内容宽度，不可设置宽高，同行显示。</td></tr><tr><td align="left">inline-block</td><td align="left">默认宽度为内容宽度，可以设置宽高，同行显示。</td></tr><tr><td align="left">list-item</td><td align="left">元素不显示，并且会从文档流中移除。</td></tr><tr><td align="left">table</td><td align="left">元素不显示，并且会从文档流中移除。</td></tr><tr><td align="left">inherit</td><td align="left">元素不显示，并且会从文档流中移除。</td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;一、CSS基础&quot;&gt;&lt;a href=&quot;#一、CSS基础&quot; class=&quot;headerlink&quot; title=&quot;一、CSS基础&quot;&gt;&lt;/a&gt;一、CSS基础&lt;/h2&gt;&lt;h3 id=&quot;1-CSS选择器及其优先级&quot;&gt;&lt;a href=&quot;#1-CSS选择器及其优先级&quot; class</summary>
+      
+    
+    
+    
+    <category term="CSS" scheme="http://example.com/categories/CSS/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>说说webpack的构建流程?</title>
@@ -431,28 +453,6 @@
     
     
     <category term="数据结构与算法" scheme="http://example.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>如何理解CDN？说说实现原理？</title>
-    <link href="http://example.com/2022/08/05/http.%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3CDN%EF%BC%9F%E8%AF%B4%E8%AF%B4%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%EF%BC%9F/"/>
-    <id>http://example.com/2022/08/05/http.%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3CDN%EF%BC%9F%E8%AF%B4%E8%AF%B4%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%EF%BC%9F/</id>
-    <published>2022-08-05T05:57:10.307Z</published>
-    <updated>2022-08-05T07:23:38.429Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="如何理解CDN？说说实现原理？"><a href="#如何理解CDN？说说实现原理？" class="headerlink" title="如何理解CDN？说说实现原理？"></a>如何理解CDN？说说实现原理？</h1><p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928152959469" alt="图片"></p><h2 id="一、是什么"><a href="#一、是什么" class="headerlink" title="一、是什么"></a>一、是什么</h2><p>CDN (全称 Content Delivery Network)，即内容分发网络</p><p>构建在现有网络基础之上的智能虚拟网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。<code>CDN</code> 的关键技术主要有内容存储和分发技术</p><p>简单来讲，<code>CDN</code>就是根据用户位置分配最近的资源</p><p>于是，用户在上网的时候不用直接访问源站，而是访问离他“最近的”一个 CDN 节点，术语叫「边缘节点」，其实就是缓存了源站内容的代理服务器。如下图：</p><p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928153004746" alt="图片"></p><h2 id="二、原理分析"><a href="#二、原理分析" class="headerlink" title="二、原理分析"></a>二、原理分析</h2><p>在没有应用<code>CDN</code>时，我们使用域名访问某一个站点时的路径为</p><blockquote><p>用户提交域名→浏览器对域名进行解释→<code>DNS</code> 解析得到目的主机的IP地址→根据IP地址访问发出请求→得到请求数据并回复</p></blockquote><p>应用<code>CDN</code>后，<code>DNS</code> 返回的不再是 <code>IP</code> 地址，而是一个<code>CNAME</code>(Canonical Name ) 别名记录，指向<code>CDN</code>的全局负载均衡</p><p><code>CNAME</code>实际上在域名解析的过程中承担了中间人（或者说代理）的角色，这是<code>CDN</code>实现的关键</p><h4 id="负载均衡系统"><a href="#负载均衡系统" class="headerlink" title="负载均衡系统"></a>负载均衡系统</h4><p>由于没有返回<code>IP</code>地址，于是本地<code>DNS</code>会向负载均衡系统再发送请求  ，则进入到<code>CDN</code>的全局负载均衡系统进行智能调度：</p><ul><li>看用户的 IP 地址，查表得知地理位置，找相对最近的边缘节点</li><li>看用户所在的运营商网络，找相同网络的边缘节点</li><li>检查边缘节点的负载情况，找负载较轻的节点</li><li>其他，比如节点的“健康状况”、服务能力、带宽、响应时间等</li></ul><p>结合上面的因素，得到最合适的边缘节点，然后把这个节点返回给用户，用户就能够就近访问<code>CDN</code>的缓存代理</p><p>整体流程如下图：</p><p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928153010180" alt="图片"></p><h4 id="缓存代理"><a href="#缓存代理" class="headerlink" title="缓存代理"></a>缓存代理</h4><p>缓存系统是 <code>CDN</code>的另一个关键组成部分，缓存系统会有选择地缓存那些最常用的那些资源</p><p>其中有两个衡量<code>CDN</code>服务质量的指标：</p><ul><li>命中率：用户访问的资源恰好在缓存系统里，可以直接返回给用户，命中次数与所有访问次数之比</li><li>回源率：缓存里没有，必须用代理的方式回源站取，回源次数与所有访问次数之比</li></ul><p>缓存系统也可以划分出层次，分成一级缓存节点和二级缓存节点。一级缓存配置高一些，直连源站，二级缓存配置低一些，直连用户</p><p>回源的时候二级缓存只找一级缓存，一级缓存没有才回源站，可以有效地减少真正的回源</p><p>现在的商业 <code>CDN</code>命中率都在 90% 以上，相当于把源站的服务能力放大了 10 倍以上</p><h2 id="三、总结"><a href="#三、总结" class="headerlink" title="三、总结"></a>三、总结</h2><p><code>CDN</code> 目的是为了改善互联网的服务质量，通俗一点说其实就是提高访问速度</p><p><code>CDN</code> 构建了全国、全球级别的专网，让用户就近访问专网里的边缘节点，降低了传输延迟，实现了网站加速</p><p>通过<code>CDN</code>的负载均衡系统，智能调度边缘节点提供服务，相当于<code>CDN</code>服务的大脑，而缓存系统相当于<code>CDN</code>的心脏，缓存命中直接返回给用户，否则回源</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;如何理解CDN？说说实现原理？&quot;&gt;&lt;a href=&quot;#如何理解CDN？说说实现原理？&quot; class=&quot;headerlink&quot; title=&quot;如何理解CDN？说说实现原理？&quot;&gt;&lt;/a&gt;如何理解CDN？说说实现原理？&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://</summary>
-      
-    
-    
-    
-    <category term="网络协议" scheme="http://example.com/categories/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/"/>
     
     
   </entry>

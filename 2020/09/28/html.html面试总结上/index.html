@@ -1,0 +1,2652 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HTML总结上 | Hexo</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="HTML总结上 | Hexo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="一、CSS基础1. CSS选择器及其优先级   选择器 格式 优先级权重    id选择器 #id 100   类选择器 #classname 10   属性选择器 a[ref&#x3D;“eee”] 10   伪类选择器 li:last-child 10   标签选择器 div 1   伪元素选择器 li:after 1   相邻兄弟选择器 h1+p 0   子选择器 ul&gt;li 0   后代选择器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS总结">
+<meta property="og:url" content="http://example.com/2022/08/07/css.css%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一、CSS基础1. CSS选择器及其优先级   选择器 格式 优先级权重    id选择器 #id 100   类选择器 #classname 10   属性选择器 a[ref&#x3D;“eee”] 10   伪类选择器 li:last-child 10   标签选择器 div 1   伪元素选择器 li:after 1   相邻兄弟选择器 h1+p 0   子选择器 ul&gt;li 0   后代选择器">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-08-07T11:46:05.638Z">
+<meta property="article:modified_time" content="2022-08-08T00:43:56.300Z">
+<meta property="article:author" content="Abu">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>Abu</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <i class="iconfont icon-rss"></i>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/userabu/userabu.github-io"
+               target="_blank">
+                
+                    <i class="iconfont icon-github"></i>
+                
+            </a>
+        
+    
+        
+            <a title="email"
+               href="mailto:lsy4109232022@163.com"
+               target="_blank">
+                
+                    <i class="iconfont icon-email"></i>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=1449581022&site=qq&menu=yes"
+               target="_blank">
+                
+                    <i class="iconfont icon-qq"></i>
+                
+            </a>
+        
+    
+        
+            <a title="kugou"
+               href="https://y.qq.com/"
+               target="_blank">
+                
+                    <i class="iconfont icon-kugou"></i>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(203)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="HTML">
+                        
+                        HTML
+                        <small>(8)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="CSS">
+                        
+                        CSS
+                        <small>(21)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="JavaScript">
+                        
+                        JavaScript
+                        <small>(33)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Vue">
+                        
+                        Vue
+                        <small>(38)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="React">
+                        
+                        React
+                        <small>(33)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="TypeScript">
+                        
+                        TypeScript
+                        <small>(12)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="设计模式">
+                        
+                        设计模式
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="数据结构与算法">
+                        
+                        数据结构与算法
+                        <small>(9)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="网络协议">
+                        
+                        网络协议
+                        <small>(15)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="es6">
+                        
+                        es6
+                        <small>(9)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Node">
+                        
+                        Node
+                        <small>(14)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Webpack">
+                        
+                        Webpack
+                        <small>(10)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="203">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+    </div>
+
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2022/08/07/css.css%E9%9D%A2%E8%AF%95%E9%A2%98/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="CSS总结">CSS总结</span>
+            <span class="post-date" title="2022-08-07 19:46:05">2022/08/07</span>
+        </a>
+        
+        
+        <a  class="全部文章 Webpack "
+           href="/2022/08/05/Webpack.%E8%AF%B4%E8%AF%B4webpack%E7%9A%84%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说webpack的构建流程?">说说webpack的构建流程?</span>
+            <span class="post-date" title="2022-08-05 14:12:04">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 Webpack "
+           href="/2022/08/05/Webpack.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Webpack%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E8%A7%A3%E5%86%B3%E4%BA%86%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对Webpack的理解？解决了什么问题？">说说你对Webpack的理解？解决了什么问题？</span>
+            <span class="post-date" title="2022-08-05 14:12:04">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 Webpack "
+           href="/2022/08/05/Webpack.%E4%B8%8EWebpack%E7%B1%BB%E4%BC%BC%E7%9A%84%E5%B7%A5%E5%85%B7%E8%BF%98%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="与Webpack类似的工具还有哪些？区别？">与Webpack类似的工具还有哪些？区别？</span>
+            <span class="post-date" title="2022-08-05 14:12:04">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 Webpack "
+           href="/2022/08/05/Webpack.%E8%AF%B4%E8%AF%B4%E6%8F%90%E9%AB%98webpack%E7%9A%84%E6%9E%84%E5%BB%BA%E9%80%9F%E5%BA%A6%E7%9A%84%E6%89%8B%E6%AE%B5%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说提高webpack的构建速度的手段有哪些？">说说提高webpack的构建速度的手段有哪些？</span>
+            <span class="post-date" title="2022-08-05 14:12:04">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 Webpack "
+           href="/2022/08/05/Webpack.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E6%98%AF%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8Webpack%E6%9D%A5%E4%BC%98%E5%8C%96%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E7%9A%84%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你是如何利用Webpack来优化前端性能的？">说说你是如何利用Webpack来优化前端性能的？</span>
+            <span class="post-date" title="2022-08-05 14:12:04">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 Webpack "
+           href="/2022/08/05/Webpack.%E8%AF%B4%E8%AF%B4Webpack%20Proxy%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%EF%BC%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E8%83%BD%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说Webpack Proxy工作原理？为什么能解决跨域?">说说Webpack Proxy工作原理？为什么能解决跨域?</span>
+            <span class="post-date" title="2022-08-05 14:12:04">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 Webpack "
+           href="/2022/08/05/Webpack.%E8%AF%B4%E8%AF%B4Webpack%E7%9A%84%E7%83%AD%E6%9B%B4%E6%96%B0%E6%98%AF%E5%A6%82%E4%BD%95%E5%81%9A%E5%88%B0%E7%9A%84%EF%BC%9F%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说Webpack的热更新是如何做到的？原理是什么？">说说Webpack的热更新是如何做到的？原理是什么？</span>
+            <span class="post-date" title="2022-08-05 14:12:04">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 Webpack "
+           href="/2022/08/05/Webpack.%E8%AF%B4%E8%AF%B4Webpack%E4%B8%ADLoader%E5%92%8CPlugin%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F%E7%BC%96%E5%86%99Loader%EF%BC%8CPlugin%E7%9A%84%E6%80%9D%E8%B7%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说Webpack中Loader和Plugin的区别？编写Loader，Plugin的思路？">说说Webpack中Loader和Plugin的区别？编写Loader，Plugin的思路？</span>
+            <span class="post-date" title="2022-08-05 14:12:04">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 Webpack "
+           href="/2022/08/05/Webpack.%E8%AF%B4%E8%AF%B4webpack%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84Plugin%EF%BC%9F%E8%A7%A3%E5%86%B3%E4%BA%86%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说webpack中常见的Plugin？解决了什么问题？">说说webpack中常见的Plugin？解决了什么问题？</span>
+            <span class="post-date" title="2022-08-05 14:12:04">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 Webpack "
+           href="/2022/08/05/Webpack.%E8%AF%B4%E8%AF%B4Webpack%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84Loader%EF%BC%9F%E8%A7%A3%E5%86%B3%E4%BA%86%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说Webpack中常见的Loader？解决了什么问题？">说说Webpack中常见的Loader？解决了什么问题？</span>
+            <span class="post-date" title="2022-08-05 14:12:04">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 设计模式 "
+           href="/2022/08/05/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="设计模式-如何理解工厂模式?">设计模式-如何理解工厂模式?</span>
+            <span class="post-date" title="2022-08-05 14:09:39">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 数据结构与算法 "
+           href="/2022/08/05/%E7%AE%97%E6%B3%95.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E9%93%BE%E8%A1%A8%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%B8%B8%E8%A7%81%E7%9A%84%E6%93%8D%E4%BD%9C%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对链表的理解？常见的操作有哪些？">说说你对链表的理解？常见的操作有哪些？</span>
+            <span class="post-date" title="2022-08-05 14:05:46">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 数据结构与算法 "
+           href="/2022/08/05/%E7%AE%97%E6%B3%95.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对数据结构的理解？有哪些？区别？">说说你对数据结构的理解？有哪些？区别？</span>
+            <span class="post-date" title="2022-08-05 14:05:46">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 数据结构与算法 "
+           href="/2022/08/05/%E7%AE%97%E6%B3%95.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E7%AE%97%E6%B3%95%E4%B8%AD%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%EF%BC%8C%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对算法中时间复杂度，空间复杂度的理解？如何计算？">说说你对算法中时间复杂度，空间复杂度的理解？如何计算？</span>
+            <span class="post-date" title="2022-08-05 14:05:46">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 数据结构与算法 "
+           href="/2022/08/05/%E7%AE%97%E6%B3%95.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E7%AE%97%E6%B3%95%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对算法的理解？应用场景？">说说你对算法的理解？应用场景？</span>
+            <span class="post-date" title="2022-08-05 14:05:46">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 数据结构与算法 "
+           href="/2022/08/05/%E7%AE%97%E6%B3%95.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E5%9B%BE%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对图的理解？相关操作有哪些？">说说你对图的理解？相关操作有哪些？</span>
+            <span class="post-date" title="2022-08-05 14:05:46">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 数据结构与算法 "
+           href="/2022/08/05/%E7%AE%97%E6%B3%95.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E5%A0%86%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对堆的理解？如何实现？应用场景？">说说你对堆的理解？如何实现？应用场景？</span>
+            <span class="post-date" title="2022-08-05 14:05:46">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 数据结构与算法 "
+           href="/2022/08/05/%E7%AE%97%E6%B3%95.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E6%A0%91%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E7%9B%B8%E5%85%B3%E7%9A%84%E6%93%8D%E4%BD%9C%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对树的理解？相关的操作有哪些？">说说你对树的理解？相关的操作有哪些？</span>
+            <span class="post-date" title="2022-08-05 14:05:45">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 数据结构与算法 "
+           href="/2022/08/05/%E7%AE%97%E6%B3%95.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E9%9B%86%E5%90%88%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%B8%B8%E8%A7%81%E7%9A%84%E6%93%8D%E4%BD%9C%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对集合的理解？常见的操作有哪些？">说说你对集合的理解？常见的操作有哪些？</span>
+            <span class="post-date" title="2022-08-05 14:05:45">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 网络协议 "
+           href="/2022/08/05/http.%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3CDN%EF%BC%9F%E8%AF%B4%E8%AF%B4%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="如何理解CDN？说说实现原理？">如何理解CDN？说说实现原理？</span>
+            <span class="post-date" title="2022-08-05 13:57:10">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 网络协议 "
+           href="/2022/08/05/http.DNS%20%E5%8D%8F%E8%AE%AE%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E8%AF%B4%E8%AF%B4%20DNS%20%E5%AE%8C%E6%95%B4%E7%9A%84%E6%9F%A5%E8%AF%A2%E8%BF%87%E7%A8%8B_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="DNS 协议是什么？说说 DNS 完整的查询过程?">DNS 协议是什么？说说 DNS 完整的查询过程?</span>
+            <span class="post-date" title="2022-08-05 13:57:10">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 网络协议 "
+           href="/2022/08/05/http.%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3TCPIP%E5%8D%8F%E8%AE%AE_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="如何理解TCP/IP协议?">如何理解TCP/IP协议?</span>
+            <span class="post-date" title="2022-08-05 13:57:10">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 网络协议 "
+           href="/2022/08/05/http.%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3OSI%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="如何理解OSI七层模型?">如何理解OSI七层模型?</span>
+            <span class="post-date" title="2022-08-05 13:57:10">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 网络协议 "
+           href="/2022/08/05/http.%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%B4HTTPS%E6%AF%94HTTP%E5%AE%89%E5%85%A8_%20HTTPS%E6%98%AF%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E5%AE%89%E5%85%A8%E7%9A%84%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="为什么说HTTPS比HTTP安全? HTTPS是如何保证安全的？">为什么说HTTPS比HTTP安全? HTTPS是如何保证安全的？</span>
+            <span class="post-date" title="2022-08-05 13:57:10">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 网络协议 "
+           href="/2022/08/05/http.%E4%BB%80%E4%B9%88%E6%98%AFHTTP_%20HTTP%20%E5%92%8C%20HTTPS%20%E7%9A%84%E5%8C%BA%E5%88%AB_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="什么是HTTP? HTTP 和 HTTPS 的区别?">什么是HTTP? HTTP 和 HTTPS 的区别?</span>
+            <span class="post-date" title="2022-08-05 13:57:10">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 网络协议 "
+           href="/2022/08/05/http.web%E5%B8%B8%E8%A7%81%E7%9A%84%E6%94%BB%E5%87%BB%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%A6%82%E4%BD%95%E9%98%B2%E5%BE%A1%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="web常见的攻击方式有哪些？如何防御？">web常见的攻击方式有哪些？如何防御？</span>
+            <span class="post-date" title="2022-08-05 13:57:10">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 网络协议 "
+           href="/2022/08/05/http.%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3UDP%20%E5%92%8C%20TCP_%20%E5%8C%BA%E5%88%AB_%20%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="如何理解UDP 和 TCP? 区别? 应用场景?">如何理解UDP 和 TCP? 区别? 应用场景?</span>
+            <span class="post-date" title="2022-08-05 13:57:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 网络协议 "
+           href="/2022/08/05/http.%E8%AF%B4%E8%AF%B4%E5%AF%B9WebSocket%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对WebSocket的理解？应用场景？">说说对WebSocket的理解？应用场景？</span>
+            <span class="post-date" title="2022-08-05 13:57:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 网络协议 "
+           href="/2022/08/05/http.%E8%AF%B4%E8%AF%B4TCP%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%92%8C%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说TCP为什么需要三次握手和四次挥手？">说说TCP为什么需要三次握手和四次挥手？</span>
+            <span class="post-date" title="2022-08-05 13:57:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 网络协议 "
+           href="/2022/08/05/http.%E8%AF%B4%E8%AF%B4%E5%9C%B0%E5%9D%80%E6%A0%8F%E8%BE%93%E5%85%A5%20URL%20%E6%95%B2%E4%B8%8B%E5%9B%9E%E8%BD%A6%E5%90%8E%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说地址栏输入 URL 敲下回车后发生了什么?">说说地址栏输入 URL 敲下回车后发生了什么?</span>
+            <span class="post-date" title="2022-08-05 13:57:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 网络协议 "
+           href="/2022/08/05/http.%E8%AF%B4%E8%AF%B4%20HTTP%20%E5%B8%B8%E8%A7%81%E7%9A%84%E8%AF%B7%E6%B1%82%E5%A4%B4%E6%9C%89%E5%93%AA%E4%BA%9B_%20%E4%BD%9C%E7%94%A8%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说 HTTP 常见的请求头有哪些? 作用？">说说 HTTP 常见的请求头有哪些? 作用？</span>
+            <span class="post-date" title="2022-08-05 13:57:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 网络协议 "
+           href="/2022/08/05/http.%E8%AF%B4%E4%B8%80%E4%B8%8B%20GET%20%E5%92%8C%20POST%20%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说一下 GET 和 POST 的区别？">说一下 GET 和 POST 的区别？</span>
+            <span class="post-date" title="2022-08-05 13:57:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 网络协议 "
+           href="/2022/08/05/http.%E8%AF%B4%E8%AF%B4%20HTTP%20%E5%B8%B8%E8%A7%81%E7%9A%84%E7%8A%B6%E6%80%81%E7%A0%81%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%8C%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说 HTTP 常见的状态码有哪些，适用场景？">说说 HTTP 常见的状态码有哪些，适用场景？</span>
+            <span class="post-date" title="2022-08-05 13:57:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 网络协议 "
+           href="/2022/08/05/http.%E8%AF%B4%E8%AF%B4%20HTTP1.01.12.0%20%E7%9A%84%E5%8C%BA%E5%88%AB_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说 HTTP1.0/1.1/2.0 的区别?">说说 HTTP1.0/1.1/2.0 的区别?</span>
+            <span class="post-date" title="2022-08-05 13:57:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 TypeScript "
+           href="/2022/08/05/ts.%E8%AF%B4%E8%AF%B4%E5%A6%82%E4%BD%95%E5%9C%A8Vue%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%BA%94%E7%94%A8TypeScript%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说如何在Vue项目中应用TypeScript？">说说如何在Vue项目中应用TypeScript？</span>
+            <span class="post-date" title="2022-08-05 11:16:40">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 TypeScript "
+           href="/2022/08/05/ts.%E8%AF%B4%E8%AF%B4%E5%A6%82%E4%BD%95%E5%9C%A8React%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%BA%94%E7%94%A8TypeScript%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说如何在React项目中应用TypeScript？">说说如何在React项目中应用TypeScript？</span>
+            <span class="post-date" title="2022-08-05 11:16:40">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 TypeScript "
+           href="/2022/08/05/ts.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20TypeScript%20%E4%B8%AD%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E4%B8%8E%E6%A8%A1%E5%9D%97%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对 TypeScript 中命名空间与模块的理解？区别？">说说对 TypeScript 中命名空间与模块的理解？区别？</span>
+            <span class="post-date" title="2022-08-05 11:16:40">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 TypeScript "
+           href="/2022/08/05/ts.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%20TypeScript%20%E4%B8%AD%E8%A3%85%E9%A5%B0%E5%99%A8%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对 TypeScript 中装饰器的理解？应用场景？">说说你对 TypeScript 中装饰器的理解？应用场景？</span>
+            <span class="post-date" title="2022-08-05 11:16:40">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 TypeScript "
+           href="/2022/08/05/ts.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%20TypeScript%20%E4%B8%AD%E9%AB%98%E7%BA%A7%E7%B1%BB%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对 TypeScript 中高级类型的理解？有哪些？">说说你对 TypeScript 中高级类型的理解？有哪些？</span>
+            <span class="post-date" title="2022-08-05 11:16:40">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 TypeScript "
+           href="/2022/08/05/ts.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%20TypeScript%20%E4%B8%AD%E6%B3%9B%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对 TypeScript 中泛型的理解？应用场景？">说说你对 TypeScript 中泛型的理解？应用场景？</span>
+            <span class="post-date" title="2022-08-05 11:16:40">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 TypeScript "
+           href="/2022/08/05/ts.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%20TypeScript%20%E4%B8%AD%E5%87%BD%E6%95%B0%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E4%B8%8E%20JavaScript%20%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对 TypeScript 中函数的理解？与 JavaScript 函数的区别？">说说你对 TypeScript 中函数的理解？与 JavaScript 函数的区别？</span>
+            <span class="post-date" title="2022-08-05 11:16:40">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 TypeScript "
+           href="/2022/08/05/ts.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%20TypeScript%20%E4%B8%AD%E7%B1%BB%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对 TypeScript 中类的理解？应用场景？">说说你对 TypeScript 中类的理解？应用场景？</span>
+            <span class="post-date" title="2022-08-05 11:16:40">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 TypeScript "
+           href="/2022/08/05/ts.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%20TypeScript%20%E4%B8%AD%E6%8E%A5%E5%8F%A3%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对 TypeScript 中接口的理解？应用场景？">说说你对 TypeScript 中接口的理解？应用场景？</span>
+            <span class="post-date" title="2022-08-05 11:16:40">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 TypeScript "
+           href="/2022/08/05/ts.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%20TypeScript%20%E4%B8%AD%E6%9E%9A%E4%B8%BE%E7%B1%BB%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对 TypeScript 中枚举类型的理解？应用场景？">说说你对 TypeScript 中枚举类型的理解？应用场景？</span>
+            <span class="post-date" title="2022-08-05 11:16:40">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 TypeScript "
+           href="/2022/08/05/ts.%E8%AF%B4%E8%AF%B4%20Typescript%20%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说 Typescript 的数据类型有哪些？">说说 Typescript 的数据类型有哪些？</span>
+            <span class="post-date" title="2022-08-05 11:16:40">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 TypeScript "
+           href="/2022/08/05/ts.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%20TypeScript%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E4%B8%8E%20JavaScript%20%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对 TypeScript 的理解？与 JavaScript 的区别？">说说你对 TypeScript 的理解？与 JavaScript 的区别？</span>
+            <span class="post-date" title="2022-08-05 11:16:40">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%9C%A8%E4%BD%BF%E7%94%A8React%20%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%EF%BC%9F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你在使用React 过程中遇到的常见问题？解决方案?">说说你在使用React 过程中遇到的常见问题？解决方案?</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4React%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%B8%B2%E6%9F%93%E6%80%8E%E4%B9%88%E5%81%9A%EF%BC%9F%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说React服务端渲染怎么做？原理是什么？">说说React服务端渲染怎么做？原理是什么？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%9C%A8React%E9%A1%B9%E7%9B%AE%E6%98%AF%E5%A6%82%E4%BD%95%E6%8D%95%E8%8E%B7%E9%94%99%E8%AF%AF%E7%9A%84%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你在React项目是如何捕获错误的？">说说你在React项目是如何捕获错误的？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4%20React%20%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E7%9A%84%E6%89%8B%E6%AE%B5%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说 React 性能优化的手段有哪些？">说说 React 性能优化的手段有哪些？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4React%20Jsx%E8%BD%AC%E6%8D%A2%E6%88%90%E7%9C%9F%E5%AE%9EDOM%E8%BF%87%E7%A8%8B%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说React Jsx转换成真实DOM过程？">说说React Jsx转换成真实DOM过程？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4%E5%AF%B9React%20Fiber%E6%9E%B6%E6%9E%84%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E8%A7%A3%E5%86%B3%E4%BA%86%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对React Fiber架构的理解？解决了什么问题？">说说对React Fiber架构的理解？解决了什么问题？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%20React%20diff%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对 React diff的理解？原理是什么？">说说你对 React diff的理解？原理是什么？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E6%98%AF%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E7%BB%84%E4%BB%B6%E7%9A%84%E6%B8%B2%E6%9F%93%E6%95%88%E7%8E%87%E7%9A%84%EF%BC%9F%E5%9C%A8React%E4%B8%AD%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E4%B8%8D%E5%BF%85%E8%A6%81%E7%9A%84render%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你是如何提高组件的渲染效率的？在React中如何避免不必要的render？">说说你是如何提高组件的渲染效率的？在React中如何避免不必要的render？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4React%20render%E6%96%B9%E6%B3%95%E7%9A%84%E5%8E%9F%E7%90%86%EF%BC%9F%E5%9C%A8%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E4%BC%9A%E8%A2%AB%E8%A7%A6%E5%8F%91%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说React render方法的原理？在什么时候会被触发？">说说React render方法的原理？在什么时候会被触发？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%20Immutable%20Data%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%A6%82%E4%BD%95%E5%BA%94%E7%94%A8%E5%9C%A8React%E9%A1%B9%E7%9B%AE%E4%B8%AD%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对 Immutable Data的理解？如何应用在React项目中？">说说你对 Immutable Data的理解？如何应用在React项目中？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4React%20Router%E6%9C%89%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F%EF%BC%9F%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说React Router有几种模式？实现原理？">说说React Router有几种模式？实现原理？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9React%20Router%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%B8%B8%E7%94%A8%E7%9A%84Router%E7%BB%84%E4%BB%B6%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对React Router的理解？常用的Router组件有哪些？">说说你对React Router的理解？常用的Router组件有哪些？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E4%BD%A0%E5%9C%A8React%E9%A1%B9%E7%9B%AE%E4%B8%AD%E6%98%AF%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Redux%E7%9A%84_%20%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E6%98%AF%E5%A6%82%E4%BD%95%E5%88%92%E5%88%86%E7%9A%84%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="你在React项目中是如何使用Redux的? 项目结构是如何划分的？">你在React项目中是如何使用Redux的? 项目结构是如何划分的？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4%E5%AF%B9Redux%E4%B8%AD%E9%97%B4%E4%BB%B6%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%B8%B8%E7%94%A8%E7%9A%84%E4%B8%AD%E9%97%B4%E4%BB%B6%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对Redux中间件的理解？常用的中间件有哪些？实现原理？">说说对Redux中间件的理解？常用的中间件有哪些？实现原理？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Redux%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%85%B6%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对Redux的理解？其工作原理？">说说你对Redux的理解？其工作原理？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E5%9C%A8React%E4%B8%AD%E7%BB%84%E4%BB%B6%E9%97%B4%E8%BF%87%E6%B8%A1%E5%8A%A8%E7%94%BB%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="在React中组件间过渡动画如何实现？">在React中组件间过渡动画如何实现？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4react%E4%B8%AD%E5%BC%95%E5%85%A5css%E7%9A%84%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说react中引入css的方式有哪几种？区别？">说说react中引入css的方式有哪几种？区别？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4%E5%AF%B9React%20Hooks%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E8%A7%A3%E5%86%B3%E4%BA%86%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对React Hooks的理解？解决了什么问题？">说说对React Hooks的理解？解决了什么问题？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4%E5%AF%B9%E9%AB%98%E9%98%B6%E7%BB%84%E4%BB%B6%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对高阶组件的理解？应用场景?">说说对高阶组件的理解？应用场景?</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4%E5%AF%B9React%E4%B8%AD%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6%E5%92%8C%E9%9D%9E%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对React中受控组件和非受控组件的理解？应用场景？">说说对React中受控组件和非受控组件的理解？应用场景？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4%E5%AF%B9React%E4%B8%AD%E7%B1%BB%E7%BB%84%E4%BB%B6%E5%92%8C%E5%87%BD%E6%95%B0%E7%BB%84%E4%BB%B6%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对React中类组件和函数组件的理解？有什么区别？">说说对React中类组件和函数组件的理解？有什么区别？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4%E5%AF%B9React%20refs%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对React refs 的理解？应用场景？">说说对React refs 的理解？应用场景？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.React%E4%B8%AD%E7%9A%84key%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="React中的key有什么作用？">React中的key有什么作用？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.React%E4%B8%AD%E7%BB%84%E4%BB%B6%E4%B9%8B%E9%97%B4%E9%80%9A%E4%BF%A1%E7%9A%84%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="React中组件之间通信的方式有哪些？">React中组件之间通信的方式有哪些？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.React%E6%9E%84%E5%BB%BA%E7%BB%84%E4%BB%B6%E7%9A%84%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="React构建组件的方式有哪些？区别？">React构建组件的方式有哪些？区别？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.React%E4%BA%8B%E4%BB%B6%E7%BB%91%E5%AE%9A%E7%9A%84%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="React事件绑定的方式有哪些？区别？">React事件绑定的方式有哪些？区别？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4%E5%AF%B9React%E4%BA%8B%E4%BB%B6%E6%9C%BA%E5%88%B6%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对React事件机制的理解？">说说对React事件机制的理解？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4%20React%E4%B8%AD%E7%9A%84setState%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说 React中的setState执行机制">说说 React中的setState执行机制</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.super()%E5%92%8Csuper(props)%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="super()和super(props)有什么区别？">super()和super(props)有什么区别？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E9%9D%A2%E8%AF%95%E5%AE%98%EF%BC%9A%E8%AF%B4%E8%AF%B4%E5%AF%B9%20State%20%E5%92%8C%20Props%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%8C%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对 State 和 Props的理解，有什么区别？">说说对 State 和 Props的理解，有什么区别？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4%20React%20%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%9C%89%E5%93%AA%E4%BA%9B%E4%B8%8D%E5%90%8C%E9%98%B6%E6%AE%B5%EF%BC%9F%E6%AF%8F%E4%B8%AA%E9%98%B6%E6%AE%B5%E5%AF%B9%E5%BA%94%E7%9A%84%E6%96%B9%E6%B3%95%E6%98%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说 React 生命周期有哪些不同阶段？每个阶段对应的方法是？">说说 React 生命周期有哪些不同阶段？每个阶段对应的方法是？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4%20Real%20DOM%E5%92%8C%20Virtual%20DOM%20%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说 Real DOM和 Virtual DOM 的区别？优缺点？">说说 Real DOM和 Virtual DOM 的区别？优缺点？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 React "
+           href="/2022/08/05/React.%E8%AF%B4%E8%AF%B4%E5%AF%B9React%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E6%9C%89%E5%93%AA%E4%BA%9B%E7%89%B9%E6%80%A7%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对React的理解？有哪些特性？">说说对React的理解？有哪些特性？</span>
+            <span class="post-date" title="2022-08-05 10:37:09">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9BOM%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%8C%E5%B8%B8%E8%A7%81%E7%9A%84BOM%E5%AF%B9%E8%B1%A1%E4%BD%A0%E4%BA%86%E8%A7%A3%E5%93%AA%E4%BA%9B%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对BOM的理解，常见的BOM对象你了解哪些？">说说你对BOM的理解，常见的BOM对象你了解哪些？</span>
+            <span class="post-date" title="2022-08-05 09:58:06">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%20%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9DOM%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%8C%E5%B8%B8%E8%A7%81%E7%9A%84%E6%93%8D%E4%BD%9C%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对DOM的理解，常见的操作有哪些？">说说你对DOM的理解，常见的操作有哪些？</span>
+            <span class="post-date" title="2022-08-05 09:58:06">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对函数式编程的理解？优缺点？">说说你对函数式编程的理解？优缺点？</span>
+            <span class="post-date" title="2022-08-05 09:58:06">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9JavaScript%E4%B8%AD%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF%E7%9A%84%E7%90%86%E8%A7%A3%E2%80%8B/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对JavaScript中事件循环的理解">说说你对JavaScript中事件循环的理解</span>
+            <span class="post-date" title="2022-08-05 09:58:06">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.bind%E3%80%81call%E3%80%81apply%20%E5%8C%BA%E5%88%AB%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAbind_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="bind、call、apply 区别？如何实现一个bind?">bind、call、apply 区别？如何实现一个bind?</span>
+            <span class="post-date" title="2022-08-05 09:58:06">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.Ajax%20%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Ajax 原理是什么？如何实现？">Ajax 原理是什么？如何实现？</span>
+            <span class="post-date" title="2022-08-05 09:58:06">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%E8%AF%B4%E8%AF%B4new%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%85%B7%E4%BD%93%E9%83%BD%E5%B9%B2%E4%BA%86%E4%BB%80%E4%B9%88%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说new操作符具体都干了什么？">说说new操作符具体都干了什么？</span>
+            <span class="post-date" title="2022-08-05 09:58:06">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%E8%A7%A3%E9%87%8A%E4%B8%8B%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%8B%E4%BB%B6%E4%BB%A3%E7%90%86%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="解释下什么是事件代理？应用场景？">解释下什么是事件代理？应用场景？</span>
+            <span class="post-date" title="2022-08-05 09:58:06">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%E8%AF%B4%E8%AF%B4%20typeof%20%E4%B8%8E%20instanceof%20%E5%8C%BA%E5%88%AB_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说 typeof 与 instanceof 区别?">说说 typeof 与 instanceof 区别?</span>
+            <span class="post-date" title="2022-08-05 09:58:06">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.avaScript%E4%B8%AD%E7%9A%84%E4%BA%8B%E4%BB%B6%E6%A8%A1%E5%9E%8B%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JavaScript中的事件模型如何理解?">JavaScript中的事件模型如何理解?</span>
+            <span class="post-date" title="2022-08-05 09:58:06">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.JavaScript%E4%B8%AD%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E5%92%8C%E6%89%A7%E8%A1%8C%E6%A0%88%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JavaScript中执行上下文和执行栈是什么？">JavaScript中执行上下文和执行栈是什么？</span>
+            <span class="post-date" title="2022-08-05 09:58:06">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Javascript%E4%B8%ADthis%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对Javascript中this对象的理解">说说你对Javascript中this对象的理解</span>
+            <span class="post-date" title="2022-08-05 09:58:06">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%E8%AF%B4%E8%AF%B4Javascript%E4%B8%AD%E7%9A%84%E7%BB%A7%E6%89%BF%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%BB%A7%E6%89%BF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说Javascript中的继承？如何实现继承？">说说Javascript中的继承？如何实现继承？</span>
+            <span class="post-date" title="2022-08-05 09:58:06">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.JavaScript%E5%8E%9F%E5%9E%8B%EF%BC%8C%E5%8E%9F%E5%9E%8B%E9%93%BE%20_%20%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E7%82%B9%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JavaScript原型，原型链 ? 有什么特点？">JavaScript原型，原型链 ? 有什么特点？</span>
+            <span class="post-date" title="2022-08-05 09:58:06">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Javascript%E4%B8%AD%E4%BD%9C%E7%94%A8%E5%9F%9F%E7%9A%84%E7%90%86%E8%A7%A3_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对Javascript中作用域的理解?">说说你对Javascript中作用域的理解?</span>
+            <span class="post-date" title="2022-08-05 09:58:06">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E9%97%AD%E5%8C%85%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E9%97%AD%E5%8C%85%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对闭包的理解？闭包使用场景?">说说你对闭包的理解？闭包使用场景?</span>
+            <span class="post-date" title="2022-08-05 09:58:06">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%E6%B7%B1%E6%8B%B7%E8%B4%9D%E6%B5%85%E6%8B%B7%E8%B4%9D%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E6%B7%B1%E6%8B%B7%E8%B4%9D%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="深拷贝浅拷贝的区别？如何实现一个深拷贝？">深拷贝浅拷贝的区别？如何实现一个深拷贝？</span>
+            <span class="post-date" title="2022-08-05 09:58:06">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.==%20%E5%92%8C%20===%E5%8C%BA%E5%88%AB%EF%BC%8C%E5%88%86%E5%88%AB%E5%9C%A8%E4%BB%80%E4%B9%88%E6%83%85%E5%86%B5%E4%BD%BF%E7%94%A8%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="== 和 ===区别，分别在什么情况使用？">== 和 ===区别，分别在什么情况使用？</span>
+            <span class="post-date" title="2022-08-05 09:58:06">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%E8%B0%88%E8%B0%88%20JavaScript%20%E4%B8%AD%E7%9A%84%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E6%9C%BA%E5%88%B6/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说谈谈 JavaScript 中的类型转换机制">说谈谈 JavaScript 中的类型转换机制</span>
+            <span class="post-date" title="2022-08-05 09:58:05">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.Javascript%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Javscript字符串的常用方法有哪些？">Javscript字符串的常用方法有哪些？</span>
+            <span class="post-date" title="2022-08-05 09:58:05">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.Javascript%E6%95%B0%E7%BB%84%E7%9A%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Javscript数组的常用方法有哪些？">Javscript数组的常用方法有哪些？</span>
+            <span class="post-date" title="2022-08-05 09:58:05">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%E8%AF%B4%E8%AF%B4javascript%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说JavaScript中的数据类型？区别？文末彩蛋！">说说JavaScript中的数据类型？区别？文末彩蛋！</span>
+            <span class="post-date" title="2022-08-05 09:58:05">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="什么是单点登录？如何实现？">什么是单点登录？如何实现？</span>
+            <span class="post-date" title="2022-08-05 09:58:05">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%E5%A4%A7%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%A6%82%E4%BD%95%E5%81%9A%E6%96%AD%E7%82%B9%E7%BB%AD%E4%BC%A0%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="大文件上传如何做断点续传？">大文件上传如何做断点续传？</span>
+            <span class="post-date" title="2022-08-05 09:58:05">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.JavaScript%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%8A%E6%8B%89%E5%8A%A0%E8%BD%BD%EF%BC%8C%E4%B8%8B%E6%8B%89%E5%88%B7%E6%96%B0%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JavaScript如何实现上拉加载，下拉刷新？">JavaScript如何实现上拉加载，下拉刷新？</span>
+            <span class="post-date" title="2022-08-05 09:58:05">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.JavaScript%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%85%83%E7%B4%A0%E6%98%AF%E5%90%A6%E5%9C%A8%E5%8F%AF%E8%A7%86%E5%8C%BA%E5%9F%9F%E4%B8%AD%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JavaScript如何判断一个元素是否在可视区域中？">JavaScript如何判断一个元素是否在可视区域中？</span>
+            <span class="post-date" title="2022-08-05 09:58:05">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%E8%AF%B4%E8%AF%B4%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81%E5%92%8C%E9%98%B2%E6%8A%96%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说函数节流和防抖？有什么区别？如何实现？">说说函数节流和防抖？有什么区别？如何实现？</span>
+            <span class="post-date" title="2022-08-05 09:58:05">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%E8%AF%B4%E8%AF%B4%20JavaScript%20%E6%95%B0%E5%AD%97%E7%B2%BE%E5%BA%A6%E4%B8%A2%E5%A4%B1%E7%9A%84%E9%97%AE%E9%A2%98%EF%BC%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说 JavaScript 数字精度丢失的问题，解决方案？">说说 JavaScript 数字精度丢失的问题，解决方案？</span>
+            <span class="post-date" title="2022-08-05 09:58:05">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.JavaScript%E4%B8%AD%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%87%BD%E6%95%B0%E7%BC%93%E5%AD%98%EF%BC%9F%E6%9C%89%E5%93%AA%E4%BA%9B%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JavaScript中如何实现函数缓存？有哪些应用场景？！">JavaScript中如何实现函数缓存？有哪些应用场景？！</span>
+            <span class="post-date" title="2022-08-05 09:58:05">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对函数式编程的理解？优缺点？">说说你对函数式编程的理解？优缺点？</span>
+            <span class="post-date" title="2022-08-05 09:58:05">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.JavaScript%E4%B8%AD%E6%9C%AC%E5%9C%B0%E5%AD%98%E5%82%A8%E7%9A%84%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%E5%8F%8A%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JavaScript中本地存储的方式有哪些？区别及应用场景？">JavaScript中本地存储的方式有哪些？区别及应用场景？</span>
+            <span class="post-date" title="2022-08-05 09:58:05">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%E8%AF%B4%E8%AF%B4%20JavaScript%20%E4%B8%AD%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9A%84%E5%87%A0%E7%A7%8D%E6%83%85%E5%86%B5%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说 JavaScript 中内存泄漏的几种情况？">说说 JavaScript 中内存泄漏的几种情况？</span>
+            <span class="post-date" title="2022-08-05 09:58:05">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 JavaScript "
+           href="/2022/08/05/js.%E4%B8%BE%E4%BE%8B%E8%AF%B4%E6%98%8E%E4%BD%A0%E5%AF%B9%E5%B0%BE%E9%80%92%E5%BD%92%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%8C%E6%9C%89%E5%93%AA%E4%BA%9B%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="举例说明你对尾递归的理解，有哪些应用场景">举例说明你对尾递归的理解，有哪些应用场景</span>
+            <span class="post-date" title="2022-08-05 09:58:05">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2022/08/05/css.%E5%85%83%E7%B4%A0%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%A6%82%E6%9E%9C%E5%85%83%E7%B4%A0%E4%B8%8D%E5%AE%9A%E5%AE%BD%E9%AB%98%E5%91%A2%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="元素水平垂直居中的方法有哪些？如果元素不定宽高呢？">元素水平垂直居中的方法有哪些？如果元素不定宽高呢？</span>
+            <span class="post-date" title="2022-08-05 08:35:12">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2022/08/05/css.%E8%B0%88%E8%B0%88%E4%BD%A0%E5%AF%B9BFC%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="谈谈你对BFC的理解">谈谈你对BFC的理解</span>
+            <span class="post-date" title="2022-08-05 08:35:12">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2022/08/05/css.CSS%E4%B8%AD%EF%BC%8C%E6%9C%89%E5%93%AA%E4%BA%9B%E6%96%B9%E5%BC%8F%E5%8F%AF%E4%BB%A5%E9%9A%90%E8%97%8F%E9%A1%B5%E9%9D%A2%E5%85%83%E7%B4%A0%EF%BC%9F%E5%8C%BA%E5%88%AB_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="CSS中，有哪些方式可以隐藏页面元素？区别?">CSS中，有哪些方式可以隐藏页面元素？区别?</span>
+            <span class="post-date" title="2022-08-05 08:35:12">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2022/08/05/css.%E8%AF%B4%E8%AF%B4%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E3%80%81css%E5%83%8F%E7%B4%A0%E3%80%81%E8%AE%BE%E5%A4%87%E7%8B%AC%E7%AB%8B%E5%83%8F%E7%B4%A0%E3%80%81dpr%E3%80%81ppi%20%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说设备像素、css像素、设备独立像素、dpr、ppi 之间的区别">说说设备像素、css像素、设备独立像素、dpr、ppi 之间的区别</span>
+            <span class="post-date" title="2022-08-05 08:35:12">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2022/08/05/css%E8%AF%B4%E8%AF%B4empxremvhvw%E7%9A%84%E5%8C%BA%E5%88%AB_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说empxremvhvw的区别">说说empxremvhvw的区别</span>
+            <span class="post-date" title="2022-08-05 08:35:12">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2022/08/05/css.CSS%E9%80%89%E6%8B%A9%E5%99%A8%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E4%BC%98%E5%85%88%E7%BA%A7%EF%BC%9F%E5%93%AA%E4%BA%9B%E5%B1%9E%E6%80%A7%E5%8F%AF%E4%BB%A5%E7%BB%A7%E6%89%BF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="CSS选择器有哪些？优先级？哪些属性可以继承？">CSS选择器有哪些？优先级？哪些属性可以继承？</span>
+            <span class="post-date" title="2022-08-05 08:35:12">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2022/08/05/css.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9CSS%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对CSS盒子模型的理解_">说说你对CSS盒子模型的理解_</span>
+            <span class="post-date" title="2022-08-05 08:35:12">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2022/08/05/css.%E8%AF%B4%E8%AF%B4%E5%AF%B9Css%E9%A2%84%E7%BC%96%E8%AF%AD%E8%A8%80%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E6%9C%89%E5%93%AA%E4%BA%9B%E5%8C%BA%E5%88%AB_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对Css预编语言的理解？有哪些区别?">说说对Css预编语言的理解？有哪些区别?</span>
+            <span class="post-date" title="2022-08-05 08:35:12">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2022/08/05/css.CSS%E5%A6%82%E4%BD%95%E7%94%BB%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2%EF%BC%9F%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="CSS如何画一个三角形？原理是什么？">CSS如何画一个三角形？原理是什么？</span>
+            <span class="post-date" title="2022-08-05 08:35:12">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2022/08/05/css%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8CSS%E5%AE%8C%E6%88%90%E8%A7%86%E5%B7%AE%E6%BB%9A%E5%8A%A8%E6%95%88%E6%9E%9C_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="如何使用CSS完成视差滚动效果?">如何使用CSS完成视差滚动效果?</span>
+            <span class="post-date" title="2022-08-05 08:35:12">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2022/08/05/css.%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%EF%BC%9F%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%A6%82%E4%BD%95%E5%81%9A%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="什么是响应式设计？响应式设计的基本原理是什么？如何做？">什么是响应式设计？响应式设计的基本原理是什么？如何做？</span>
+            <span class="post-date" title="2022-08-05 08:35:12">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2022/08/05/css.%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3%E5%9B%9E%E6%B5%81%E8%B7%9F%E9%87%8D%E7%BB%98%EF%BC%9F%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%E4%BC%9A%E8%A7%A6%E5%8F%91%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="怎么理解回流跟重绘？什么场景下会触发？">怎么理解回流跟重绘？什么场景下会触发？</span>
+            <span class="post-date" title="2022-08-05 08:35:12">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2022/08/05/css.CSS3%E5%B8%B8%E8%A7%81%E5%8A%A8%E7%94%BB%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="CSS3常见动画有哪些？实现方式？">CSS3常见动画有哪些？实现方式？</span>
+            <span class="post-date" title="2022-08-05 08:35:12">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2022/08/05/css.CSS3%E6%96%B0%E5%A2%9E%E4%BA%86%E5%93%AA%E4%BA%9B%E6%96%B0%E7%89%B9%E6%80%A7%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="CSS3新增了哪些新特性？">CSS3新增了哪些新特性？</span>
+            <span class="post-date" title="2022-08-05 08:35:12">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2022/08/05/css.%E8%AF%B4%E8%AF%B4flexbox%EF%BC%88%E5%BC%B9%E6%80%A7%E7%9B%92%E5%B8%83%E5%B1%80%E6%A8%A1%E5%9E%8B%EF%BC%89,%E4%BB%A5%E5%8F%8A%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说flexbox（弹性盒布局模型）,以及适用场景">说说flexbox（弹性盒布局模型）,以及适用场景</span>
+            <span class="post-date" title="2022-08-05 08:35:12">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 HTML "
+           href="/2022/08/05/html.HTML5%E6%9C%89%E5%93%AA%E4%BA%9B%E6%9B%B4%E6%96%B0/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="HTML5有哪些更新">HTML5有哪些更新</span>
+            <span class="post-date" title="2022-08-05 08:30:23">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 HTML "
+           href="/2022/08/05/html.%E5%B8%B8%E2%BD%A4%E7%9A%84meta%E6%A0%87%E7%AD%BE%E6%9C%89%E5%93%AA%E4%BA%9B/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="常⽤的meta标签有哪些">常⽤的meta标签有哪些</span>
+            <span class="post-date" title="2022-08-05 08:18:24">2022/08/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 HTML "
+           href="/2022/08/04/html.script%E6%A0%87%E7%AD%BE%E4%B8%ADdefer%E5%92%8Casync%E7%9A%84%E5%8C%BA%E5%88%AB/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="script标签中defer和async的区别">script标签中defer和async的区别</span>
+            <span class="post-date" title="2022-08-04 18:58:10">2022/08/04</span>
+        </a>
+        
+        
+        <a  class="全部文章 HTML "
+           href="/2022/08/04/html.DOCTYPE(%E2%BD%82%E6%A1%A3%E7%B1%BB%E5%9E%8B)%20%E7%9A%84%E4%BD%9C%E2%BD%A4/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="DOCTYPE(⽂档类型) 的作⽤">DOCTYPE(⽂档类型) 的作⽤</span>
+            <span class="post-date" title="2022-08-04 18:26:49">2022/08/04</span>
+        </a>
+        
+        
+        <a  class="全部文章 HTML "
+           href="/2022/08/04/html.%E5%AF%B9HTML%E8%AF%AD%E4%B9%89%E5%8C%96%E7%9A%84%E7%90%86%E8%A7%A3/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="对HTML语义化的理解">对HTML语义化的理解</span>
+            <span class="post-date" title="2022-08-04 17:31:03">2022/08/04</span>
+        </a>
+        
+        
+        <a  class="全部文章 HTML "
+           href="/2022/08/04/html.src%E5%92%8Chref%E7%9A%84%E5%8C%BA%E5%88%AB/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="src和href的区别">src和href的区别</span>
+            <span class="post-date" title="2022-08-04 17:14:43">2022/08/04</span>
+        </a>
+        
+        
+        <a  class="全部文章 es6 "
+           href="/2022/08/04/es6.%E4%BD%A0%E6%98%AF%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3ES6%E4%B8%AD%20Decorator%20%E7%9A%84%EF%BC%9F%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="你是怎么理解ES6中 Decorator 的？使用场景？">你是怎么理解ES6中 Decorator 的？使用场景？</span>
+            <span class="post-date" title="2022-08-04 16:44:01">2022/08/04</span>
+        </a>
+        
+        
+        <a  class="全部文章 es6 "
+           href="/2022/08/04/es6.%E9%9D%A2%E8%AF%95%E5%AE%98%EF%BC%9A%E4%BD%A0%E6%98%AF%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3ES6%E4%B8%ADProxy%E7%9A%84%EF%BC%9F%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="理解ES6中Proxy的？使用场景">理解ES6中Proxy的？使用场景</span>
+            <span class="post-date" title="2022-08-04 16:44:01">2022/08/04</span>
+        </a>
+        
+        
+        <a  class="全部文章 es6 "
+           href="/2022/08/04/es6.%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3ES6%E4%B8%AD%20Generator%E7%9A%84%EF%BC%9F%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="怎么理解ES6中 Generator的？使用场景？">怎么理解ES6中 Generator的？使用场景？</span>
+            <span class="post-date" title="2022-08-04 16:44:01">2022/08/04</span>
+        </a>
+        
+        
+        <a  class="全部文章 es6 "
+           href="/2022/08/04/es6.%E4%BD%A0%E6%98%AF%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3ES6%E4%B8%AD%20Promise%E7%9A%84%EF%BC%9F%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="你是怎么理解ES6中 Promise的？使用场景？">你是怎么理解ES6中 Promise的？使用场景？</span>
+            <span class="post-date" title="2022-08-04 16:44:01">2022/08/04</span>
+        </a>
+        
+        
+        <a  class="全部文章 es6 "
+           href="/2022/08/04/es6.ES6%E4%B8%AD%E6%96%B0%E5%A2%9E%E7%9A%84Set%E3%80%81Map%E4%B8%A4%E7%A7%8D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="ES6中新增的Set、Map两种数据结构怎么理解">ES6中新增的Set、Map两种数据结构怎么理解</span>
+            <span class="post-date" title="2022-08-04 16:44:01">2022/08/04</span>
+        </a>
+        
+        
+        <a  class="全部文章 es6 "
+           href="/2022/08/04/es6.ES6%E4%B8%AD%E5%87%BD%E6%95%B0%E6%96%B0%E5%A2%9E%E4%BA%86%E5%93%AA%E4%BA%9B%E6%89%A9%E5%B1%95_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="ES6中函数新增了哪些扩展">ES6中函数新增了哪些扩展</span>
+            <span class="post-date" title="2022-08-04 16:44:01">2022/08/04</span>
+        </a>
+        
+        
+        <a  class="全部文章 es6 "
+           href="/2022/08/04/es6.ES6%E4%B8%AD%E5%AF%B9%E8%B1%A1%E6%96%B0%E5%A2%9E%E4%BA%86%E5%93%AA%E4%BA%9B%E6%89%A9%E5%B1%95_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="ES6中对象新增了哪些扩展">ES6中对象新增了哪些扩展</span>
+            <span class="post-date" title="2022-08-04 16:44:01">2022/08/04</span>
+        </a>
+        
+        
+        <a  class="全部文章 es6 "
+           href="/2022/08/04/es6.ES6%E4%B8%AD%E6%95%B0%E7%BB%84%E6%96%B0%E5%A2%9E%E4%BA%86%E5%93%AA%E4%BA%9B%E6%89%A9%E5%B1%95_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="ES6中数组新增了哪些扩展">ES6中数组新增了哪些扩展</span>
+            <span class="post-date" title="2022-08-04 16:44:01">2022/08/04</span>
+        </a>
+        
+        
+        <a  class="全部文章 es6 "
+           href="/2022/08/04/es6.%E8%AF%B4%E8%AF%B4var%E3%80%81let%E3%80%81const%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说var、let、const之间的区别">说说var、let、const之间的区别</span>
+            <span class="post-date" title="2022-08-04 16:42:18">2022/08/04</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E8%AF%B4%E8%AF%B4Vue%203.0%E4%B8%ADTreeshaking%E7%89%B9%E6%80%A7%EF%BC%9F%E4%B8%BE%E4%BE%8B%E8%AF%B4%E6%98%8E%E4%B8%80%E4%B8%8B%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说Vue 3.0中Treeshaking特性？举例说明一下？">说说Vue 3.0中Treeshaking特性？举例说明一下？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E4%BB%80%E4%B9%88%E6%98%AF%E8%99%9A%E6%8B%9FDOM%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E8%99%9A%E6%8B%9FDOM%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="什么是虚拟DOM？如何实现一个虚拟DOM？">什么是虚拟DOM？如何实现一个虚拟DOM？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.Vue3%E6%9C%89%E4%BA%86%E8%A7%A3%E8%BF%87%E5%90%97%EF%BC%9F%E8%83%BD%E8%AF%B4%E8%AF%B4%E8%B7%9FVue2%E7%9A%84%E5%8C%BA%E5%88%AB%E5%90%97%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Vue3有了解过吗？能说说跟Vue2的区别吗？">Vue3有了解过吗？能说说跟Vue2的区别吗？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9keep-alive%E7%9A%84%E7%90%86%E8%A7%A3%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E6%80%8E%E4%B9%88%E7%BC%93%E5%AD%98%E5%BD%93%E5%89%8D%E7%9A%84%E7%BB%84%E4%BB%B6%EF%BC%9F%E7%BC%93%E5%AD%98%E5%90%8E%E6%80%8E%E4%B9%88%E6%9B%B4%E6%96%B0%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对keep-alive的理解是什么？怎么缓存当前的组件？缓存后怎么更新？">说说你对keep-alive的理解是什么？怎么缓存当前的组件？缓存后怎么更新？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E4%BD%A0%E4%BA%86%E8%A7%A3Axios%E7%9A%84%E5%8E%9F%E7%90%86%E5%90%97%EF%BC%9F%E6%9C%89%E7%9C%8B%E8%BF%87%E5%AE%83%E7%9A%84%E6%BA%90%E7%A0%81%E5%90%97%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="你了解Axios的原理吗？有看过它的源码吗？">你了解Axios的原理吗？有看过它的源码吗？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.Vue3.0%20%E6%89%80%E9%87%87%E7%94%A8%E7%9A%84%20Composition%20Api%20%E4%B8%8E%20Vue2.x%20%E4%BD%BF%E7%94%A8%E7%9A%84%20Options%20Api%20%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Vue3.0 所采用的 Composition Api 与 Vue2.x 使用的 Options Api 有什么不同？">Vue3.0 所采用的 Composition Api 与 Vue2.x 使用的 Options Api 有什么不同？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E8%AF%B4%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%9C%A8%E5%88%97%E8%A1%A8%E7%BB%84%E4%BB%B6%E4%B8%AD%E5%86%99%20key%EF%BC%8C%E5%85%B6%E4%BD%9C%E7%94%A8%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说为什么要在列表组件中写 key，其作用是什么？">说说为什么要在列表组件中写 key，其作用是什么？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.SPA%EF%BC%88%E5%8D%95%E9%A1%B5%E5%BA%94%E7%94%A8%EF%BC%89%E9%A6%96%E5%B1%8F%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6%E6%85%A2%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SPA（单页应用）首屏加载速度慢怎么解决？">SPA（单页应用）首屏加载速度慢怎么解决？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E4%BD%A0%E6%9C%89%E5%86%99%E8%BF%87%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A4%E5%90%97%EF%BC%9F%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A4%E7%9A%84%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="你有写过自定义指令吗？自定义指令的应用场景有哪些？">你有写过自定义指令吗？自定义指令的应用场景有哪些？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.vue%E9%A1%B9%E7%9B%AE%E5%A6%82%E4%BD%95%E9%83%A8%E7%BD%B2%EF%BC%9F%E6%9C%89%E9%81%87%E5%88%B0%E5%B8%83%E7%BD%B2%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%90%8E%E5%88%B7%E6%96%B0404%E9%97%AE%E9%A2%98%E5%90%97%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="vue项目如何部署？有遇到布署服务器后刷新404问题吗？">vue项目如何部署？有遇到布署服务器后刷新404问题吗？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E8%B7%A8%E5%9F%9F%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9FVue%E9%A1%B9%E7%9B%AE%E4%B8%AD%E4%BD%A0%E6%98%AF%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F%E7%9A%84%E5%91%A2%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="跨域是什么？Vue项目中你是如何解决跨域的呢？">跨域是什么？Vue项目中你是如何解决跨域的呢？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.Vue3.0%E7%9A%84%E8%AE%BE%E8%AE%A1%E7%9B%AE%E6%A0%87%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%81%9A%E4%BA%86%E5%93%AA%E4%BA%9B%E4%BC%98%E5%8C%96_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Vue3.0的设计目标是什么？做了哪些优化?">Vue3.0的设计目标是什么？做了哪些优化?</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.Vue%E4%B8%AD%E7%BB%84%E4%BB%B6%E5%92%8C%E6%8F%92%E4%BB%B6%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Vue中组件和插件有什么区别？">Vue中组件和插件有什么区别？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9vue%E7%9A%84mixin%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%8C%E6%9C%89%E5%93%AA%E4%BA%9B%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对vue的mixin的理解，有哪些应用场景？">说说你对vue的mixin的理解，有哪些应用场景？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.SSR%E8%A7%A3%E5%86%B3%E4%BA%86%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%EF%BC%9F%E6%9C%89%E5%81%9A%E8%BF%87SSR%E5%90%97%EF%BC%9F%E4%BD%A0%E6%98%AF%E6%80%8E%E4%B9%88%E5%81%9A%E7%9A%84%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SSR解决了什么问题？有做过SSR吗？你是怎么做的？">SSR解决了什么问题？有做过SSR吗？你是怎么做的？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E5%B8%B8%E7%94%A8%E7%9A%84%E4%BF%AE%E9%A5%B0%E7%AC%A6%E6%9C%89%E5%93%AA%E4%BA%9B%E6%9C%89%E4%BB%80%E4%B9%88%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Vue常用的修饰符有哪些?有什么应用场景?">Vue常用的修饰符有哪些?有什么应用场景?</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E7%94%A8Vue3.0%20%E5%86%99%E8%BF%87%E7%BB%84%E4%BB%B6%E5%90%97%EF%BC%9F%E5%A6%82%E6%9E%9C%E6%83%B3%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%20Modal%E4%BD%A0%E4%BC%9A%E6%80%8E%E4%B9%88%E8%AE%BE%E8%AE%A1%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="用Vue3.0 写过组件吗？如果想实现一个 Modal你会怎么设计？">用Vue3.0 写过组件吗？如果想实现一个 Modal你会怎么设计？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.Vue%E9%A1%B9%E7%9B%AE%E4%B8%AD%E6%9C%89%E5%B0%81%E8%A3%85%E8%BF%87axios%E5%90%97%EF%BC%9F%E6%80%8E%E4%B9%88%E5%B0%81%E8%A3%85%E7%9A%84%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Vue项目中有封装过axios吗？怎么封装的？">Vue项目中有封装过axios吗？怎么封装的？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E7%90%86%E8%A7%A3_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对双向绑定的理解?">说说你对双向绑定的理解?</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.Vue%E4%B8%AD%E7%9A%84%E8%BF%87%E6%BB%A4%E5%99%A8%E4%BA%86%E8%A7%A3%E5%90%97%EF%BC%9F%E8%BF%87%E6%BB%A4%E5%99%A8%E7%9A%84%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Vue中的过滤器了解吗？过滤器的应用场景有哪些？">Vue中的过滤器了解吗？过滤器的应用场景有哪些？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9slot%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9Fslot%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对slot的理解？slot使用场景有哪些？">说说你对slot的理解？slot使用场景有哪些？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E4%B8%BA%E4%BB%80%E4%B9%88Vue%E4%B8%AD%E7%9A%84v-if%E5%92%8Cv-for%E4%B8%8D%E5%BB%BA%E8%AE%AE%E4%B8%80%E8%B5%B7%E7%94%A8_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="为什么Vue中的v-if和v-for不建议一起用?">为什么Vue中的v-if和v-for不建议一起用?</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.Vue%E8%A6%81%E5%81%9A%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A%EF%BC%9F%E6%8E%A7%E5%88%B6%E5%88%B0%E6%8C%89%E9%92%AE%E7%BA%A7%E5%88%AB%E7%9A%84%E6%9D%83%E9%99%90%E6%80%8E%E4%B9%88%E5%81%9A%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Vue要做权限管理该怎么做？控制到按钮级别的权限怎么做？">Vue要做权限管理该怎么做？控制到按钮级别的权限怎么做？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E4%BA%86%E8%A7%A3%E8%BF%87vue%E4%B8%AD%E7%9A%84diff%E7%AE%97%E6%B3%95%E5%90%97%EF%BC%9F%E8%AF%B4%E8%AF%B4%E7%9C%8B/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="了解过vue中的diff算法吗？说说看">了解过vue中的diff算法吗？说说看</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.Vue3.0%E9%87%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%20Proxy%20API%20%E6%9B%BF%E4%BB%A3%20defineProperty%20API%20%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Vue3.0里为什么要用 Proxy API 替代 defineProperty API ？">Vue3.0里为什么要用 Proxy API 替代 defineProperty API ？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.Vue3.0%20%E6%80%A7%E8%83%BD%E6%8F%90%E5%8D%87%E4%B8%BB%E8%A6%81%E6%98%AF%E9%80%9A%E8%BF%87%E5%93%AA%E5%87%A0%E6%96%B9%E9%9D%A2%E4%BD%93%E7%8E%B0%E7%9A%84%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Vue3.0 性能提升主要是通过哪几方面体现的？">Vue3.0 性能提升主要是通过哪几方面体现的？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%9A%84%E7%90%86%E8%A7%A3_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对Vue生命周期的理解?">说说你对Vue生命周期的理解?</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.Vue%E4%B8%AD%E7%9A%84$nextTick%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Vue中的$nextTick怎么理解?">Vue中的$nextTick怎么理解?</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.Vue%E4%B8%AD%E7%9A%84v-show%E5%92%8Cv-if%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Vue中的v-show和v-if怎么理解？">Vue中的v-show和v-if怎么理解？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E4%B8%BA%E4%BB%80%E4%B9%88data%E5%B1%9E%E6%80%A7%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E8%80%8C%E4%B8%8D%E6%98%AF%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="为什么data属性是一个函数而不是一个对象？">为什么data属性是一个函数而不是一个对象？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.Vue%E5%AE%9E%E4%BE%8B%E6%8C%82%E8%BD%BD%E7%9A%84%E8%BF%87%E7%A8%8B%E4%B8%AD%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Vue实例挂载的过程中发生了什么?">Vue实例挂载的过程中发生了什么?</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E4%BD%A0%E6%98%AF%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86vue%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84%E9%94%99%E8%AF%AF%E7%9A%84%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="你是怎么处理vue项目中的错误的？">你是怎么处理vue项目中的错误的？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.Vue%E4%B8%AD%E7%BB%99%E5%AF%B9%E8%B1%A1%E6%B7%BB%E5%8A%A0%E6%96%B0%E5%B1%9E%E6%80%A7%E7%95%8C%E9%9D%A2%E4%B8%8D%E5%88%B7%E6%96%B0_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Vue中给对象添加新属性界面不刷新?">Vue中给对象添加新属性界面不刷新?</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9vue%E7%9A%84%E7%90%86%E8%A7%A3_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对vue的理解?">说说你对vue的理解?</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E8%AF%B4%E4%B8%8B%E4%BD%A0%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E7%9A%84%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%EF%BC%8C%E5%A6%82%E6%9E%9C%E6%98%AF%E5%A4%A7%E5%9E%8B%E9%A1%B9%E7%9B%AE%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E5%88%92%E5%88%86%E7%BB%93%E6%9E%84%E5%92%8C%E5%88%92%E5%88%86%E7%BB%84%E4%BB%B6%E5%91%A2%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说下你的vue项目的目录结构，如果是大型项目你该怎么划分结构和划分组件呢？">说下你的vue项目的目录结构，如果是大型项目你该怎么划分结构和划分组件呢？</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E8%AF%B4%E8%AF%B4%E5%AF%B9observable%E7%9A%84%E7%90%86%E8%A7%A3/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对observable的理解">说说对observable的理解</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.Vue%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Vue组件间通信方式都有哪些?">Vue组件间通信方式都有哪些?</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 Vue "
+           href="/2022/07/26/vue.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9SPA%EF%BC%88%E5%8D%95%E9%A1%B5%E5%BA%94%E7%94%A8%EF%BC%89%E7%9A%84%E7%90%86%E8%A7%A3_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对SPA（单页应用）的理解?">说说你对SPA（单页应用）的理解?</span>
+            <span class="post-date" title="2022-07-26 10:22:43">2022/07/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 HTML "
+           href="/2020/09/30/html.html%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93%E4%B8%8B/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="HTML总结下">HTML总结下</span>
+            <span class="post-date" title="2020-09-30 14:08:26">2020/09/30</span>
+        </a>
+        
+        
+        <a  class="全部文章 HTML "
+           href="/2020/09/28/html.html%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93%E4%B8%8A/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="HTML总结上">HTML总结上</span>
+            <span class="post-date" title="2020-09-28 14:08:26">2020/09/28</span>
+        </a>
+        
+        
+        <a  class="全部文章 数据结构与算法 "
+           href="/2020/04/11/%E7%AE%97%E6%B3%95.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E6%A0%88%E3%80%81%E9%98%9F%E5%88%97%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对栈、队列的理解？应用场景？">说说你对栈、队列的理解？应用场景？</span>
+            <span class="post-date" title="2020-04-11 00:00:00">2020/04/11</span>
+        </a>
+        
+        
+        <a  class="全部文章 Node "
+           href="/2019/11/10/node.Node%E6%80%A7%E8%83%BD%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E7%9B%91%E6%8E%A7%E4%BB%A5%E5%8F%8A%E4%BC%98%E5%8C%96%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Node性能如何进行监控以及优化？">Node性能如何进行监控以及优化？</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
+        <a  class="全部文章 Node "
+           href="/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="如何实现文件上传？说说你的思路">如何实现文件上传？说说你的思路</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
+        <a  class="全部文章 Node "
+           href="/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0JWT%E9%89%B4%E6%9D%83%E6%9C%BA%E5%88%B6%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="如何实现JWT鉴权机制？说说你的思路">如何实现JWT鉴权机制？说说你的思路</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
+        <a  class="全部文章 Node "
+           href="/2019/11/10/node.%E5%A6%82%E6%9E%9C%E8%AE%A9%E4%BD%A0%E6%9D%A5%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E5%88%86%E9%A1%B5%E5%8A%9F%E8%83%BD,%20%E4%BD%A0%E4%BC%9A%E6%80%8E%E4%B9%88%E8%AE%BE%E8%AE%A1_%20%E5%89%8D%E5%90%8E%E7%AB%AF%E5%A6%82%E4%BD%95%E4%BA%A4%E4%BA%92_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="如果让你来设计一个分页功能, 你会怎么设计? 前后端如何交互?">如果让你来设计一个分页功能, 你会怎么设计? 前后端如何交互?</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
+        <a  class="全部文章 Node "
+           href="/2019/11/10/node.%E8%AF%B4%E8%AF%B4Node%E4%B8%AD%E7%9A%84EventEmitter_%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAEventEmitter_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说Node中的EventEmitter? 如何实现一个EventEmitter?">说说Node中的EventEmitter? 如何实现一个EventEmitter?</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
+        <a  class="全部文章 Node "
+           href="/2019/11/10/node.%E8%AF%B4%E8%AF%B4%20Node.%20js%20%E6%9C%89%E5%93%AA%E4%BA%9B%E5%85%A8%E5%B1%80%E5%AF%B9%E8%B1%A1%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说 Node. js 有哪些全局对象？">说说 Node. js 有哪些全局对象？</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
+        <a  class="全部文章 Node "
+           href="/2019/11/10/node.%E8%AF%B4%E8%AF%B4%20Node%20%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7%E4%BB%A5%E5%8F%8A%20Require%20%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%AD%96%E7%95%A5_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?">说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
+        <a  class="全部文章 Node "
+           href="/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Node.js%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说你对Node.js 的理解？优缺点？应用场景？">说说你对Node.js 的理解？优缺点？应用场景？</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
+        <a  class="全部文章 Node "
+           href="/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20Buffer%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对 Node 中的 Buffer 的理解？应用场景？">说说对 Node 中的 Buffer 的理解？应用场景？</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
+        <a  class="全部文章 Node "
+           href="/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20Process%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对 Node 中的 Process 的理解？有哪些常用方法？">说说对 Node 中的 Process 的理解？有哪些常用方法？</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
+        <a  class="全部文章 Node "
+           href="/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%E4%B8%AD%E9%97%B4%E4%BB%B6%E6%A6%82%E5%BF%B5%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%8C%E5%A6%82%E4%BD%95%E5%B0%81%E8%A3%85%20node%20%E4%B8%AD%E9%97%B4%E4%BB%B6%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对中间件概念的理解，如何封装 node 中间件？">说说对中间件概念的理解，如何封装 node 中间件？</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
+        <a  class="全部文章 Node "
+           href="/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20Stream%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对 Node 中的 Stream 的理解？应用场景？">说说对 Node 中的 Stream 的理解？应用场景？</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
+        <a  class="全部文章 Node "
+           href="/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20fs%20%E6%A8%A1%E5%9D%97%E7%9A%84%E7%90%86%E8%A7%A3_%20%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对 Node 中的 fs 模块的理解? 有哪些常用方法?">说说对 Node 中的 fs 模块的理解? 有哪些常用方法?</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
+        <a  class="全部文章 Node "
+           href="/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node.js%20%E4%B8%AD%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF%E6%9C%BA%E5%88%B6%E7%90%86%E8%A7%A3_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对 Node.js 中的事件循环机制理解?">说说对 Node.js 中的事件循环机制理解?</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2019/09/11/css.%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8BCSS%E4%B8%AD%E7%9A%84Grid%E7%BD%91%E6%A0%BC%E5%B8%83%E5%B1%80/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="介绍一下CSS中的Grid网格布局">介绍一下CSS中的Grid网格布局</span>
+            <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
+        </a>
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2019/09/11/css.%E5%A6%82%E6%9E%9C%E8%A6%81%E5%81%9A%E4%BC%98%E5%8C%96%EF%BC%8CCSS%E6%8F%90%E9%AB%98%E6%80%A7%E8%83%BD%E7%9A%84%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="如果要做优化，CSS提高性能的方法有哪些？">如果要做优化，CSS提高性能的方法有哪些？</span>
+            <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
+        </a>
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2019/09/11/css.%E8%AE%A9Chrome%E6%94%AF%E6%8C%81%E5%B0%8F%E4%BA%8E12px%20%E7%9A%84%E6%96%87%E5%AD%97%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="让Chrome支持小于12px 的文字方式有哪些？区别？">让Chrome支持小于12px 的文字方式有哪些？区别？</span>
+            <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
+        </a>
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%EF%BC%8F%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E7%9C%81%E7%95%A5%E6%A0%B7%E5%BC%8F%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="如何实现单行／多行文本溢出的省略样式？">如何实现单行／多行文本溢出的省略样式？</span>
+            <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
+        </a>
+        
+        
+        <a  class="全部文章 CSS "
+           href="/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80%EF%BC%8C%E5%8F%B3%E4%BE%A7%E8%87%AA%E9%80%82%E5%BA%94%EF%BC%9F%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80%E4%B8%AD%E9%97%B4%E8%87%AA%E9%80%82%E5%BA%94%E5%91%A2%EF%BC%9F/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？">如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？</span>
+            <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-html.html面试总结上" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">HTML总结上</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="HTML">HTML</a>
+            
+        </span>
+        
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2022-08-07 20:08:41'>2020-09-28 14:08</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-src%E5%92%8Chref%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">1. src和href的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%AF%B9HTML%E8%AF%AD%E4%B9%89%E5%8C%96%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-text">2. 对HTML语义化的理解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%AD%E4%B9%89%E5%8C%96%E7%9A%84%E4%BC%98%E7%82%B9%E5%A6%82%E4%B8%8B%EF%BC%9A"><span class="toc-text">语义化的优点如下：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE%EF%BC%9A"><span class="toc-text">常见的语义化标签：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-DOCTYPE-%E2%BD%82%E6%A1%A3%E7%B1%BB%E5%9E%8B-%E7%9A%84%E4%BD%9C%E2%BD%A4"><span class="toc-text">3. DOCTYPE(⽂档类型) 的作⽤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-script%E6%A0%87%E7%AD%BE%E4%B8%ADdefer%E5%92%8Casync%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">4. script标签中defer和async的区别</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#defer-%E5%92%8C-async%E5%B1%9E%E6%80%A7%E9%83%BD%E6%98%AF%E5%8E%BB%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD%E5%A4%96%E9%83%A8%E7%9A%84JS%E8%84%9A%E6%9C%AC%E6%96%87%E4%BB%B6%EF%BC%8C%E5%AE%83%E4%BB%AC%E9%83%BD%E4%B8%8D%E4%BC%9A%E9%98%BB%E5%A1%9E%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A7%A3%E6%9E%90%EF%BC%8C%E5%85%B6%E5%8C%BA%E5%88%AB%E5%A6%82%E4%B8%8B%EF%BC%9A"><span class="toc-text">defer 和 async属性都是去异步加载外部的JS脚本文件，它们都不会阻塞页面的解析，其区别如下：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E5%B8%B8%E2%BD%A4%E7%9A%84meta%E6%A0%87%E7%AD%BE%E6%9C%89%E5%93%AA%E4%BA%9B"><span class="toc-text">5. 常⽤的meta标签有哪些</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%9A%84meta%E6%A0%87%E7%AD%BE%EF%BC%9A"><span class="toc-text">常用的meta标签：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-HTML5%E6%9C%89%E5%93%AA%E4%BA%9B%E6%9B%B4%E6%96%B0"><span class="toc-text">6. HTML5有哪些更新</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE"><span class="toc-text">1. 语义化标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AA%92%E4%BD%93%E6%A0%87%E7%AD%BE"><span class="toc-text">2. 媒体标签</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%881%EF%BC%89-audio%EF%BC%9A%E9%9F%B3%E9%A2%91"><span class="toc-text">（1） audio：音频</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%882%EF%BC%89video%E8%A7%86%E9%A2%91"><span class="toc-text">（2）video视频</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%883%EF%BC%89source%E6%A0%87%E7%AD%BE"><span class="toc-text">（3）source标签</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%A1%A8%E5%8D%95"><span class="toc-text">3. 表单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E8%BF%9B%E5%BA%A6%E6%9D%A1%E3%80%81%E5%BA%A6%E9%87%8F%E5%99%A8"><span class="toc-text">4. 进度条、度量器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-DOM%E6%9F%A5%E8%AF%A2%E6%93%8D%E4%BD%9C"><span class="toc-text">5.DOM查询操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-Web%E5%AD%98%E5%82%A8"><span class="toc-text">6. Web存储</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E5%85%B6%E4%BB%96"><span class="toc-text">7. 其他</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-img%E7%9A%84srcset%E5%B1%9E%E6%80%A7%E7%9A%84%E4%BD%9C%E2%BD%A4%EF%BC%9F"><span class="toc-text">7. img的srcset属性的作⽤？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F-%E7%A9%BA-void-%E5%85%83%E7%B4%A0%E6%9C%89%E9%82%A3%E4%BA%9B%EF%BC%9F"><span class="toc-text">8.  行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E8%AF%B4%E4%B8%80%E4%B8%8B-web-worker"><span class="toc-text">9. 说一下 web worker</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-HTML5%E7%9A%84%E7%A6%BB%E7%BA%BF%E5%82%A8%E5%AD%98%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8%EF%BC%8C%E5%AE%83%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">10. HTML5的离线储存怎么使用，它的工作原理是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E5%A6%82%E4%BD%95%E5%AF%B9-HTML5-%E7%9A%84%E7%A6%BB%E7%BA%BF%E5%82%A8%E5%AD%98%E8%B5%84%E6%BA%90%E8%BF%9B%E8%A1%8C%E7%AE%A1%E7%90%86%E5%92%8C%E5%8A%A0%E8%BD%BD%EF%BC%9F"><span class="toc-text">11. 浏览器是如何对 HTML5 的离线储存资源进行管理和加载？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-title%E4%B8%8Eh1%E7%9A%84%E5%8C%BA%E5%88%AB%E3%80%81b%E4%B8%8Estrong%E7%9A%84%E5%8C%BA%E5%88%AB%E3%80%81i%E4%B8%8Eem%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-text">12. title与h1的区别、b与strong的区别、i与em的区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-iframe-%E6%9C%89%E9%82%A3%E4%BA%9B%E4%BC%98%E7%82%B9%E5%92%8C%E7%BC%BA%E7%82%B9%EF%BC%9F"><span class="toc-text">13. iframe 有那些优点和缺点？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14-label-%E7%9A%84%E4%BD%9C%E7%94%A8%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%EF%BC%9F"><span class="toc-text">14. label 的作用是什么？如何使用？</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-6 i,
+    .toc-level-6 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a18f8caac72c44ccb29197298f65809e~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp" alt="图片"></p>
+<h2 id="1-src和href的区别"><a href="#1-src和href的区别" class="headerlink" title="1. src和href的区别"></a>1. src和href的区别</h2><p><strong>src和href都是用来引用外部的资源，它们的区别如下：</strong></p>
+<blockquote>
+<p><em>src： 表示对资源的引用，它指向的内容会嵌入到当前标签所在的位置。src会将其指向的资源下载并应⽤到⽂档内，如请求js脚本。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执⾏完毕，所以⼀般js脚本会放在页面底部。</em></p>
+<p><em>href： 表示超文本引用，它指向一些网络资源，建立和当前元素或本文档的链接关系。当浏览器识别到它他指向的⽂件时，就会并⾏下载资源，不会停⽌对当前⽂档的处理。 常用在a、link等标签上。</em></p>
+</blockquote>
+<h2 id="2-对HTML语义化的理解"><a href="#2-对HTML语义化的理解" class="headerlink" title="2. 对HTML语义化的理解"></a>2. 对HTML语义化的理解</h2><p><em>语义化是指根据内容的结构化（内容语义化），选择合适的标签（代码语义化）。通俗来讲就是用正确的标签做正确的事情。</em></p>
+<h3 id="语义化的优点如下："><a href="#语义化的优点如下：" class="headerlink" title="语义化的优点如下："></a>语义化的优点如下：</h3><blockquote>
+<p>1.对机器友好，带有语义的文字表现力丰富，更适合搜索引擎的爬虫爬取有效信息，有利于SEO。除此之外，语义类还支持读屏软件，根据文章可以自动生成目录；</p>
+<p>2.对开发者友好，使用语义类标签增强了可读性，结构更加清晰，开发者能清晰的看出网页的结构，便于团队的开发与维护。</p>
+</blockquote>
+<h3 id="常见的语义化标签："><a href="#常见的语义化标签：" class="headerlink" title="常见的语义化标签："></a>常见的语义化标签：</h3><pre><code>    &lt;header&gt;&lt;/header&gt;  头部
+    
+    &lt;nav&gt;&lt;/nav&gt;  导航栏
+    
+    &lt;section&gt;&lt;/section&gt;  区块（有语义化的div）
+    
+    &lt;main&gt;&lt;/main&gt;  主要区域
+    
+    &lt;article&gt;&lt;/article&gt;  主要内容
+    
+    &lt;aside&gt;&lt;/aside&gt;  侧边栏
+    
+    &lt;footer&gt;&lt;/footer&gt;  底部
+</code></pre>
+<h2 id="3-DOCTYPE-⽂档类型-的作⽤"><a href="#3-DOCTYPE-⽂档类型-的作⽤" class="headerlink" title="3. DOCTYPE(⽂档类型) 的作⽤"></a>3. DOCTYPE(⽂档类型) 的作⽤</h2><p><em>DOCTYPE是HTML5中一种标准通用标记语言的文档类型声明，它的目的是告诉浏览器（解析器）应该以什么样（html或xhtml）的文档类型定义来解析文档，不同的渲染模式会影响浏览器对 CSS 代码甚⾄ JavaScript 脚本的解析。它必须声明在HTML⽂档的第⼀⾏。</em></p>
+<p><em>浏览器渲染页面的两种模式（可通过document.compatMode获取，比如，语雀官网的文档类型是CSS1Compat）：</em></p>
+<blockquote>
+<p><strong>CSS1Compat：标准模式（Strick mode），默认模式，浏览器使用W3C的标准解析渲染页面。在标准模式中，浏览器以其支持的最高标准呈现页面。</strong></p>
+<p><strong>BackCompat：怪异模式(混杂模式)(Quick mode)，浏览器使用自己的怪异模式解析渲染页面。在怪异模式中，页面以一种比较宽松的向后兼容的方式显示。</strong></p>
+</blockquote>
+<h2 id="4-script标签中defer和async的区别"><a href="#4-script标签中defer和async的区别" class="headerlink" title="4. script标签中defer和async的区别"></a>4. script标签中defer和async的区别</h2><p>如果没有defer或async属性，浏览器会立即加载并执行相应的脚本。它不会等待后续加载的文档元素，读取到就会开始加载和执行，这样就阻塞了后续文档的加载。</p>
+<p><strong><strong>下图可以直观的看出三者之间的区别:</strong></strong></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b0a8a139519f46dfa2d1992c58eb5397~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp" alt="图片"></p>
+<p><code>其中蓝色代表js脚本网络加载时间，红色代表js脚本执行时间，绿色代表html解析。</code></p>
+<h3 id="defer-和-async属性都是去异步加载外部的JS脚本文件，它们都不会阻塞页面的解析，其区别如下："><a href="#defer-和-async属性都是去异步加载外部的JS脚本文件，它们都不会阻塞页面的解析，其区别如下：" class="headerlink" title="defer 和 async属性都是去异步加载外部的JS脚本文件，它们都不会阻塞页面的解析，其区别如下："></a>defer 和 async属性都是去异步加载外部的JS脚本文件，它们都不会阻塞页面的解析，其区别如下：</h3><p>执行顺序： 多个带async属性的标签，不能保证加载的顺序；多个带defer属性的标签，按照加载顺序执行；<br>脚本是否并行执行：async属性，表示后续文档的加载和执行与js脚本的加载和执行是并行进行的，即异步执行；defer属性，加载后续文档的过程和js脚本的加载(此时仅加载不执行)是并行进行的(异步)，js脚本需要等到文档所有元素解析完成之后才执行，DOMContentLoaded事件触发执行之前。</p>
+<h2 id="5-常⽤的meta标签有哪些"><a href="#5-常⽤的meta标签有哪些" class="headerlink" title="5. 常⽤的meta标签有哪些"></a>5. 常⽤的meta标签有哪些</h2><p>meta 标签由 name 和 content 属性定义，用来描述网页文档的属性，比如网页的作者，网页描述，关键词等，除了HTTP标准固定了一些name作为大家使用的共识，开发者还可以自定义name。</p>
+<h3 id="常用的meta标签："><a href="#常用的meta标签：" class="headerlink" title="常用的meta标签："></a>常用的meta标签：</h3><p>（1）charset，用来描述HTML文档的编码类型：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta charset=&quot;UTF-8&quot; &gt;</span><br></pre></td></tr></table></figure>
+
+<p>（2） keywords，页面关键词：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=&quot;keywords&quot; content=&quot;关键词&quot; /&gt;</span><br></pre></td></tr></table></figure>
+
+<p>（3）description，页面描述：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=&quot;description&quot; content=&quot;页面描述内容&quot; /&gt;</span><br></pre></td></tr></table></figure>
+
+<p>（4）refresh，页面重定向和刷新：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta http-equiv=&quot;refresh&quot; content=&quot;0;url=&quot; /&gt;</span><br></pre></td></tr></table></figure>
+
+<p>（5）viewport，适配移动端，可以控制视口的大小和比例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>其中，content 参数有以下几种：</p>
+<pre><code>  width viewport ：宽度(数值/device-width)
+  height viewport ：高度(数值/device-height)
+  initial-scale ：初始缩放比例
+  maximum-scale ：最大缩放比例
+  minimum-scale ：最小缩放比例
+  user-scalable ：是否允许用户缩放(yes/no）
+</code></pre>
+<p>（6）搜索引擎索引方式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=&quot;robots&quot; content=&quot;index,follow&quot; /&gt;</span><br></pre></td></tr></table></figure>
+
+<p>其中，content 参数有以下几种：</p>
+<pre><code>all：文件将被检索，且页面上的链接可以被查询；
+none：文件将不被检索，且页面上的链接不可以被查询；
+index：文件将被检索；
+follow：页面上的链接可以被查询；
+noindex：文件将不被检索；
+nofollow：页面上的链接不可以被查询。
+</code></pre>
+<h2 id="6-HTML5有哪些更新"><a href="#6-HTML5有哪些更新" class="headerlink" title="6. HTML5有哪些更新"></a>6. HTML5有哪些更新</h2><h3 id="1-语义化标签"><a href="#1-语义化标签" class="headerlink" title="1. 语义化标签"></a>1. 语义化标签</h3><pre><code>header：定义文档的页眉（头部）；
+nav：定义导航链接的部分；
+footer：定义文档或节的页脚（底部）；
+article：定义文章内容；
+section：定义文档中的节（section、区段）；
+aside：定义其所处内容之外的内容（侧边）；
+</code></pre>
+<h3 id="2-媒体标签"><a href="#2-媒体标签" class="headerlink" title="2. 媒体标签"></a>2. 媒体标签</h3><h4 id="（1）-audio：音频"><a href="#（1）-audio：音频" class="headerlink" title="（1） audio：音频"></a><strong>（1） audio：音频</strong></h4><p><strong>代码如下</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;audio src=&#x27;&#x27; controls autoplay loop=&#x27;true&#x27;&gt;&lt;/audio&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>示例</strong><br><audio src='' controls autoplay loop='true'></audio></p>
+<p><strong>属性：</strong></p>
+<blockquote>
+<p>controls 控制面板<br>autoplay 自动播放<br>loop=‘true’ 循环播放</p>
+</blockquote>
+<h4 id="（2）video视频"><a href="#（2）video视频" class="headerlink" title="（2）video视频"></a><strong>（2）video视频</strong></h4><p><strong>代码如下</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;video src=&#x27;&#x27; poster=&#x27;imgs/aa.jpg&#x27; controls&gt;&lt;/video&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>示例</strong><br><video src='' poster='imgs/aa.jpg' controls></video></p>
+<p><strong>属性：</strong></p>
+<blockquote>
+<p>poster：指定视频还没有完全下载完毕，或者用户还没有点击播放前显示的封面。默认显示当前视频文件的第一针画面，当然通过poster也可以自己指定。<br>controls 控制面板<br>width<br>height</p>
+</blockquote>
+<h4 id="（3）source标签"><a href="#（3）source标签" class="headerlink" title="（3）source标签"></a>（3）source标签</h4><p>因为浏览器对视频格式支持程度不一样，为了能够兼容不同的浏览器，可以通过source来指定视频源。<br><strong>代码如下</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;video&gt;</span><br><span class="line"> 	&lt;source src=&#x27;aa.flv&#x27; type=&#x27;video/flv&#x27;&gt;&lt;/source&gt;</span><br><span class="line"> 	&lt;source src=&#x27;aa.mp4&#x27; type=&#x27;video/mp4&#x27;&gt;&lt;/source&gt;</span><br><span class="line">&lt;/video&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-表单"><a href="#3-表单" class="headerlink" title="3. 表单"></a>3. 表单</h3><p><strong>表单类型：</strong></p>
+<blockquote>
+<p>email ：能够验证当前输入的邮箱地址是否合法<br>url ： 验证URL<br>number ： 只能输入数字，其他输入不了，而且自带上下增大减小箭头，max属性可以设置为最大值，min可以设置为最小值，value为默认值。<br>search ： 输入框后面会给提供一个小叉，可以删除输入的内容，更加人性化。<br>range ： 可以提供给一个范围，其中可以设置max和min以及value，其中value属性可以设置为默认值<br>color ： 提供了一个颜色拾取器<br>time ： 时分秒<br>data ： 日期选择年月日<br>datatime ： 时间和日期(目前只有Safari支持)<br>datatime-local ：日期时间控件<br>week ：周控件<br>month：月控件</p>
+</blockquote>
+<p><strong>表单属性：</strong></p>
+<blockquote>
+<p>placeholder ：提示信息<br>autofocus ：自动获取焦点<br>autocomplete=“on” 或者 autocomplete=“off” 使用这个属性需要有两个前提：<br>    1.表单必须提交过<br>    2.必须有name属性。<br>required：要求输入框不能为空，必须有值才能够提交。<br>pattern=” “ 里面写入想要的正则模式，例如手机号patte=”^(+86)?\d{10}$”<br>multiple：可以选择多个文件或者多个邮箱<br>form=” form表单的ID”</p>
+</blockquote>
+<p><strong>表单事件：</strong></p>
+<blockquote>
+<p>oninput 每当input里的输入框内容发生变化都会触发此事件。<br>oninvalid 当验证不通过时触发此事件。</p>
+</blockquote>
+<h3 id="4-进度条、度量器"><a href="#4-进度条、度量器" class="headerlink" title="4. 进度条、度量器"></a>4. 进度条、度量器</h3><pre><code>    *progress标签：用来表示任务的进度（IE、Safari不支持），max用来表示任务的进度，value表示已完成多少
+    *meter属性：用来显示剩余容量或剩余库存（IE、Safari不支持）
+        *high/low：规定被视作高/低的范围
+        *max/min：规定最大/小值
+        *value：规定当前度量值
+</code></pre>
+<p>设置规则：min &lt; low &lt; high &lt; max</p>
+<h3 id="5-DOM查询操作"><a href="#5-DOM查询操作" class="headerlink" title="5.DOM查询操作"></a>5.DOM查询操作</h3><p>document.querySelector()<br>document.querySelectorAll()</p>
+<p>它们选择的对象可以是标签，可以是类(需要加点)，可以是ID(需要加#)</p>
+<h3 id="6-Web存储"><a href="#6-Web存储" class="headerlink" title="6. Web存储"></a>6. Web存储</h3><p>HTML5 提供了两种在客户端存储数据的新方法：</p>
+<p>localStorage - 没有时间限制的数据存储<br>sessionStorage - 针对一个 session 的数据存储</p>
+<h3 id="7-其他"><a href="#7-其他" class="headerlink" title="7. 其他"></a>7. 其他</h3><ul>
+<li>拖放：拖放是一种常见的特性，即抓取对象以后拖到另一个位置。设置元素可拖放：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img draggable=&quot;true&quot; /&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>画布（canvas ）： canvas 元素使用 JavaScript 在网页上绘制图像。画布是一个矩形区域，可以控制其每一像素。canvas 拥有多种绘制路径、矩形、圆形、字符以及添加图像的方法。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;100&quot;&gt;&lt;/canvas&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>SVG：SVG 指可伸缩矢量图形，用于定义用于网络的基于矢量的图形，使用 XML 格式定义图形，图像在放大或改变尺寸的情况下其图形质量不会有损失，它是万维网联盟的标准</li>
+<li>地理定位：Geolocation（地理定位）用于定位用户的位置。‘</li>
+</ul>
+<p><strong>总结：</strong><br>（1）新增语义化标签：nav、header、footer、aside、section、article<br>（2）音频、视频标签：audio、video<br>（3）数据存储：localStorage、sessionStorage<br>（4）canvas（画布）、Geolocation（地理定位）、websocket（通信协议）<br>（5）input标签新增属性：placeholder、autocomplete、autofocus、required<br>（6）history API：go、forward、back、pushstate<br><strong>移除的元素有：</strong></p>
+<p>纯表现的元素：basefont，big，center，font, s，strike，tt，u;<br>对可用性产生负面影响的元素：frame，frameset，noframes；</p>
+<h2 id="7-img的srcset属性的作⽤？"><a href="#7-img的srcset属性的作⽤？" class="headerlink" title="7. img的srcset属性的作⽤？"></a>7. img的srcset属性的作⽤？</h2><p>响应式页面中经常用到根据屏幕密度设置不同的图片。这时就用到了 img 标签的srcset属性。srcset属性用于设置不同屏幕密度下，img 会自动加载不同的图片。用法如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;image-128.png&quot; srcset=&quot;image-256.png 2x&quot; /&gt;</span><br></pre></td></tr></table></figure>
+
+<p>使用上面的代码，就能实现在屏幕密度为1x的情况下加载image-128.png, 屏幕密度为2x时加载image-256.png。</p>
+<p>按照上面的实现，不同的屏幕密度都要设置图片地址，目前的屏幕密度有1x,2x,3x,4x四种，如果每一个图片都设置4张图片，加载就会很慢。所以就有了新的srcset标准。代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;image-128.png&quot;</span><br><span class="line">     srcset=&quot;image-128.png 128w, image-256.png 256w, image-512.png 512w&quot;</span><br><span class="line">     sizes=&quot;(max-width: 360px) 340px, 128px&quot; /&gt;</span><br></pre></td></tr></table></figure>
+
+<p>其中srcset指定图片的地址和对应的图片质量。sizes用来设置图片的尺寸零界点。对于 srcset 中的 w 单位，可以理解成图片质量。如果可视区域小于这个质量的值，就可以使用。浏览器会自动选择一个最小的可用图片。</p>
+<p>sizes语法如下：</p>
+<p>sizes=”[media query] [length], [media query] [length] … “</p>
+<p>sizes就是指默认显示128px, 如果视区宽度大于360px, 则显示340px。</p>
+<h2 id="8-行内元素有哪些？块级元素有哪些？-空-void-元素有那些？"><a href="#8-行内元素有哪些？块级元素有哪些？-空-void-元素有那些？" class="headerlink" title="8.  行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？"></a>8.  行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</h2><ul>
+<li>行内元素有：a b span img input select strong；</li>
+<li>块级元素有：div ul ol li dl dt dd h1 h2 h3 h4 h5 h6 p；</li>
+</ul>
+<p>空元素，即没有内容的HTML元素。空元素是在开始标签中关闭的，也就是空元素没有闭合标签：</p>
+<p>常见的有：<br><code>&lt;br&gt;、&lt;hr&gt;、&lt;img&gt;、&lt;input&gt;、&lt;link&gt;、&lt;meta&gt;；</code></p>
+<p>鲜见的有：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;area&gt;、&lt;base&gt;、&lt;col&gt;、&lt;colgroup&gt;、&lt;command&gt;、&lt;embed&gt;、&lt;keygen&gt;、&lt;param&gt;、&lt;source&gt;、&lt;track&gt;、&lt;wbr&gt;。</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="9-说一下-web-worker"><a href="#9-说一下-web-worker" class="headerlink" title="9. 说一下 web worker"></a>9. 说一下 web worker</h2><p>在 HTML 页面中，如果在执行脚本时，页面的状态是不可相应的，直到脚本执行完成后，页面才变成可相应。web worker 是运行在后台的 js，独立于其他脚本，不会影响页面的性能。 并且通过 postMessage 将结果回传到主线程。这样在进行复杂操作的时候，就不会阻塞主线程了。<br>如何创建 web worker：</p>
+<ol>
+<li>检测浏览器对于 web worker 的支持性</li>
+<li>创建 web worker 文件（js，回传函数等）</li>
+<li>创建 web worker 对象</li>
+</ol>
+<h2 id="10-HTML5的离线储存怎么使用，它的工作原理是什么"><a href="#10-HTML5的离线储存怎么使用，它的工作原理是什么" class="headerlink" title="10. HTML5的离线储存怎么使用，它的工作原理是什么"></a>10. HTML5的离线储存怎么使用，它的工作原理是什么</h2><p>离线存储指的是：在用户没有与因特网连接时，可以正常访问站点或应用，在用户与因特网连接时，更新用户机器上的缓存文件。</p>
+<p><strong>原理：</strong>HTML5的离线存储是基于一个新建的 .appcache 文件的缓存机制(不是存储技术)，通过这个文件上的解析清单离线存储资源，这些资源就会像cookie一样被存储了下来。之后当网络在处于离线状态下时，浏览器会通过被离线存储的数据进行页面展示</p>
+<p><strong>使用方法：</strong><br>（1）创建一个和 html 同名的 manifest 文件，然后在页面头部加入 manifest 属性：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;html lang=&quot;en&quot; manifest=&quot;index.manifest&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>（2）在 cache.manifest 文件中编写需要离线存储的资源：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">CACHE MANIFEST</span><br><span class="line">    #v0.11</span><br><span class="line">    CACHE:</span><br><span class="line">    js/app.js</span><br><span class="line">    css/style.css</span><br><span class="line">    NETWORK:</span><br><span class="line">    resourse/logo.png</span><br><span class="line">    FALLBACK:</span><br><span class="line">    / /offline.html</span><br></pre></td></tr></table></figure>
+
+
+<ul>
+<li>CACHE: 表示需要离线存储的资源列表，由于包含 manifest 文件的页面将被自动离线存储，所以不需要把页面自身也列出来。</li>
+<li>NETWORK: 表示在它下面列出来的资源只有在在线的情况下才能访问，他们不会被离线存储，所以在离线情况下无法使用这些资源。不过，如果在 CACHE 和 NETWORK 中有一个相同的资源，那么这个资源还是会被离线存储，也就是说 CACHE 的优先级更高。</li>
+<li>FALLBACK: 表示如果访问第一个资源失败，那么就使用第二个资源来替换他，比如上面这个文件表示的就是如果访问根目录下任何一个资源失败了，那么就去访问 offline.html 。</li>
+</ul>
+<p>（3）在离线状态时，操作 window.applicationCache 进行离线缓存的操作。<br>    <strong>如何更新缓存：</strong><br>            （1）更新 manifest 文件<br>            （2）通过 javascript 操作<br>            （3）清除浏览器缓存<br>    <strong>注意事项：</strong><br>            （1）浏览器对缓存数据的容量限制可能不太一样（某些浏览器设置的限制是每个站点 5MB）。<br>            （2）如果 manifest 文件，或者内部列举的某一个文件不能正常下载，整个更新过程都将失败，浏览器继续全部使用老的缓存。<br>            （3）引用 manifest 的 html 必须与 manifest 文件同源，在同一个域下。<br>            （4）FALLBACK 中的资源必须和 manifest 文件同源。<br>            （5）当一个资源被缓存后，该浏览器直接请求这个绝对路径也会访问缓存中的资源。<br>            （6）站点中的其他页面即使没有设置 manifest 属性，请求的资源如果在缓存中也从缓存中访问。<br>            （7）当 manifest 文件发生改变时，资源请求本身也会触发更新。</p>
+<h2 id="11-浏览器是如何对-HTML5-的离线储存资源进行管理和加载？"><a href="#11-浏览器是如何对-HTML5-的离线储存资源进行管理和加载？" class="headerlink" title="11. 浏览器是如何对 HTML5 的离线储存资源进行管理和加载？"></a>11. 浏览器是如何对 HTML5 的离线储存资源进行管理和加载？</h2><p>在线的情况下，浏览器发现 html 头部有 manifest 属性，它会请求 manifest 文件，如果是第一次访问页面 ，那么浏览器就会根据 manifest 文件的内容下载相应的资源并且进行离线存储。如果已经访问过页面并且资源已经进行离线存储了，那么浏览器就会使用离线的资源加载页面，然后浏览器会对比新的 manifest 文件与旧的 manifest 文件，如果文件没有发生改变，就不做任何操作，如果文件改变了，就会重新下载文件中的资源并进行离线存储。<br>离线的情况下，浏览器会直接使用离线存储的资源。</p>
+<h2 id="12-title与h1的区别、b与strong的区别、i与em的区别？"><a href="#12-title与h1的区别、b与strong的区别、i与em的区别？" class="headerlink" title="12. title与h1的区别、b与strong的区别、i与em的区别？"></a>12. title与h1的区别、b与strong的区别、i与em的区别？</h2><p>strong标签有语义，是起到加重语气的效果，而b标签是没有的，b标签只是一个简单加粗标签。b标签之间的字符都设为粗体，strong标签加强字符的语气都是通过粗体来实现的，而搜索引擎更侧重strong标签。<br>title属性没有明确意义只表示是个标题，H1则表示层次明确的标题，对页面信息的抓取有很大的影响<br>i内容展示为斜体，em表示强调的文本</p>
+<h2 id="13-iframe-有那些优点和缺点？"><a href="#13-iframe-有那些优点和缺点？" class="headerlink" title="13. iframe 有那些优点和缺点？"></a>13. iframe 有那些优点和缺点？</h2><p>iframe 元素会创建包含另外一个文档的内联框架（即行内框架）。<br><strong>优点：</strong></p>
+<p>用来加载速度较慢的内容（如广告）<br>可以使脚本可以并行下载<br>可以实现跨子域通信</p>
+<p><strong>缺点：</strong></p>
+<p>iframe 会阻塞主页面的 onload 事件<br>无法被一些搜索引擎索识别<br>会产生很多页面，不容易管理</p>
+<h2 id="14-label-的作用是什么？如何使用？"><a href="#14-label-的作用是什么？如何使用？" class="headerlink" title="14. label 的作用是什么？如何使用？"></a>14. label 的作用是什么？如何使用？</h2><p>label标签来定义表单控件的关系：当用户选择label标签时，浏览器会自动将焦点转到和label标签相关的表单控件上。</p>
+<p><strong>使用方法1：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;label for=&quot;mobile&quot;&gt;Number:&lt;/label&gt;</span><br><span class="line">&lt;input type=&quot;text&quot; id=&quot;mobile&quot;/&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>使用方法2：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;label&gt;Date:&lt;input type=&quot;text&quot;/&gt;&lt;/label&gt;</span><br></pre></td></tr></table></figure>
+      
+       
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Abu
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

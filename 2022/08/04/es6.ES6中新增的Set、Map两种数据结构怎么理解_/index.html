@@ -6,35 +6,21 @@
   <meta name="keywords" content="">
   <meta name="description" content="ES6中新增的Set、Map两种数据结构怎么理解 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="一、CSS基础1. CSS选择器及其优先级   选择器 格式 优先级权重    id选择器 #id 100   类选择器 #classname 10   属性选择器 a[ref&#x3D;“eee”] 10   伪类选择器 li:last-child 10   标签选择器 div 1   伪元素选择器 li:after 1   相邻兄弟选择器 h1+p 0   子选择器 ul&gt;li 0   后代选择器">
-<meta property="og:type" content="article">
-<meta property="og:title" content="CSS总结">
-<meta property="og:url" content="https://liuliushaoyang0723.gitee.io/2022/08/07/css.css%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="https://liuliushaoyang0723.gitee.io/abu/categories/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一、CSS基础1. CSS选择器及其优先级   选择器 格式 优先级权重    id选择器 #id 100   类选择器 #classname 10   属性选择器 a[ref&#x3D;“eee”] 10   伪类选择器 li:last-child 10   标签选择器 div 1   伪元素选择器 li:after 1   相邻兄弟选择器 h1+p 0   子选择器 ul&gt;li 0   后代选择器">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4544d45b5a0c47a58c0c33a7d8fbac09~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4040de9fef1a49f4ae0ae66039edcfe0~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5f1da1cbae9b45528cc2b33f74eb32f2~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3d58c5313e884e38b1545a5896613250~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2911f98bbacf4b1cbffbb9e1527a4977~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c57fc165a4ce4d5b9a2885867d4f1cab~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fbc59ae1adb5454c8c7f60582df10ff9~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6523548b65834c578202acc5e6388af4~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4b35e646aa3c4d9cac803753d8b67c39~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d6d4f199b3f842f090890eea32318e11~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d2c7150bd7614a548f04a2919f1ea12a~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cba8731fea9842a8b8103c2b387fe64f~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab996951a0cc42cf9e6d9e12eb827f8b~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/531c6c250dd8446fb0f264e7b3df6fba~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e4beaf4e4a0140ad9e7252f8a6e4e8e6~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/445f50ad19164b0f863ad8dfef2a29b1~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a1ac630463164e42a027b54bb95f56ba~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="article:published_time" content="2022-08-07T11:46:05.638Z">
-<meta property="article:modified_time" content="2022-08-08T03:58:03.168Z">
+<meta property="article:published_time" content="2022-08-04T08:19:38.000Z">
+<meta property="article:modified_time" content="2022-08-04T08:23:32.938Z">
 <meta property="article:author" content="Abu">
+<meta property="article:tag" content="html">
+<meta property="article:tag" content="css">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="Vue">
+<meta property="article:tag" content="React">
+<meta property="article:tag" content="TypeScript">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4544d45b5a0c47a58c0c33a7d8fbac09~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -2055,15 +2041,6 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="如何实现文件上传？说说你的思路">如何实现文件上传？说说你的思路</span>
-            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
-        </a>
-        
-        
-        <a  class="全部文章 Node "
            href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0JWT%E9%89%B4%E6%9D%83%E6%9C%BA%E5%88%B6%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
            data-tag=""
            data-author="" >
@@ -2082,10 +2059,10 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%20Node%20%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7%E4%BB%A5%E5%8F%8A%20Require%20%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%AD%96%E7%95%A5_/"
+           href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?">说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?</span>
+            <span class="post-title" title="如何实现文件上传？说说你的思路">如何实现文件上传？说说你的思路</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2109,19 +2086,19 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Node.js%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%20Node%20%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7%E4%BB%A5%E5%8F%8A%20Require%20%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%AD%96%E7%95%A5_/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说你对Node.js 的理解？优缺点？应用场景？">说说你对Node.js 的理解？优缺点？应用场景？</span>
+            <span class="post-title" title="说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?">说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4Node%E4%B8%AD%E7%9A%84EventEmitter_%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAEventEmitter_/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Node.js%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说Node中的EventEmitter? 如何实现一个EventEmitter?">说说Node中的EventEmitter? 如何实现一个EventEmitter?</span>
+            <span class="post-title" title="说说你对Node.js 的理解？优缺点？应用场景？">说说你对Node.js 的理解？优缺点？应用场景？</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2136,19 +2113,19 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20fs%20%E6%A8%A1%E5%9D%97%E7%9A%84%E7%90%86%E8%A7%A3_%20%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95_/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20Stream%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说对 Node 中的 fs 模块的理解? 有哪些常用方法?">说说对 Node 中的 fs 模块的理解? 有哪些常用方法?</span>
+            <span class="post-title" title="说说对 Node 中的 Stream 的理解？应用场景？">说说对 Node 中的 Stream 的理解？应用场景？</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20Stream%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4Node%E4%B8%AD%E7%9A%84EventEmitter_%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAEventEmitter_/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说对 Node 中的 Stream 的理解？应用场景？">说说对 Node 中的 Stream 的理解？应用场景？</span>
+            <span class="post-title" title="说说Node中的EventEmitter? 如何实现一个EventEmitter?">说说Node中的EventEmitter? 如何实现一个EventEmitter?</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2171,6 +2148,15 @@
         </a>
         
         
+        <a  class="全部文章 Node "
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20fs%20%E6%A8%A1%E5%9D%97%E7%9A%84%E7%90%86%E8%A7%A3_%20%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对 Node 中的 fs 模块的理解? 有哪些常用方法?">说说对 Node 中的 fs 模块的理解? 有哪些常用方法?</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
         <a  class="全部文章 CSS "
            href="/abu/2019/09/11/css.%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8BCSS%E4%B8%AD%E7%9A%84Grid%E7%BD%91%E6%A0%BC%E5%B8%83%E5%B1%80/"
            data-tag=""
@@ -2181,10 +2167,10 @@
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80%EF%BC%8C%E5%8F%B3%E4%BE%A7%E8%87%AA%E9%80%82%E5%BA%94%EF%BC%9F%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80%E4%B8%AD%E9%97%B4%E8%87%AA%E9%80%82%E5%BA%94%E5%91%A2%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%EF%BC%8F%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E7%9C%81%E7%95%A5%E6%A0%B7%E5%BC%8F%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？">如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？</span>
+            <span class="post-title" title="如何实现单行／多行文本溢出的省略样式？">如何实现单行／多行文本溢出的省略样式？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
@@ -2199,19 +2185,19 @@
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E8%AE%A9Chrome%E6%94%AF%E6%8C%81%E5%B0%8F%E4%BA%8E12px%20%E7%9A%84%E6%96%87%E5%AD%97%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80%EF%BC%8C%E5%8F%B3%E4%BE%A7%E8%87%AA%E9%80%82%E5%BA%94%EF%BC%9F%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80%E4%B8%AD%E9%97%B4%E8%87%AA%E9%80%82%E5%BA%94%E5%91%A2%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="让Chrome支持小于12px 的文字方式有哪些？区别？">让Chrome支持小于12px 的文字方式有哪些？区别？</span>
+            <span class="post-title" title="如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？">如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%EF%BC%8F%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E7%9C%81%E7%95%A5%E6%A0%B7%E5%BC%8F%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E8%AE%A9Chrome%E6%94%AF%E6%8C%81%E5%B0%8F%E4%BA%8E12px%20%E7%9A%84%E6%96%87%E5%AD%97%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="如何实现单行／多行文本溢出的省略样式？">如何实现单行／多行文本溢出的省略样式？</span>
+            <span class="post-title" title="让Chrome支持小于12px 的文字方式有哪些？区别？">让Chrome支持小于12px 的文字方式有哪些？区别？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
@@ -2275,7 +2261,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ES6%E4%B8%AD%E6%96%B0%E5%A2%9E%E7%9A%84Set%E3%80%81Map%E4%B8%A4%E7%A7%8D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3"><span class="toc-text">ES6中新增的Set、Map两种数据结构怎么理解?</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81Set"><span class="toc-text">一、Set</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5"><span class="toc-text">增删改查</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#add"><span class="toc-text">add()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#delete"><span class="toc-text">delete()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#has"><span class="toc-text">has()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#clear"><span class="toc-text">clear()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%81%8D%E5%8E%86"><span class="toc-text">遍历</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81Map"><span class="toc-text">二、Map</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5-1"><span class="toc-text">增删改查</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#size"><span class="toc-text">size</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#set"><span class="toc-text">set()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get"><span class="toc-text">get()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#has-1"><span class="toc-text">has()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#delete-1"><span class="toc-text">delete()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#clear-1"><span class="toc-text">clear()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%81%8D%E5%8E%86-1"><span class="toc-text">遍历</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81WeakSet-%E5%92%8C-WeakMap"><span class="toc-text">三、WeakSet 和 WeakMap</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#WeakSet"><span class="toc-text">WeakSet</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#WeakMap"><span class="toc-text">WeakMap</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#es6%E4%B8%AD%E6%96%B0%E5%A2%9E%E7%9A%84set-map%E4%B8%A4%E7%A7%8D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3"><span class="toc-text"> ES6中新增的Set、Map两种数据结构怎么理解?</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-set"><span class="toc-text"> 一、Set</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5"><span class="toc-text"> 增删改查</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#add"><span class="toc-text"> add()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#delete"><span class="toc-text"> delete()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#has"><span class="toc-text"> has()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#clear"><span class="toc-text"> clear()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%81%8D%E5%8E%86"><span class="toc-text"> 遍历</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-map"><span class="toc-text"> 二、Map</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5-2"><span class="toc-text"> 增删改查</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#size"><span class="toc-text"> size</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#set"><span class="toc-text"> set()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get"><span class="toc-text"> get()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#has-2"><span class="toc-text"> has()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#delete-2"><span class="toc-text"> delete()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#clear-2"><span class="toc-text"> clear()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%81%8D%E5%8E%86-2"><span class="toc-text"> 遍历</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-weakset-%E5%92%8C-weakmap"><span class="toc-text"> 三、WeakSet 和 WeakMap</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#weakset"><span class="toc-text"> WeakSet</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#weakmap"><span class="toc-text"> WeakMap</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -2291,44 +2277,49 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="ES6中新增的Set、Map两种数据结构怎么理解"><a href="#ES6中新增的Set、Map两种数据结构怎么理解" class="headerlink" title="ES6中新增的Set、Map两种数据结构怎么理解?"></a>ES6中新增的Set、Map两种数据结构怎么理解?</h1><p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928231125406" alt="图片"></p>
+        <h1 id="es6中新增的set-map两种数据结构怎么理解"><a class="markdownIt-Anchor" href="#es6中新增的set-map两种数据结构怎么理解"></a> ES6中新增的Set、Map两种数据结构怎么理解?</h1>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928231125406" alt="图片" /></p>
 <p>如果要用一句话来描述，我们可以说</p>
 <p><code>Set</code>是一种叫做集合的数据结构，<code>Map</code>是一种叫做字典的数据结构</p>
 <p>什么是集合？什么又是字典？</p>
 <ul>
-<li>集合<br>是由一堆无序的、相关联的，且不重复的内存结构【数学中称为元素】组成的组合</li>
-<li>字典<br>是一些元素的集合。每个元素有一个称作key 的域，不同元素的key 各不相同</li>
+<li>集合<br />
+是由一堆无序的、相关联的，且不重复的内存结构【数学中称为元素】组成的组合</li>
+<li>字典<br />
+是一些元素的集合。每个元素有一个称作key 的域，不同元素的key 各不相同</li>
 </ul>
 <p>区别？</p>
 <ul>
 <li>共同点：集合、字典都可以存储不重复的值</li>
 <li>不同点：集合是以[值，值]的形式存储元素，字典是以[键，值]的形式存储</li>
 </ul>
-<h2 id="一、Set"><a href="#一、Set" class="headerlink" title="一、Set"></a>一、Set</h2><p><code>Set</code>是<code>es6</code>新增的数据结构，类似于数组，但是成员的值都是唯一的，没有重复的值，我们一般称为集合</p>
+<h2 id="一-set"><a class="markdownIt-Anchor" href="#一-set"></a> 一、Set</h2>
+<p><code>Set</code>是<code>es6</code>新增的数据结构，类似于数组，但是成员的值都是唯一的，没有重复的值，我们一般称为集合</p>
 <p><code>Set</code>本身是一个构造函数，用来生成 Set 数据结构</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> s = <span class="keyword">new</span> <span class="title class_">Set</span>();</span><br></pre></td></tr></table></figure>
-
-<h3 id="增删改查"><a href="#增删改查" class="headerlink" title="增删改查"></a>增删改查</h3><p><code>Set</code>的实例关于增删改查的方法：</p>
+<h3 id="增删改查"><a class="markdownIt-Anchor" href="#增删改查"></a> 增删改查</h3>
+<p><code>Set</code>的实例关于增删改查的方法：</p>
 <ul>
 <li>add()</li>
 <li>delete()</li>
 <li>has()</li>
 <li>clear()</li>
 </ul>
-<h3 id="add"><a href="#add" class="headerlink" title="add()"></a>add()</h3><p>添加某个值，返回 <code>Set</code> 结构本身</p>
+<h3 id="add"><a class="markdownIt-Anchor" href="#add"></a> add()</h3>
+<p>添加某个值，返回 <code>Set</code> 结构本身</p>
 <p>当添加实例中已经存在的元素，<code>set</code>不会进行处理添加</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s.<span class="title function_">add</span>(<span class="number">1</span>).<span class="title function_">add</span>(<span class="number">2</span>).<span class="title function_">add</span>(<span class="number">2</span>); <span class="comment">// 2只被添加了一次</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="delete"><a href="#delete" class="headerlink" title="delete()"></a>delete()</h3><p>删除某个值，返回一个布尔值，表示删除是否成功</p>
+<h3 id="delete"><a class="markdownIt-Anchor" href="#delete"></a> delete()</h3>
+<p>删除某个值，返回一个布尔值，表示删除是否成功</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s.<span class="title function_">delete</span>(<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-
-<h3 id="has"><a href="#has" class="headerlink" title="has()"></a>has()</h3><p>返回一个布尔值，判断该值是否为<code>Set</code>的成员</p>
+<h3 id="has"><a class="markdownIt-Anchor" href="#has"></a> has()</h3>
+<p>返回一个布尔值，判断该值是否为<code>Set</code>的成员</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s.<span class="title function_">has</span>(<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
-
-<h3 id="clear"><a href="#clear" class="headerlink" title="clear()"></a>clear()</h3><p>清除所有成员，没有返回值</p>
+<h3 id="clear"><a class="markdownIt-Anchor" href="#clear"></a> clear()</h3>
+<p>清除所有成员，没有返回值</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s.<span class="title function_">clear</span>()</span><br></pre></td></tr></table></figure>
-
-<h3 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h3><p><code>Set</code>实例遍历的方法有如下：</p>
+<h3 id="遍历"><a class="markdownIt-Anchor" href="#遍历"></a> 遍历</h3>
+<p><code>Set</code>实例遍历的方法有如下：</p>
 <p>关于遍历的方法，有如下：</p>
 <ul>
 <li>keys()：返回键名的遍历器</li>
@@ -2339,18 +2330,16 @@
 <p><code>Set</code>的遍历顺序就是插入顺序</p>
 <p><code>keys</code>方法、<code>values</code>方法、<code>entries</code>方法返回的都是遍历器对象</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> set = <span class="keyword">new</span> <span class="title class_">Set</span>([<span class="string">&#x27;red&#x27;</span>, <span class="string">&#x27;green&#x27;</span>, <span class="string">&#x27;blue&#x27;</span>]);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> item <span class="keyword">of</span> set.<span class="title function_">keys</span>()) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(item);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// red</span></span><br><span class="line"><span class="comment">// green</span></span><br><span class="line"><span class="comment">// blue</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> item <span class="keyword">of</span> set.<span class="title function_">values</span>()) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(item);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// red</span></span><br><span class="line"><span class="comment">// green</span></span><br><span class="line"><span class="comment">// blue</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> item <span class="keyword">of</span> set.<span class="title function_">entries</span>()) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(item);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// [&quot;red&quot;, &quot;red&quot;]</span></span><br><span class="line"><span class="comment">// [&quot;green&quot;, &quot;green&quot;]</span></span><br><span class="line"><span class="comment">// [&quot;blue&quot;, &quot;blue&quot;]</span></span><br><span class="line"><span class="title function_">forEach</span>()<span class="string">`用于对每个成员执行某种操作，没有返回值，键值、键名都相等，同样的`</span>forEach<span class="string">`方法有第二个参数，用于绑定处理函数的`</span><span class="variable language_">this</span></span><br><span class="line"><span class="keyword">let</span> set = <span class="keyword">new</span> <span class="title class_">Set</span>([<span class="number">1</span>, <span class="number">4</span>, <span class="number">9</span>]);</span><br><span class="line">set.<span class="title function_">forEach</span>(<span class="function">(<span class="params">value, key</span>) =&gt;</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(key + <span class="string">&#x27; : &#x27;</span> + value))</span><br><span class="line"><span class="comment">// 1 : 1</span></span><br><span class="line"><span class="comment">// 4 : 4</span></span><br><span class="line"><span class="comment">// 9 : 9</span></span><br></pre></td></tr></table></figure>
-
 <p>扩展运算符和<code>Set</code> 结构相结合实现数组或字符串去重</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 数组</span></span><br><span class="line"><span class="keyword">let</span> arr = [<span class="number">3</span>, <span class="number">5</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">5</span>, <span class="number">5</span>];</span><br><span class="line"><span class="keyword">let</span> unique = [...<span class="keyword">new</span> <span class="title class_">Set</span>(arr)]; <span class="comment">// [3, 5, 2]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 字符串</span></span><br><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;352255&quot;</span>;</span><br><span class="line"><span class="keyword">let</span> unique = [...<span class="keyword">new</span> <span class="title class_">Set</span>(str)].<span class="title function_">join</span>(<span class="string">&quot;&quot;</span>); <span class="comment">// &quot;&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>实现并集、交集、和差集</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="keyword">new</span> <span class="title class_">Set</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]);</span><br><span class="line"><span class="keyword">let</span> b = <span class="keyword">new</span> <span class="title class_">Set</span>([<span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>]);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 并集</span></span><br><span class="line"><span class="keyword">let</span> union = <span class="keyword">new</span> <span class="title class_">Set</span>([...a, ...b]);</span><br><span class="line"><span class="comment">// Set &#123;1, 2, 3, 4&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 交集</span></span><br><span class="line"><span class="keyword">let</span> intersect = <span class="keyword">new</span> <span class="title class_">Set</span>([...a].<span class="title function_">filter</span>(<span class="function"><span class="params">x</span> =&gt;</span> b.<span class="title function_">has</span>(x)));</span><br><span class="line"><span class="comment">// set &#123;2, 3&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// （a 相对于 b 的）差集</span></span><br><span class="line"><span class="keyword">let</span> difference = <span class="keyword">new</span> <span class="title class_">Set</span>([...a].<span class="title function_">filter</span>(<span class="function"><span class="params">x</span> =&gt;</span> !b.<span class="title function_">has</span>(x)));</span><br><span class="line"><span class="comment">// Set &#123;1&#125;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="二、Map"><a href="#二、Map" class="headerlink" title="二、Map"></a>二、Map</h2><p><code>Map</code>类型是键值对的有序列表，而键和值都可以是任意类型</p>
+<h2 id="二-map"><a class="markdownIt-Anchor" href="#二-map"></a> 二、Map</h2>
+<p><code>Map</code>类型是键值对的有序列表，而键和值都可以是任意类型</p>
 <p><code>Map</code>本身是一个构造函数，用来生成 <code>Map</code> 数据结构</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> m = <span class="keyword">new</span> <span class="title class_">Map</span>()</span><br></pre></td></tr></table></figure>
-
-<h3 id="增删改查-1"><a href="#增删改查-1" class="headerlink" title="增删改查"></a>增删改查</h3><p><code>Map</code> 结构的实例针对增删改查有以下属性和操作方法：</p>
+<h3 id="增删改查-2"><a class="markdownIt-Anchor" href="#增删改查-2"></a> 增删改查</h3>
+<p><code>Map</code> 结构的实例针对增删改查有以下属性和操作方法：</p>
 <ul>
 <li>size 属性</li>
 <li>set()</li>
@@ -2359,25 +2348,26 @@
 <li>delete()</li>
 <li>clear()</li>
 </ul>
-<h3 id="size"><a href="#size" class="headerlink" title="size"></a>size</h3><p><code>size</code>属性返回 Map 结构的成员总数。</p>
+<h3 id="size"><a class="markdownIt-Anchor" href="#size"></a> size</h3>
+<p><code>size</code>属性返回 Map 结构的成员总数。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> map = <span class="keyword">new</span> <span class="title class_">Map</span>();</span><br><span class="line">map.<span class="title function_">set</span>(<span class="string">&#x27;foo&#x27;</span>, <span class="literal">true</span>);</span><br><span class="line">map.<span class="title function_">set</span>(<span class="string">&#x27;bar&#x27;</span>, <span class="literal">false</span>);</span><br><span class="line"></span><br><span class="line">map.<span class="property">size</span> <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="set"><a href="#set" class="headerlink" title="set()"></a>set()</h3><p>设置键名<code>key</code>对应的键值为<code>value</code>，然后返回整个 Map 结构</p>
+<h3 id="set"><a class="markdownIt-Anchor" href="#set"></a> set()</h3>
+<p>设置键名<code>key</code>对应的键值为<code>value</code>，然后返回整个 Map 结构</p>
 <p>如果<code>key</code>已经有值，则键值会被更新，否则就新生成该键</p>
 <p>同时返回的是当前<code>Map</code>对象，可采用链式写法</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> m = <span class="keyword">new</span> <span class="title class_">Map</span>();</span><br><span class="line"></span><br><span class="line">m.<span class="title function_">set</span>(<span class="string">&#x27;edition&#x27;</span>, <span class="number">6</span>)        <span class="comment">// 键是字符串</span></span><br><span class="line">m.<span class="title function_">set</span>(<span class="number">262</span>, <span class="string">&#x27;standard&#x27;</span>)     <span class="comment">// 键是数值</span></span><br><span class="line">m.<span class="title function_">set</span>(<span class="literal">undefined</span>, <span class="string">&#x27;nah&#x27;</span>)    <span class="comment">// 键是 undefined</span></span><br><span class="line">m.<span class="title function_">set</span>(<span class="number">1</span>, <span class="string">&#x27;a&#x27;</span>).<span class="title function_">set</span>(<span class="number">2</span>, <span class="string">&#x27;b&#x27;</span>).<span class="title function_">set</span>(<span class="number">3</span>, <span class="string">&#x27;c&#x27;</span>) <span class="comment">// 链式操作</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="get"><a href="#get" class="headerlink" title="get()"></a>get()</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">get<span class="string">`方法读取`</span>key<span class="string">`对应的键值，如果找不到`</span>key<span class="string">`，返回`</span><span class="literal">undefined</span></span><br><span class="line"><span class="keyword">const</span> m = <span class="keyword">new</span> <span class="title class_">Map</span>();</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> hello = <span class="keyword">function</span>(<span class="params"></span>) &#123;<span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;hello&#x27;</span>);&#125;;</span><br><span class="line">m.<span class="title function_">set</span>(hello, <span class="string">&#x27;Hello ES6!&#x27;</span>) <span class="comment">// 键是函数</span></span><br><span class="line"></span><br><span class="line">m.<span class="title function_">get</span>(hello)  <span class="comment">// Hello ES6!</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="has-1"><a href="#has-1" class="headerlink" title="has()"></a>has()</h3><p><code>has</code>方法返回一个布尔值，表示某个键是否在当前 Map 对象之中</p>
+<h3 id="get"><a class="markdownIt-Anchor" href="#get"></a> get()</h3>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">get<span class="string">`方法读取`</span>key<span class="string">`对应的键值，如果找不到`</span>key<span class="string">`，返回`</span><span class="literal">undefined</span></span><br><span class="line"><span class="keyword">const</span> m = <span class="keyword">new</span> <span class="title class_">Map</span>();</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> hello = <span class="keyword">function</span>(<span class="params"></span>) &#123;<span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;hello&#x27;</span>);&#125;;</span><br><span class="line">m.<span class="title function_">set</span>(hello, <span class="string">&#x27;Hello ES6!&#x27;</span>) <span class="comment">// 键是函数</span></span><br><span class="line"></span><br><span class="line">m.<span class="title function_">get</span>(hello)  <span class="comment">// Hello ES6!</span></span><br></pre></td></tr></table></figure>
+<h3 id="has-2"><a class="markdownIt-Anchor" href="#has-2"></a> has()</h3>
+<p><code>has</code>方法返回一个布尔值，表示某个键是否在当前 Map 对象之中</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> m = <span class="keyword">new</span> <span class="title class_">Map</span>();</span><br><span class="line"></span><br><span class="line">m.<span class="title function_">set</span>(<span class="string">&#x27;edition&#x27;</span>, <span class="number">6</span>);</span><br><span class="line">m.<span class="title function_">set</span>(<span class="number">262</span>, <span class="string">&#x27;standard&#x27;</span>);</span><br><span class="line">m.<span class="title function_">set</span>(<span class="literal">undefined</span>, <span class="string">&#x27;nah&#x27;</span>);</span><br><span class="line"></span><br><span class="line">m.<span class="title function_">has</span>(<span class="string">&#x27;edition&#x27;</span>)     <span class="comment">// true</span></span><br><span class="line">m.<span class="title function_">has</span>(<span class="string">&#x27;years&#x27;</span>)       <span class="comment">// false</span></span><br><span class="line">m.<span class="title function_">has</span>(<span class="number">262</span>)           <span class="comment">// true</span></span><br><span class="line">m.<span class="title function_">has</span>(<span class="literal">undefined</span>)     <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="delete-1"><a href="#delete-1" class="headerlink" title="delete()"></a>delete()</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">delete</span><span class="string">`方法删除某个键，返回`</span><span class="literal">true</span><span class="string">`。如果删除失败，返回`</span><span class="literal">false</span></span><br><span class="line"><span class="keyword">const</span> m = <span class="keyword">new</span> <span class="title class_">Map</span>();</span><br><span class="line">m.<span class="title function_">set</span>(<span class="literal">undefined</span>, <span class="string">&#x27;nah&#x27;</span>);</span><br><span class="line">m.<span class="title function_">has</span>(<span class="literal">undefined</span>)     <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line">m.<span class="title function_">delete</span>(<span class="literal">undefined</span>)</span><br><span class="line">m.<span class="title function_">has</span>(<span class="literal">undefined</span>)       <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="clear-1"><a href="#clear-1" class="headerlink" title="clear()"></a>clear()</h3><p><code>clear</code>方法清除所有成员，没有返回值</p>
+<h3 id="delete-2"><a class="markdownIt-Anchor" href="#delete-2"></a> delete()</h3>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">delete</span><span class="string">`方法删除某个键，返回`</span><span class="literal">true</span><span class="string">`。如果删除失败，返回`</span><span class="literal">false</span></span><br><span class="line"><span class="keyword">const</span> m = <span class="keyword">new</span> <span class="title class_">Map</span>();</span><br><span class="line">m.<span class="title function_">set</span>(<span class="literal">undefined</span>, <span class="string">&#x27;nah&#x27;</span>);</span><br><span class="line">m.<span class="title function_">has</span>(<span class="literal">undefined</span>)     <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line">m.<span class="title function_">delete</span>(<span class="literal">undefined</span>)</span><br><span class="line">m.<span class="title function_">has</span>(<span class="literal">undefined</span>)       <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+<h3 id="clear-2"><a class="markdownIt-Anchor" href="#clear-2"></a> clear()</h3>
+<p><code>clear</code>方法清除所有成员，没有返回值</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> map = <span class="keyword">new</span> <span class="title class_">Map</span>();</span><br><span class="line">map.<span class="title function_">set</span>(<span class="string">&#x27;foo&#x27;</span>, <span class="literal">true</span>);</span><br><span class="line">map.<span class="title function_">set</span>(<span class="string">&#x27;bar&#x27;</span>, <span class="literal">false</span>);</span><br><span class="line"></span><br><span class="line">map.<span class="property">size</span> <span class="comment">// 2</span></span><br><span class="line">map.<span class="title function_">clear</span>()</span><br><span class="line">map.<span class="property">size</span> <span class="comment">// 0</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="遍历-1"><a href="#遍历-1" class="headerlink" title="遍历"></a>遍历</h3><p><code>Map</code>结构原生提供三个遍历器生成函数和一个遍历方法：</p>
+<h3 id="遍历-2"><a class="markdownIt-Anchor" href="#遍历-2"></a> 遍历</h3>
+<p><code>Map</code>结构原生提供三个遍历器生成函数和一个遍历方法：</p>
 <ul>
 <li>keys()：返回键名的遍历器</li>
 <li>values()：返回键值的遍历器</li>
@@ -2386,13 +2376,12 @@
 </ul>
 <p>遍历顺序就是插入顺序</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> map = <span class="keyword">new</span> <span class="title class_">Map</span>([</span><br><span class="line">  [<span class="string">&#x27;F&#x27;</span>, <span class="string">&#x27;no&#x27;</span>],</span><br><span class="line">  [<span class="string">&#x27;T&#x27;</span>,  <span class="string">&#x27;yes&#x27;</span>],</span><br><span class="line">]);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> key <span class="keyword">of</span> map.<span class="title function_">keys</span>()) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(key);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// &quot;F&quot;</span></span><br><span class="line"><span class="comment">// &quot;T&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> value <span class="keyword">of</span> map.<span class="title function_">values</span>()) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(value);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// &quot;no&quot;</span></span><br><span class="line"><span class="comment">// &quot;yes&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> item <span class="keyword">of</span> map.<span class="title function_">entries</span>()) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(item[<span class="number">0</span>], item[<span class="number">1</span>]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// &quot;F&quot; &quot;no&quot;</span></span><br><span class="line"><span class="comment">// &quot;T&quot; &quot;yes&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 或者</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> [key, value] <span class="keyword">of</span> map.<span class="title function_">entries</span>()) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(key, value);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// &quot;F&quot; &quot;no&quot;</span></span><br><span class="line"><span class="comment">// &quot;T&quot; &quot;yes&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 等同于使用map.entries()</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> [key, value] <span class="keyword">of</span> map) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(key, value);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// &quot;F&quot; &quot;no&quot;</span></span><br><span class="line"><span class="comment">// &quot;T&quot; &quot;yes&quot;</span></span><br><span class="line"></span><br><span class="line">map.<span class="title function_">forEach</span>(<span class="keyword">function</span>(<span class="params">value, key, map</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Key: %s, Value: %s&quot;</span>, key, value);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<h2 id="三、WeakSet-和-WeakMap"><a href="#三、WeakSet-和-WeakMap" class="headerlink" title="三、WeakSet 和 WeakMap"></a>三、WeakSet 和 WeakMap</h2><h3 id="WeakSet"><a href="#WeakSet" class="headerlink" title="WeakSet"></a>WeakSet</h3><p>创建<code>WeakSet</code>实例</p>
+<h2 id="三-weakset-和-weakmap"><a class="markdownIt-Anchor" href="#三-weakset-和-weakmap"></a> 三、WeakSet 和 WeakMap</h2>
+<h3 id="weakset"><a class="markdownIt-Anchor" href="#weakset"></a> WeakSet</h3>
+<p>创建<code>WeakSet</code>实例</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ws = <span class="keyword">new</span> <span class="title class_">WeakSet</span>();</span><br></pre></td></tr></table></figure>
-
 <p><code>WeakSet</code>可以接受一个具有 <code>Iterable</code>接口的对象作为参数</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> a = [[<span class="number">1</span>, <span class="number">2</span>], [<span class="number">3</span>, <span class="number">4</span>]];</span><br><span class="line"><span class="keyword">const</span> ws = <span class="keyword">new</span> <span class="title class_">WeakSet</span>(a);</span><br><span class="line"><span class="comment">// WeakSet &#123;[1, 2], [3, 4]&#125;</span></span><br></pre></td></tr></table></figure>
-
 <p>在<code>API</code>中<code>WeakSet</code>与<code>Set</code>有两个区别：</p>
 <ul>
 <li>没有遍历操作的<code>API</code></li>
@@ -2400,24 +2389,21 @@
 </ul>
 <p><code>WeackSet</code>只能成员只能是引用类型，而不能是其他类型的值</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> ws=<span class="keyword">new</span> <span class="title class_">WeakSet</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 成员不是引用类型</span></span><br><span class="line"><span class="keyword">let</span> weakSet=<span class="keyword">new</span> <span class="title class_">WeakSet</span>([<span class="number">2</span>,<span class="number">3</span>]);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(weakSet) <span class="comment">// 报错</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 成员为引用类型</span></span><br><span class="line"><span class="keyword">let</span> obj1=&#123;<span class="attr">name</span>:<span class="number">1</span>&#125;</span><br><span class="line"><span class="keyword">let</span> obj2=&#123;<span class="attr">name</span>:<span class="number">1</span>&#125;</span><br><span class="line"><span class="keyword">let</span> ws=<span class="keyword">new</span> <span class="title class_">WeakSet</span>([obj1,obj2]); </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(ws) <span class="comment">//WeakSet &#123;&#123;…&#125;, &#123;…&#125;&#125;</span></span><br></pre></td></tr></table></figure>
-
 <p><code>WeakSet</code>里面的引用只要在外部消失，它在 <code>WeakSet</code>里面的引用就会自动消失</p>
-<h3 id="WeakMap"><a href="#WeakMap" class="headerlink" title="WeakMap"></a>WeakMap</h3><p><code>WeakMap</code>结构与<code>Map</code>结构类似，也是用于生成键值对的集合</p>
+<h3 id="weakmap"><a class="markdownIt-Anchor" href="#weakmap"></a> WeakMap</h3>
+<p><code>WeakMap</code>结构与<code>Map</code>结构类似，也是用于生成键值对的集合</p>
 <p>在<code>API</code>中<code>WeakMap</code>与<code>Map</code>有两个区别：</p>
 <ul>
 <li>没有遍历操作的<code>API</code></li>
 <li>没有<code>clear</code>清空方法</li>
 </ul>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// WeakMap 可以使用 set 方法添加成员</span></span><br><span class="line"><span class="keyword">const</span> wm1 = <span class="keyword">new</span> <span class="title class_">WeakMap</span>();</span><br><span class="line"><span class="keyword">const</span> key = &#123;<span class="attr">foo</span>: <span class="number">1</span>&#125;;</span><br><span class="line">wm1.<span class="title function_">set</span>(key, <span class="number">2</span>);</span><br><span class="line">wm1.<span class="title function_">get</span>(key) <span class="comment">// 2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// WeakMap 也可以接受一个数组，</span></span><br><span class="line"><span class="comment">// 作为构造函数的参数</span></span><br><span class="line"><span class="keyword">const</span> k1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="keyword">const</span> k2 = [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>];</span><br><span class="line"><span class="keyword">const</span> wm2 = <span class="keyword">new</span> <span class="title class_">WeakMap</span>([[k1, <span class="string">&#x27;foo&#x27;</span>], [k2, <span class="string">&#x27;bar&#x27;</span>]]);</span><br><span class="line">wm2.<span class="title function_">get</span>(k2) <span class="comment">// &quot;bar&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p><code>WeakMap</code>只接受对象作为键名（<code>null</code>除外），不接受其他类型的值作为键名</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> map = <span class="keyword">new</span> <span class="title class_">WeakMap</span>();</span><br><span class="line">map.<span class="title function_">set</span>(<span class="number">1</span>, <span class="number">2</span>)</span><br><span class="line"><span class="comment">// TypeError: 1 is not an object!</span></span><br><span class="line">map.<span class="title function_">set</span>(<span class="title class_">Symbol</span>(), <span class="number">2</span>)</span><br><span class="line"><span class="comment">// TypeError: Invalid value used as weak map key</span></span><br><span class="line">map.<span class="title function_">set</span>(<span class="literal">null</span>, <span class="number">2</span>)</span><br><span class="line"><span class="comment">// TypeError: Invalid value used as weak map key</span></span><br></pre></td></tr></table></figure>
-
 <p><code>WeakMap</code>的键名所指向的对象，一旦不再需要，里面的键名对象和所对应的键值对会自动消失，不用手动删除引用</p>
 <p>举个场景例子：</p>
 <p>在网页的 DOM 元素上添加数据，就可以使用<code>WeakMap</code>结构，当该 DOM 元素被清除，其所对应的<code>WeakMap</code>记录就会自动被移除</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> wm = <span class="keyword">new</span> <span class="title class_">WeakMap</span>();</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> element = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;example&#x27;</span>);</span><br><span class="line"></span><br><span class="line">wm.<span class="title function_">set</span>(element, <span class="string">&#x27;some information&#x27;</span>);</span><br><span class="line">wm.<span class="title function_">get</span>(element) <span class="comment">// &quot;some information&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>注意：<code>WeakMap</code> 弱引用的只是键名，而不是键值。键值依然是正常引用</p>
 <p>下面代码中，键值<code>obj</code>会在<code>WeakMap</code>产生新的引用，当你修改<code>obj</code>不会影响到内部</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> wm = <span class="keyword">new</span> <span class="title class_">WeakMap</span>();</span><br><span class="line"><span class="keyword">let</span> key = &#123;&#125;;</span><br><span class="line"><span class="keyword">let</span> obj = &#123;<span class="attr">foo</span>: <span class="number">1</span>&#125;;</span><br><span class="line"></span><br><span class="line">wm.<span class="title function_">set</span>(key, obj);</span><br><span class="line">obj = <span class="literal">null</span>;</span><br><span class="line">wm.<span class="title function_">get</span>(key)</span><br><span class="line"><span class="comment">// Object &#123;foo: 1&#125;</span></span><br></pre></td></tr></table></figure>

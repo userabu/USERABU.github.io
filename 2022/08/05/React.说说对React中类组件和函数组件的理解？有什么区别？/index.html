@@ -6,35 +6,21 @@
   <meta name="keywords" content="">
   <meta name="description" content="说说对React中类组件和函数组件的理解？有什么区别？ | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="一、CSS基础1. CSS选择器及其优先级   选择器 格式 优先级权重    id选择器 #id 100   类选择器 #classname 10   属性选择器 a[ref&#x3D;“eee”] 10   伪类选择器 li:last-child 10   标签选择器 div 1   伪元素选择器 li:after 1   相邻兄弟选择器 h1+p 0   子选择器 ul&gt;li 0   后代选择器">
-<meta property="og:type" content="article">
-<meta property="og:title" content="CSS总结">
-<meta property="og:url" content="https://liuliushaoyang0723.gitee.io/2022/08/07/css.css%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="https://liuliushaoyang0723.gitee.io/abu/categories/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一、CSS基础1. CSS选择器及其优先级   选择器 格式 优先级权重    id选择器 #id 100   类选择器 #classname 10   属性选择器 a[ref&#x3D;“eee”] 10   伪类选择器 li:last-child 10   标签选择器 div 1   伪元素选择器 li:after 1   相邻兄弟选择器 h1+p 0   子选择器 ul&gt;li 0   后代选择器">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4544d45b5a0c47a58c0c33a7d8fbac09~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4040de9fef1a49f4ae0ae66039edcfe0~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5f1da1cbae9b45528cc2b33f74eb32f2~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3d58c5313e884e38b1545a5896613250~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2911f98bbacf4b1cbffbb9e1527a4977~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c57fc165a4ce4d5b9a2885867d4f1cab~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fbc59ae1adb5454c8c7f60582df10ff9~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6523548b65834c578202acc5e6388af4~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4b35e646aa3c4d9cac803753d8b67c39~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d6d4f199b3f842f090890eea32318e11~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d2c7150bd7614a548f04a2919f1ea12a~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cba8731fea9842a8b8103c2b387fe64f~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab996951a0cc42cf9e6d9e12eb827f8b~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/531c6c250dd8446fb0f264e7b3df6fba~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e4beaf4e4a0140ad9e7252f8a6e4e8e6~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/445f50ad19164b0f863ad8dfef2a29b1~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a1ac630463164e42a027b54bb95f56ba~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="article:published_time" content="2022-08-07T11:46:05.638Z">
-<meta property="article:modified_time" content="2022-08-08T03:58:03.168Z">
+<meta property="article:published_time" content="2022-08-04T08:19:38.000Z">
+<meta property="article:modified_time" content="2022-08-04T08:23:32.938Z">
 <meta property="article:author" content="Abu">
+<meta property="article:tag" content="html">
+<meta property="article:tag" content="css">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="Vue">
+<meta property="article:tag" content="React">
+<meta property="article:tag" content="TypeScript">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4544d45b5a0c47a58c0c33a7d8fbac09~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -2055,15 +2041,6 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="如何实现文件上传？说说你的思路">如何实现文件上传？说说你的思路</span>
-            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
-        </a>
-        
-        
-        <a  class="全部文章 Node "
            href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0JWT%E9%89%B4%E6%9D%83%E6%9C%BA%E5%88%B6%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
            data-tag=""
            data-author="" >
@@ -2082,10 +2059,10 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%20Node%20%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7%E4%BB%A5%E5%8F%8A%20Require%20%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%AD%96%E7%95%A5_/"
+           href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?">说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?</span>
+            <span class="post-title" title="如何实现文件上传？说说你的思路">如何实现文件上传？说说你的思路</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2109,19 +2086,19 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Node.js%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%20Node%20%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7%E4%BB%A5%E5%8F%8A%20Require%20%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%AD%96%E7%95%A5_/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说你对Node.js 的理解？优缺点？应用场景？">说说你对Node.js 的理解？优缺点？应用场景？</span>
+            <span class="post-title" title="说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?">说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4Node%E4%B8%AD%E7%9A%84EventEmitter_%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAEventEmitter_/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Node.js%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说Node中的EventEmitter? 如何实现一个EventEmitter?">说说Node中的EventEmitter? 如何实现一个EventEmitter?</span>
+            <span class="post-title" title="说说你对Node.js 的理解？优缺点？应用场景？">说说你对Node.js 的理解？优缺点？应用场景？</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2136,19 +2113,19 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20fs%20%E6%A8%A1%E5%9D%97%E7%9A%84%E7%90%86%E8%A7%A3_%20%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95_/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20Stream%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说对 Node 中的 fs 模块的理解? 有哪些常用方法?">说说对 Node 中的 fs 模块的理解? 有哪些常用方法?</span>
+            <span class="post-title" title="说说对 Node 中的 Stream 的理解？应用场景？">说说对 Node 中的 Stream 的理解？应用场景？</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20Stream%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4Node%E4%B8%AD%E7%9A%84EventEmitter_%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAEventEmitter_/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说对 Node 中的 Stream 的理解？应用场景？">说说对 Node 中的 Stream 的理解？应用场景？</span>
+            <span class="post-title" title="说说Node中的EventEmitter? 如何实现一个EventEmitter?">说说Node中的EventEmitter? 如何实现一个EventEmitter?</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2171,6 +2148,15 @@
         </a>
         
         
+        <a  class="全部文章 Node "
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20fs%20%E6%A8%A1%E5%9D%97%E7%9A%84%E7%90%86%E8%A7%A3_%20%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对 Node 中的 fs 模块的理解? 有哪些常用方法?">说说对 Node 中的 fs 模块的理解? 有哪些常用方法?</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
         <a  class="全部文章 CSS "
            href="/abu/2019/09/11/css.%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8BCSS%E4%B8%AD%E7%9A%84Grid%E7%BD%91%E6%A0%BC%E5%B8%83%E5%B1%80/"
            data-tag=""
@@ -2181,10 +2167,10 @@
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80%EF%BC%8C%E5%8F%B3%E4%BE%A7%E8%87%AA%E9%80%82%E5%BA%94%EF%BC%9F%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80%E4%B8%AD%E9%97%B4%E8%87%AA%E9%80%82%E5%BA%94%E5%91%A2%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%EF%BC%8F%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E7%9C%81%E7%95%A5%E6%A0%B7%E5%BC%8F%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？">如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？</span>
+            <span class="post-title" title="如何实现单行／多行文本溢出的省略样式？">如何实现单行／多行文本溢出的省略样式？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
@@ -2199,19 +2185,19 @@
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E8%AE%A9Chrome%E6%94%AF%E6%8C%81%E5%B0%8F%E4%BA%8E12px%20%E7%9A%84%E6%96%87%E5%AD%97%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80%EF%BC%8C%E5%8F%B3%E4%BE%A7%E8%87%AA%E9%80%82%E5%BA%94%EF%BC%9F%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80%E4%B8%AD%E9%97%B4%E8%87%AA%E9%80%82%E5%BA%94%E5%91%A2%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="让Chrome支持小于12px 的文字方式有哪些？区别？">让Chrome支持小于12px 的文字方式有哪些？区别？</span>
+            <span class="post-title" title="如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？">如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%EF%BC%8F%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E7%9C%81%E7%95%A5%E6%A0%B7%E5%BC%8F%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E8%AE%A9Chrome%E6%94%AF%E6%8C%81%E5%B0%8F%E4%BA%8E12px%20%E7%9A%84%E6%96%87%E5%AD%97%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="如何实现单行／多行文本溢出的省略样式？">如何实现单行／多行文本溢出的省略样式？</span>
+            <span class="post-title" title="让Chrome支持小于12px 的文字方式有哪些？区别？">让Chrome支持小于12px 的文字方式有哪些？区别？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
@@ -2275,7 +2261,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%B4%E8%AF%B4%E5%AF%B9React%E4%B8%AD%E7%B1%BB%E7%BB%84%E4%BB%B6%E5%92%8C%E5%87%BD%E6%95%B0%E7%BB%84%E4%BB%B6%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-text">说说对React中类组件和函数组件的理解？有什么区别？</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%B1%BB%E7%BB%84%E4%BB%B6"><span class="toc-text">一、类组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%87%BD%E6%95%B0%E7%BB%84%E4%BB%B6"><span class="toc-text">二、函数组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%8C%BA%E5%88%AB"><span class="toc-text">三、区别</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E5%86%99%E5%BD%A2%E5%BC%8F"><span class="toc-text">编写形式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86"><span class="toc-text">状态管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-text">生命周期</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B0%83%E7%94%A8%E6%96%B9%E5%BC%8F"><span class="toc-text">调用方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E6%B8%B2%E6%9F%93%E7%9A%84%E5%80%BC"><span class="toc-text">获取渲染的值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-text">小结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="toc-text">参考文献</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%B4%E8%AF%B4%E5%AF%B9react%E4%B8%AD%E7%B1%BB%E7%BB%84%E4%BB%B6%E5%92%8C%E5%87%BD%E6%95%B0%E7%BB%84%E4%BB%B6%E7%9A%84%E7%90%86%E8%A7%A3%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="toc-text"> 说说对React中类组件和函数组件的理解？有什么区别？</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E7%B1%BB%E7%BB%84%E4%BB%B6"><span class="toc-text"> 一、类组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E5%87%BD%E6%95%B0%E7%BB%84%E4%BB%B6"><span class="toc-text"> 二、函数组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-%E5%8C%BA%E5%88%AB"><span class="toc-text"> 三、区别</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E5%86%99%E5%BD%A2%E5%BC%8F"><span class="toc-text"> 编写形式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86"><span class="toc-text"> 状态管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-text"> 生命周期</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B0%83%E7%94%A8%E6%96%B9%E5%BC%8F"><span class="toc-text"> 调用方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E6%B8%B2%E6%9F%93%E7%9A%84%E5%80%BC"><span class="toc-text"> 获取渲染的值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-text"> 小结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="toc-text"> 参考文献</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -2291,17 +2277,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="说说对React中类组件和函数组件的理解？有什么区别？"><a href="#说说对React中类组件和函数组件的理解？有什么区别？" class="headerlink" title="说说对React中类组件和函数组件的理解？有什么区别？"></a>说说对React中类组件和函数组件的理解？有什么区别？</h1><p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928203519767" alt="图片"></p>
-<h2 id="一、类组件"><a href="#一、类组件" class="headerlink" title="一、类组件"></a>一、类组件</h2><p>类组件，顾名思义，也就是通过使用<code>ES6</code>类的编写形式去编写组件，该类必须继承<code>React.Component</code></p>
+        <h1 id="说说对react中类组件和函数组件的理解有什么区别"><a class="markdownIt-Anchor" href="#说说对react中类组件和函数组件的理解有什么区别"></a> 说说对React中类组件和函数组件的理解？有什么区别？</h1>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928203519767" alt="图片" /></p>
+<h2 id="一-类组件"><a class="markdownIt-Anchor" href="#一-类组件"></a> 一、类组件</h2>
+<p>类组件，顾名思义，也就是通过使用<code>ES6</code>类的编写形式去编写组件，该类必须继承<code>React.Component</code></p>
 <p>如果想要访问父组件传递过来的参数，可通过<code>this.props</code>的方式去访问</p>
 <p>在组件中必须实现<code>render</code>方法，在<code>return</code>中返回<code>React</code>对象，如下：</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Welcome</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">props</span>) &#123;</span><br><span class="line">    <span class="variable language_">super</span>(props)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello, &#123;this.props.name&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="二、函数组件"><a href="#二、函数组件" class="headerlink" title="二、函数组件"></a>二、函数组件</h2><p>函数组件，顾名思义，就是通过函数编写的形式去实现一个<code>React</code>组件，是<code>React</code>中定义组件最简单的方式</p>
+<h2 id="二-函数组件"><a class="markdownIt-Anchor" href="#二-函数组件"></a> 二、函数组件</h2>
+<p>函数组件，顾名思义，就是通过函数编写的形式去实现一个<code>React</code>组件，是<code>React</code>中定义组件最简单的方式</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Welcome</span>(<span class="params">props</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello, &#123;props.name&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>函数第一个参数为<code>props</code>用于接收父组件传递过来的参数</p>
-<h2 id="三、区别"><a href="#三、区别" class="headerlink" title="三、区别"></a>三、区别</h2><p>针对两种<code>React</code>组件，其区别主要分成以下几大方向：</p>
+<h2 id="三-区别"><a class="markdownIt-Anchor" href="#三-区别"></a> 三、区别</h2>
+<p>针对两种<code>React</code>组件，其区别主要分成以下几大方向：</p>
 <ul>
 <li>编写形式</li>
 <li>状态管理</li>
@@ -2309,47 +2297,45 @@
 <li>调用方式</li>
 <li>获取渲染的值</li>
 </ul>
-<h3 id="编写形式"><a href="#编写形式" class="headerlink" title="编写形式"></a>编写形式</h3><p>两者最明显的区别在于编写形式的不同，同一种功能的实现可以分别对应类组件和函数组件的编写形式</p>
+<h3 id="编写形式"><a class="markdownIt-Anchor" href="#编写形式"></a> 编写形式</h3>
+<p>两者最明显的区别在于编写形式的不同，同一种功能的实现可以分别对应类组件和函数组件的编写形式</p>
 <p>函数组件：</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Welcome</span>(<span class="params">props</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello, &#123;props.name&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>类组件：</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Welcome</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">props</span>) &#123;</span><br><span class="line">    <span class="variable language_">super</span>(props)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello, &#123;this.props.name&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="状态管理"><a href="#状态管理" class="headerlink" title="状态管理"></a>状态管理</h3><p>在<code>hooks</code>出来之前，函数组件就是无状态组件，不能保管组件的状态，不像类组件中调用<code>setState</code></p>
+<h3 id="状态管理"><a class="markdownIt-Anchor" href="#状态管理"></a> 状态管理</h3>
+<p>在<code>hooks</code>出来之前，函数组件就是无状态组件，不能保管组件的状态，不像类组件中调用<code>setState</code></p>
 <p>如果想要管理<code>state</code>状态，可以使用<code>useState</code>，如下：</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">FunctionalComponent</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">    <span class="keyword">const</span> [count, setCount] = <span class="title class_">React</span>.<span class="title function_">useState</span>(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">        <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">p</span>&gt;</span>count: &#123;count&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;()</span> =&gt;</span> setCount(count + 1)&#125;&gt;Click<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">    );</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
 <p>在使用<code>hooks</code>情况下，一般如果函数组件调用<code>state</code>，则需要创建一个类组件或者<code>state</code>提升到你的父组件中，然后通过<code>props</code>对象传递到子组件</p>
-<h3 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h3><p>在函数组件中，并不存在生命周期，这是因为这些生命周期钩子都来自于继承的<code>React.Component</code></p>
+<h3 id="生命周期"><a class="markdownIt-Anchor" href="#生命周期"></a> 生命周期</h3>
+<p>在函数组件中，并不存在生命周期，这是因为这些生命周期钩子都来自于继承的<code>React.Component</code></p>
 <p>所以，如果用到生命周期，就只能使用类组件</p>
 <p>但是函数组件使用<code>useEffect</code>也能够完成替代生命周期的作用，这里给出一个简单的例子：</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">FunctionalComponent</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">    <span class="title function_">useEffect</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello&quot;</span>);</span><br><span class="line">    &#125;, []);</span><br><span class="line">    <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello, World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
 <p>上述简单的例子对应类组件中的<code>componentDidMount</code>生命周期</p>
 <p>如果在<code>useEffect</code>回调函数中<code>return</code>一个函数，则<code>return</code>函数会在组件卸载的时候执行，正如<code>componentWillUnmount</code></p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">FunctionalComponent</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line"> <span class="title class_">React</span>.<span class="title function_">useEffect</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">   <span class="keyword">return</span> <span class="function">() =&gt;</span> &#123;</span><br><span class="line">     <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Bye&quot;</span>);</span><br><span class="line">   &#125;;</span><br><span class="line"> &#125;, []);</span><br><span class="line"> <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Bye, World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h3 id="调用方式"><a href="#调用方式" class="headerlink" title="调用方式"></a>调用方式</h3><p>如果是一个函数组件，调用则是执行函数即可：</p>
+<h3 id="调用方式"><a class="markdownIt-Anchor" href="#调用方式"></a> 调用方式</h3>
+<p>如果是一个函数组件，调用则是执行函数即可：</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 你的代码 </span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">SayHi</span>(<span class="params"></span>) &#123; </span><br><span class="line">    <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello, React<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span> </span><br><span class="line">&#125; </span><br><span class="line"><span class="comment">// React内部 </span></span><br><span class="line"><span class="keyword">const</span> result = <span class="title class_">SayHi</span>(props) <span class="comment">// » &lt;p&gt;Hello, React&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
-
 <p>如果是一个类组件，则需要将组件进行实例化，然后调用实例对象的<code>render</code>方法：</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 你的代码 </span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">SayHi</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123; </span><br><span class="line">    <span class="title function_">render</span>(<span class="params"></span>) &#123; </span><br><span class="line">        <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello, React<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span> </span><br><span class="line">    &#125; </span><br><span class="line">&#125; </span><br><span class="line"><span class="comment">// React内部 </span></span><br><span class="line"><span class="keyword">const</span> instance = <span class="keyword">new</span> <span class="title class_">SayHi</span>(props) <span class="comment">// » SayHi &#123;&#125; </span></span><br><span class="line"><span class="keyword">const</span> result = instance.<span class="title function_">render</span>() <span class="comment">// » &lt;p&gt;Hello, React&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="获取渲染的值"><a href="#获取渲染的值" class="headerlink" title="获取渲染的值"></a>获取渲染的值</h3><p>首先给出一个示例</p>
+<h3 id="获取渲染的值"><a class="markdownIt-Anchor" href="#获取渲染的值"></a> 获取渲染的值</h3>
+<p>首先给出一个示例</p>
 <p>函数组件对应如下：</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">ProfilePage</span>(<span class="params">props</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> <span class="title function_">showMessage</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&#x27;Followed &#x27;</span> + props.<span class="property">user</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> <span class="title function_">handleClick</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">    <span class="built_in">setTimeout</span>(showMessage, <span class="number">3000</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;handleClick&#125;</span>&gt;</span>Follow<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line">  )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>类组件对应如下：</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ProfilePage</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  <span class="title function_">showMessage</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&#x27;Followed &#x27;</span> + <span class="variable language_">this</span>.<span class="property">props</span>.<span class="property">user</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">handleClick</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="built_in">setTimeout</span>(<span class="variable language_">this</span>.<span class="property">showMessage</span>.<span class="title function_">bind</span>(<span class="variable language_">this</span>), <span class="number">3000</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;this.handleClick.bind(this)&#125;</span>&gt;</span>Follow<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>两者看起来实现功能是一致的，但是在类组件中，输出<code>this.props.user</code>，<code>Props</code>在 <code>React</code>中是不可变的所以它永远不会改变，但是 <code>this</code> 总是可变的，以便您可以在 <code>render</code> 和生命周期函数中读取新版本</p>
 <p>因此，如果我们的组件在请求运行时更新。<code>this.props</code> 将会改变。<code>showMessage</code>方法从“最新”的 <code>props</code> 中读取 <code>user</code></p>
 <p>而函数组件，本身就不存在<code>this</code>，<code>props</code>并不发生改变，因此同样是点击，<code>alert</code>的内容仍旧是之前的内容</p>
-<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>两种组件都有各自的优缺点</p>
+<h3 id="小结"><a class="markdownIt-Anchor" href="#小结"></a> 小结</h3>
+<p>两种组件都有各自的优缺点</p>
 <p>函数组件语法更短、更简单，这使得它更容易开发、理解和测试</p>
 <p>而类组件也会因大量使用 <code>this</code>而让人感到困惑</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<h2 id="参考文献"><a class="markdownIt-Anchor" href="#参考文献"></a> 参考文献</h2>
+<ul>
 <li><a href="https://zh-hans.reactjs.org/docs/components-and-props.html#function-and-class-components">https://zh-hans.reactjs.org/docs/components-and-props.html#function-and-class-components</a></li>
 </ul>
 

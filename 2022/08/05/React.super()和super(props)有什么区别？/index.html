@@ -6,35 +6,21 @@
   <meta name="keywords" content="">
   <meta name="description" content="super()和super(props)有什么区别？ | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="一、CSS基础1. CSS选择器及其优先级   选择器 格式 优先级权重    id选择器 #id 100   类选择器 #classname 10   属性选择器 a[ref&#x3D;“eee”] 10   伪类选择器 li:last-child 10   标签选择器 div 1   伪元素选择器 li:after 1   相邻兄弟选择器 h1+p 0   子选择器 ul&gt;li 0   后代选择器">
-<meta property="og:type" content="article">
-<meta property="og:title" content="CSS总结">
-<meta property="og:url" content="https://liuliushaoyang0723.gitee.io/2022/08/07/css.css%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="https://liuliushaoyang0723.gitee.io/abu/categories/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一、CSS基础1. CSS选择器及其优先级   选择器 格式 优先级权重    id选择器 #id 100   类选择器 #classname 10   属性选择器 a[ref&#x3D;“eee”] 10   伪类选择器 li:last-child 10   标签选择器 div 1   伪元素选择器 li:after 1   相邻兄弟选择器 h1+p 0   子选择器 ul&gt;li 0   后代选择器">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4544d45b5a0c47a58c0c33a7d8fbac09~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4040de9fef1a49f4ae0ae66039edcfe0~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5f1da1cbae9b45528cc2b33f74eb32f2~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3d58c5313e884e38b1545a5896613250~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2911f98bbacf4b1cbffbb9e1527a4977~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c57fc165a4ce4d5b9a2885867d4f1cab~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fbc59ae1adb5454c8c7f60582df10ff9~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6523548b65834c578202acc5e6388af4~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4b35e646aa3c4d9cac803753d8b67c39~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d6d4f199b3f842f090890eea32318e11~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d2c7150bd7614a548f04a2919f1ea12a~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cba8731fea9842a8b8103c2b387fe64f~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab996951a0cc42cf9e6d9e12eb827f8b~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/531c6c250dd8446fb0f264e7b3df6fba~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e4beaf4e4a0140ad9e7252f8a6e4e8e6~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/445f50ad19164b0f863ad8dfef2a29b1~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a1ac630463164e42a027b54bb95f56ba~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="article:published_time" content="2022-08-07T11:46:05.638Z">
-<meta property="article:modified_time" content="2022-08-08T03:58:03.168Z">
+<meta property="article:published_time" content="2022-08-04T08:19:38.000Z">
+<meta property="article:modified_time" content="2022-08-04T08:23:32.938Z">
 <meta property="article:author" content="Abu">
+<meta property="article:tag" content="html">
+<meta property="article:tag" content="css">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="Vue">
+<meta property="article:tag" content="React">
+<meta property="article:tag" content="TypeScript">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4544d45b5a0c47a58c0c33a7d8fbac09~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -2055,15 +2041,6 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="如何实现文件上传？说说你的思路">如何实现文件上传？说说你的思路</span>
-            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
-        </a>
-        
-        
-        <a  class="全部文章 Node "
            href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0JWT%E9%89%B4%E6%9D%83%E6%9C%BA%E5%88%B6%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
            data-tag=""
            data-author="" >
@@ -2082,10 +2059,10 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%20Node%20%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7%E4%BB%A5%E5%8F%8A%20Require%20%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%AD%96%E7%95%A5_/"
+           href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?">说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?</span>
+            <span class="post-title" title="如何实现文件上传？说说你的思路">如何实现文件上传？说说你的思路</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2109,19 +2086,19 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Node.js%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%20Node%20%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7%E4%BB%A5%E5%8F%8A%20Require%20%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%AD%96%E7%95%A5_/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说你对Node.js 的理解？优缺点？应用场景？">说说你对Node.js 的理解？优缺点？应用场景？</span>
+            <span class="post-title" title="说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?">说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4Node%E4%B8%AD%E7%9A%84EventEmitter_%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAEventEmitter_/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Node.js%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说Node中的EventEmitter? 如何实现一个EventEmitter?">说说Node中的EventEmitter? 如何实现一个EventEmitter?</span>
+            <span class="post-title" title="说说你对Node.js 的理解？优缺点？应用场景？">说说你对Node.js 的理解？优缺点？应用场景？</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2136,19 +2113,19 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20fs%20%E6%A8%A1%E5%9D%97%E7%9A%84%E7%90%86%E8%A7%A3_%20%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95_/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20Stream%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说对 Node 中的 fs 模块的理解? 有哪些常用方法?">说说对 Node 中的 fs 模块的理解? 有哪些常用方法?</span>
+            <span class="post-title" title="说说对 Node 中的 Stream 的理解？应用场景？">说说对 Node 中的 Stream 的理解？应用场景？</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20Stream%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4Node%E4%B8%AD%E7%9A%84EventEmitter_%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAEventEmitter_/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说对 Node 中的 Stream 的理解？应用场景？">说说对 Node 中的 Stream 的理解？应用场景？</span>
+            <span class="post-title" title="说说Node中的EventEmitter? 如何实现一个EventEmitter?">说说Node中的EventEmitter? 如何实现一个EventEmitter?</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2171,6 +2148,15 @@
         </a>
         
         
+        <a  class="全部文章 Node "
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20fs%20%E6%A8%A1%E5%9D%97%E7%9A%84%E7%90%86%E8%A7%A3_%20%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对 Node 中的 fs 模块的理解? 有哪些常用方法?">说说对 Node 中的 fs 模块的理解? 有哪些常用方法?</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
         <a  class="全部文章 CSS "
            href="/abu/2019/09/11/css.%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8BCSS%E4%B8%AD%E7%9A%84Grid%E7%BD%91%E6%A0%BC%E5%B8%83%E5%B1%80/"
            data-tag=""
@@ -2181,10 +2167,10 @@
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80%EF%BC%8C%E5%8F%B3%E4%BE%A7%E8%87%AA%E9%80%82%E5%BA%94%EF%BC%9F%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80%E4%B8%AD%E9%97%B4%E8%87%AA%E9%80%82%E5%BA%94%E5%91%A2%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%EF%BC%8F%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E7%9C%81%E7%95%A5%E6%A0%B7%E5%BC%8F%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？">如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？</span>
+            <span class="post-title" title="如何实现单行／多行文本溢出的省略样式？">如何实现单行／多行文本溢出的省略样式？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
@@ -2199,19 +2185,19 @@
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E8%AE%A9Chrome%E6%94%AF%E6%8C%81%E5%B0%8F%E4%BA%8E12px%20%E7%9A%84%E6%96%87%E5%AD%97%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80%EF%BC%8C%E5%8F%B3%E4%BE%A7%E8%87%AA%E9%80%82%E5%BA%94%EF%BC%9F%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80%E4%B8%AD%E9%97%B4%E8%87%AA%E9%80%82%E5%BA%94%E5%91%A2%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="让Chrome支持小于12px 的文字方式有哪些？区别？">让Chrome支持小于12px 的文字方式有哪些？区别？</span>
+            <span class="post-title" title="如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？">如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%EF%BC%8F%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E7%9C%81%E7%95%A5%E6%A0%B7%E5%BC%8F%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E8%AE%A9Chrome%E6%94%AF%E6%8C%81%E5%B0%8F%E4%BA%8E12px%20%E7%9A%84%E6%96%87%E5%AD%97%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="如何实现单行／多行文本溢出的省略样式？">如何实现单行／多行文本溢出的省略样式？</span>
+            <span class="post-title" title="让Chrome支持小于12px 的文字方式有哪些？区别？">让Chrome支持小于12px 的文字方式有哪些？区别？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
@@ -2275,7 +2261,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#super-%E5%92%8Csuper-props-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-text">super()和super(props)有什么区别？</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81ES6%E7%B1%BB"><span class="toc-text">一、ES6类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E7%B1%BB%E7%BB%84%E4%BB%B6"><span class="toc-text">二、类组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%80%BB%E7%BB%93"><span class="toc-text">三、总结</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#super%E5%92%8Csuperprops%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="toc-text"> super()和super(props)有什么区别？</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-es6%E7%B1%BB"><span class="toc-text"> 一、ES6类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E7%B1%BB%E7%BB%84%E4%BB%B6"><span class="toc-text"> 二、类组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-%E6%80%BB%E7%BB%93"><span class="toc-text"> 三、总结</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -2291,33 +2277,31 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="super-和super-props-有什么区别？"><a href="#super-和super-props-有什么区别？" class="headerlink" title="super()和super(props)有什么区别？"></a>super()和super(props)有什么区别？</h1><p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928182747287" alt="图片"></p>
-<h2 id="一、ES6类"><a href="#一、ES6类" class="headerlink" title="一、ES6类"></a>一、ES6类</h2><p>在<code>ES6</code>中，通过<code>extends</code>关键字实现类的继承，方式如下：</p>
+        <h1 id="super和superprops有什么区别"><a class="markdownIt-Anchor" href="#super和superprops有什么区别"></a> super()和super(props)有什么区别？</h1>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928182747287" alt="图片" /></p>
+<h2 id="一-es6类"><a class="markdownIt-Anchor" href="#一-es6类"></a> 一、ES6类</h2>
+<p>在<code>ES6</code>中，通过<code>extends</code>关键字实现类的继承，方式如下：</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">sup</span> &#123;</span><br><span class="line">    <span class="title function_">constructor</span>(<span class="params">name</span>) &#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">name</span> = name</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="title function_">printName</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">name</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">sub</span> <span class="keyword">extends</span> <span class="title class_ inherited__">sup</span>&#123;</span><br><span class="line">    <span class="title function_">constructor</span>(<span class="params">name,age</span>) &#123;</span><br><span class="line">        <span class="variable language_">super</span>(name) <span class="comment">// super代表的事父类的构造函数</span></span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">age</span> = age</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="title function_">printAge</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">age</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> jack = <span class="keyword">new</span> <span class="title function_">sub</span>(<span class="string">&#x27;jack&#x27;</span>,<span class="number">20</span>)</span><br><span class="line">jack.<span class="title function_">printName</span>()    <span class="comment">//输出 : jack</span></span><br><span class="line">jack.<span class="title function_">printAge</span>()    <span class="comment">//输出 : 20</span></span><br></pre></td></tr></table></figure>
-
 <p>在上面的例子中，可以看到通过<code>super</code>关键字实现调用父类，<code>super</code>代替的是父类的构建函数，使用<code>super(name)</code>相当于调用<code>sup.prototype.constructor.call(this,name)</code></p>
-<p>如果在子类中不使用<code>super</code>，关键字，则会引发报错，如下：<img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928182803289" alt="图片"></p>
+<p>如果在子类中不使用<code>super</code>，关键字，则会引发报错，如下：<img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928182803289" alt="图片" /></p>
 <p>报错的原因是 子类是没有自己的<code>this</code>对象的，它只能继承父类的<code>this</code>对象，然后对其进行加工</p>
 <p>而<code>super()</code>就是将父类中的<code>this</code>对象继承给子类的，没有<code>super()</code>子类就得不到<code>this</code>对象</p>
 <p>如果先调用<code>this</code>，再初始化<code>super()</code>，同样是禁止的行为</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">sub</span> <span class="keyword">extends</span> <span class="title class_ inherited__">sup</span>&#123;</span><br><span class="line">    <span class="title function_">constructor</span>(<span class="params">name,age</span>) &#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">age</span> = age</span><br><span class="line">        <span class="variable language_">super</span>(name) <span class="comment">// super代表的事父类的构造函数</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>所以在子类<code>constructor</code>中，必须先调用<code>super</code>才能引用<code>this</code></p>
-<h2 id="二、类组件"><a href="#二、类组件" class="headerlink" title="二、类组件"></a>二、类组件</h2><p>在<code>React</code>中，类组件是基于<code>es6</code>的规范实现的，继承<code>React.Component</code>，因此如果用到<code>constructor</code>就必须写<code>super()</code>才初始化<code>this</code></p>
+<h2 id="二-类组件"><a class="markdownIt-Anchor" href="#二-类组件"></a> 二、类组件</h2>
+<p>在<code>React</code>中，类组件是基于<code>es6</code>的规范实现的，继承<code>React.Component</code>，因此如果用到<code>constructor</code>就必须写<code>super()</code>才初始化<code>this</code></p>
 <p>这时候，在调用<code>super()</code>的时候，我们一般都需要传入<code>props</code>作为参数，如果不传进去，<code>React</code>内部也会将其定义在组件实例中</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// React 内部</span></span><br><span class="line"><span class="keyword">const</span> instance = <span class="keyword">new</span> <span class="title class_">YourComponent</span>(props);</span><br><span class="line">instance.<span class="property">props</span> = props;</span><br></pre></td></tr></table></figure>
-
 <p>所以无论有没有<code>constructor</code>，在<code>render</code>中<code>this.props</code>都是可以使用的，这是<code>React</code>自动附带的，是可以不写的：</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">HelloMessage</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span>&#123;</span><br><span class="line">    render ()&#123;</span><br><span class="line">        <span class="keyword">return</span> (</span><br><span class="line">            <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>nice to meet you! &#123;this.props.name&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">        );</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>但是也不建议使用<code>super()</code>代替<code>super(props)</code></p>
 <p>因为在<code>React</code>会在类组件构造函数生成实例后再给<code>this.props</code>赋值，所以在不传递<code>props</code>在<code>super</code>的情况下，调用<code>this.props</code>为<code>undefined</code>，如下情况：</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Button</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">props</span>) &#123;</span><br><span class="line">    <span class="variable language_">super</span>(); <span class="comment">// 没传入 props</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(props);      <span class="comment">//  &#123;&#125;</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">props</span>); <span class="comment">//  undefined</span></span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>而传入<code>props</code>的则都能正常访问，确保了 <code>this.props</code> 在构造函数执行完毕之前已被赋值，更符合逻辑，如下：</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Button</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">props</span>) &#123;</span><br><span class="line">    <span class="variable language_">super</span>(props); <span class="comment">// 没传入 props</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(props);      <span class="comment">//  &#123;&#125;</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">props</span>); <span class="comment">//  &#123;&#125;</span></span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="三、总结"><a href="#三、总结" class="headerlink" title="三、总结"></a>三、总结</h2><p>在<code>React</code>中，类组件基于<code>ES6</code>，所以在<code>constructor</code>中必须使用<code>super</code></p>
+<h2 id="三-总结"><a class="markdownIt-Anchor" href="#三-总结"></a> 三、总结</h2>
+<p>在<code>React</code>中，类组件基于<code>ES6</code>，所以在<code>constructor</code>中必须使用<code>super</code></p>
 <p>在调用<code>super</code>过程，无论是否传入<code>props</code>，<code>React</code>内部都会将<code>porps</code>赋值给组件实例<code>porps</code>属性中</p>
 <p>如果只调用了<code>super()</code>，那么<code>this.props</code>在<code>super()</code>和构造函数结束之间仍是<code>undefined</code></p>
 

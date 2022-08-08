@@ -6,35 +6,21 @@
   <meta name="keywords" content="">
   <meta name="description" content="说说你对双向绑定的理解? | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="一、CSS基础1. CSS选择器及其优先级   选择器 格式 优先级权重    id选择器 #id 100   类选择器 #classname 10   属性选择器 a[ref&#x3D;“eee”] 10   伪类选择器 li:last-child 10   标签选择器 div 1   伪元素选择器 li:after 1   相邻兄弟选择器 h1+p 0   子选择器 ul&gt;li 0   后代选择器">
-<meta property="og:type" content="article">
-<meta property="og:title" content="CSS总结">
-<meta property="og:url" content="https://liuliushaoyang0723.gitee.io/2022/08/07/css.css%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="https://liuliushaoyang0723.gitee.io/abu/categories/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一、CSS基础1. CSS选择器及其优先级   选择器 格式 优先级权重    id选择器 #id 100   类选择器 #classname 10   属性选择器 a[ref&#x3D;“eee”] 10   伪类选择器 li:last-child 10   标签选择器 div 1   伪元素选择器 li:after 1   相邻兄弟选择器 h1+p 0   子选择器 ul&gt;li 0   后代选择器">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4544d45b5a0c47a58c0c33a7d8fbac09~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4040de9fef1a49f4ae0ae66039edcfe0~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5f1da1cbae9b45528cc2b33f74eb32f2~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3d58c5313e884e38b1545a5896613250~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2911f98bbacf4b1cbffbb9e1527a4977~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c57fc165a4ce4d5b9a2885867d4f1cab~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fbc59ae1adb5454c8c7f60582df10ff9~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6523548b65834c578202acc5e6388af4~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4b35e646aa3c4d9cac803753d8b67c39~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d6d4f199b3f842f090890eea32318e11~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d2c7150bd7614a548f04a2919f1ea12a~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cba8731fea9842a8b8103c2b387fe64f~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab996951a0cc42cf9e6d9e12eb827f8b~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/531c6c250dd8446fb0f264e7b3df6fba~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e4beaf4e4a0140ad9e7252f8a6e4e8e6~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/445f50ad19164b0f863ad8dfef2a29b1~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a1ac630463164e42a027b54bb95f56ba~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="article:published_time" content="2022-08-07T11:46:05.638Z">
-<meta property="article:modified_time" content="2022-08-08T03:58:03.168Z">
+<meta property="article:published_time" content="2022-08-04T08:19:38.000Z">
+<meta property="article:modified_time" content="2022-08-04T08:23:32.938Z">
 <meta property="article:author" content="Abu">
+<meta property="article:tag" content="html">
+<meta property="article:tag" content="css">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="Vue">
+<meta property="article:tag" content="React">
+<meta property="article:tag" content="TypeScript">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4544d45b5a0c47a58c0c33a7d8fbac09~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -2055,15 +2041,6 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="如何实现文件上传？说说你的思路">如何实现文件上传？说说你的思路</span>
-            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
-        </a>
-        
-        
-        <a  class="全部文章 Node "
            href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0JWT%E9%89%B4%E6%9D%83%E6%9C%BA%E5%88%B6%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
            data-tag=""
            data-author="" >
@@ -2082,10 +2059,10 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%20Node%20%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7%E4%BB%A5%E5%8F%8A%20Require%20%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%AD%96%E7%95%A5_/"
+           href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?">说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?</span>
+            <span class="post-title" title="如何实现文件上传？说说你的思路">如何实现文件上传？说说你的思路</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2109,19 +2086,19 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Node.js%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%20Node%20%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7%E4%BB%A5%E5%8F%8A%20Require%20%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%AD%96%E7%95%A5_/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说你对Node.js 的理解？优缺点？应用场景？">说说你对Node.js 的理解？优缺点？应用场景？</span>
+            <span class="post-title" title="说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?">说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4Node%E4%B8%AD%E7%9A%84EventEmitter_%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAEventEmitter_/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Node.js%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说Node中的EventEmitter? 如何实现一个EventEmitter?">说说Node中的EventEmitter? 如何实现一个EventEmitter?</span>
+            <span class="post-title" title="说说你对Node.js 的理解？优缺点？应用场景？">说说你对Node.js 的理解？优缺点？应用场景？</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2136,19 +2113,19 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20fs%20%E6%A8%A1%E5%9D%97%E7%9A%84%E7%90%86%E8%A7%A3_%20%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95_/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20Stream%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说对 Node 中的 fs 模块的理解? 有哪些常用方法?">说说对 Node 中的 fs 模块的理解? 有哪些常用方法?</span>
+            <span class="post-title" title="说说对 Node 中的 Stream 的理解？应用场景？">说说对 Node 中的 Stream 的理解？应用场景？</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20Stream%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4Node%E4%B8%AD%E7%9A%84EventEmitter_%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAEventEmitter_/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说对 Node 中的 Stream 的理解？应用场景？">说说对 Node 中的 Stream 的理解？应用场景？</span>
+            <span class="post-title" title="说说Node中的EventEmitter? 如何实现一个EventEmitter?">说说Node中的EventEmitter? 如何实现一个EventEmitter?</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2171,6 +2148,15 @@
         </a>
         
         
+        <a  class="全部文章 Node "
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20fs%20%E6%A8%A1%E5%9D%97%E7%9A%84%E7%90%86%E8%A7%A3_%20%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对 Node 中的 fs 模块的理解? 有哪些常用方法?">说说对 Node 中的 fs 模块的理解? 有哪些常用方法?</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
         <a  class="全部文章 CSS "
            href="/abu/2019/09/11/css.%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8BCSS%E4%B8%AD%E7%9A%84Grid%E7%BD%91%E6%A0%BC%E5%B8%83%E5%B1%80/"
            data-tag=""
@@ -2181,10 +2167,10 @@
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80%EF%BC%8C%E5%8F%B3%E4%BE%A7%E8%87%AA%E9%80%82%E5%BA%94%EF%BC%9F%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80%E4%B8%AD%E9%97%B4%E8%87%AA%E9%80%82%E5%BA%94%E5%91%A2%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%EF%BC%8F%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E7%9C%81%E7%95%A5%E6%A0%B7%E5%BC%8F%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？">如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？</span>
+            <span class="post-title" title="如何实现单行／多行文本溢出的省略样式？">如何实现单行／多行文本溢出的省略样式？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
@@ -2199,19 +2185,19 @@
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E8%AE%A9Chrome%E6%94%AF%E6%8C%81%E5%B0%8F%E4%BA%8E12px%20%E7%9A%84%E6%96%87%E5%AD%97%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80%EF%BC%8C%E5%8F%B3%E4%BE%A7%E8%87%AA%E9%80%82%E5%BA%94%EF%BC%9F%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80%E4%B8%AD%E9%97%B4%E8%87%AA%E9%80%82%E5%BA%94%E5%91%A2%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="让Chrome支持小于12px 的文字方式有哪些？区别？">让Chrome支持小于12px 的文字方式有哪些？区别？</span>
+            <span class="post-title" title="如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？">如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%EF%BC%8F%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E7%9C%81%E7%95%A5%E6%A0%B7%E5%BC%8F%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E8%AE%A9Chrome%E6%94%AF%E6%8C%81%E5%B0%8F%E4%BA%8E12px%20%E7%9A%84%E6%96%87%E5%AD%97%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="如何实现单行／多行文本溢出的省略样式？">如何实现单行／多行文本溢出的省略样式？</span>
+            <span class="post-title" title="让Chrome支持小于12px 的文字方式有哪些？区别？">让Chrome支持小于12px 的文字方式有哪些？区别？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
@@ -2275,7 +2261,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-text">说说你对双向绑定的理解?</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A"><span class="toc-text">一、什么是双向绑定</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">二、双向绑定的原理是什么</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%90%86%E8%A7%A3ViewModel"><span class="toc-text">理解ViewModel</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AE%9E%E7%8E%B0%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A"><span class="toc-text">三、实现双向绑定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0"><span class="toc-text">实现</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BC%96%E8%AF%91Compile"><span class="toc-text">编译Compile</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BE%9D%E8%B5%96%E6%94%B6%E9%9B%86"><span class="toc-text">依赖收集</span></a></li></ol></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-text"> 说说你对双向绑定的理解?</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E4%BB%80%E4%B9%88%E6%98%AF%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A"><span class="toc-text"> 一、什么是双向绑定</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text"> 二、双向绑定的原理是什么</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%90%86%E8%A7%A3viewmodel"><span class="toc-text"> 理解ViewModel</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89-%E5%AE%9E%E7%8E%B0%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A"><span class="toc-text"> 三、实现双向绑定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0"><span class="toc-text"> 实现</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BC%96%E8%AF%91compile"><span class="toc-text"> 编译Compile</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BE%9D%E8%B5%96%E6%94%B6%E9%9B%86"><span class="toc-text"> 依赖收集</span></a></li></ol></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -2291,16 +2277,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="说说你对双向绑定的理解"><a href="#说说你对双向绑定的理解" class="headerlink" title="说说你对双向绑定的理解?"></a>说说你对双向绑定的理解?</h1><p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928220848288" alt="图片"></p>
-<h2 id="一、什么是双向绑定"><a href="#一、什么是双向绑定" class="headerlink" title="一、什么是双向绑定"></a>一、什么是双向绑定</h2><p>我们先从单向绑定切入</p>
+        <h1 id="说说你对双向绑定的理解"><a class="markdownIt-Anchor" href="#说说你对双向绑定的理解"></a> 说说你对双向绑定的理解?</h1>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928220848288" alt="图片" /></p>
+<h2 id="一-什么是双向绑定"><a class="markdownIt-Anchor" href="#一-什么是双向绑定"></a> 一、什么是双向绑定</h2>
+<p>我们先从单向绑定切入</p>
 <p>单向绑定非常简单，就是把<code>Model</code>绑定到<code>View</code>，当我们用<code>JavaScript</code>代码更新<code>Model</code>时，<code>View</code>就会自动更新</p>
 <p>双向绑定就很容易联想到了，在单向绑定的基础上，用户更新了<code>View</code>，<code>Model</code>的数据也自动被更新了，这种情况就是双向绑定</p>
 <p>举个栗子</p>
-<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928220845242" alt="图片"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928220845242" alt="图片" /></p>
 <p>当用户填写表单时，<code>View</code>的状态就被更新了，如果此时可以自动更新<code>Model</code>的状态，那就相当于我们把<code>Model</code>和<code>View</code>做了双向绑定</p>
 <p>关系图如下</p>
-<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt="图片"></p>
-<h2 id="二、双向绑定的原理是什么"><a href="#二、双向绑定的原理是什么" class="headerlink" title="二、双向绑定的原理是什么"></a>二、双向绑定的原理是什么</h2><p>我们都知道 <code>Vue</code> 是数据双向绑定的框架，双向绑定由三个重要部分构成</p>
+<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt="图片" /></p>
+<h2 id="二-双向绑定的原理是什么"><a class="markdownIt-Anchor" href="#二-双向绑定的原理是什么"></a> 二、双向绑定的原理是什么</h2>
+<p>我们都知道 <code>Vue</code> 是数据双向绑定的框架，双向绑定由三个重要部分构成</p>
 <ul>
 <li>数据层（Model）：应用的数据及业务逻辑</li>
 <li>视图层（View）：应用的展示效果，各类UI组件</li>
@@ -2308,7 +2297,8 @@
 </ul>
 <p>而上面的这个分层的架构方案，可以用一个专业术语进行称呼：<code>MVVM</code></p>
 <p>这里的控制层的核心功能便是 “数据双向绑定” 。自然，我们只需弄懂它是什么，便可以进一步了解数据绑定的原理</p>
-<h3 id="理解ViewModel"><a href="#理解ViewModel" class="headerlink" title="理解ViewModel"></a>理解ViewModel</h3><p>它的主要职责就是：</p>
+<h3 id="理解viewmodel"><a class="markdownIt-Anchor" href="#理解viewmodel"></a> 理解ViewModel</h3>
+<p>它的主要职责就是：</p>
 <ul>
 <li>数据变化后更新视图</li>
 <li>视图变化后更新数据</li>
@@ -2318,7 +2308,8 @@
 <li>监听器（Observer）：对所有数据的属性进行监听</li>
 <li>解析器（Compiler）：对每个元素节点的指令进行扫描跟解析,根据指令模板替换数据,以及绑定相应的更新函数</li>
 </ul>
-<h3 id="三、实现双向绑定"><a href="#三、实现双向绑定" class="headerlink" title="三、实现双向绑定"></a>三、实现双向绑定</h3><p>我们还是以<code>Vue</code>为例，先来看看<code>Vue</code>中的双向绑定流程是什么的</p>
+<h3 id="三-实现双向绑定"><a class="markdownIt-Anchor" href="#三-实现双向绑定"></a> 三、实现双向绑定</h3>
+<p>我们还是以<code>Vue</code>为例，先来看看<code>Vue</code>中的双向绑定流程是什么的</p>
 <ol>
 <li><code>new Vue()</code>首先执行初始化，对<code>data</code>执行响应化处理，这个过程发生<code>Observe</code>中</li>
 <li>同时对模板执行编译，找到其中动态绑定的数据，从<code>data</code>中获取并初始化视图，这个过程发生在<code>Compile</code>中</li>
@@ -2327,22 +2318,20 @@
 <li>将来data中数据⼀旦发生变化，会首先找到对应的<code>Dep</code>，通知所有<code>Watcher</code>执行更新函数</li>
 </ol>
 <p>流程图如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928220841261" alt="图片"></p>
-<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><p>先来一个构造函数：执行初始化，对<code>data</code>执行响应化处理</p>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928220841261" alt="图片" /></p>
+<h3 id="实现"><a class="markdownIt-Anchor" href="#实现"></a> 实现</h3>
+<p>先来一个构造函数：执行初始化，对<code>data</code>执行响应化处理</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Vue</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">options</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">$options</span> = options;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">$data</span> = options.<span class="property">data</span>;</span><br><span class="line">      </span><br><span class="line">    <span class="comment">// 对data选项做响应式处理</span></span><br><span class="line">    <span class="title function_">observe</span>(<span class="variable language_">this</span>.<span class="property">$data</span>);</span><br><span class="line">      </span><br><span class="line">    <span class="comment">// 代理data到vm上</span></span><br><span class="line">    <span class="title function_">proxy</span>(<span class="variable language_">this</span>);</span><br><span class="line">      </span><br><span class="line">    <span class="comment">// 执行编译</span></span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">Compile</span>(options.<span class="property">el</span>, <span class="variable language_">this</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>对<code>data</code>选项执行响应化具体操作</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">observe</span>(<span class="params">obj</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="keyword">typeof</span> obj !== <span class="string">&quot;object&quot;</span> || obj == <span class="literal">null</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">new</span> <span class="title class_">Observer</span>(obj);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Observer</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">value</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">value</span> = value;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="title function_">walk</span>(value);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="title function_">walk</span>(<span class="params">obj</span>) &#123;</span><br><span class="line">    <span class="title class_">Object</span>.<span class="title function_">keys</span>(obj).<span class="title function_">forEach</span>(<span class="function">(<span class="params">key</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="title function_">defineReactive</span>(obj, key, obj[key]);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="编译Compile"><a href="#编译Compile" class="headerlink" title="编译Compile"></a>编译<code>Compile</code></h4><p>对每个元素节点的指令进行扫描跟解析,根据指令模板替换数据,以及绑定相应的更新函数</p>
-<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt="图片"></p>
+<h4 id="编译compile"><a class="markdownIt-Anchor" href="#编译compile"></a> 编译<code>Compile</code></h4>
+<p>对每个元素节点的指令进行扫描跟解析,根据指令模板替换数据,以及绑定相应的更新函数</p>
+<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt="图片" /></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Compile</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">el, vm</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">$vm</span> = vm;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">$el</span> = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(el);  <span class="comment">// 获取dom</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="property">$el</span>) &#123;</span><br><span class="line">      <span class="variable language_">this</span>.<span class="title function_">compile</span>(<span class="variable language_">this</span>.<span class="property">$el</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="title function_">compile</span>(<span class="params">el</span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> childNodes = el.<span class="property">childNodes</span>; </span><br><span class="line">    <span class="title class_">Array</span>.<span class="title function_">from</span>(childNodes).<span class="title function_">forEach</span>(<span class="function">(<span class="params">node</span>) =&gt;</span> &#123; <span class="comment">// 遍历子元素</span></span><br><span class="line">      <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="title function_">isElement</span>(node)) &#123;   <span class="comment">// 判断是否为节点</span></span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;编译元素&quot;</span> + node.<span class="property">nodeName</span>);</span><br><span class="line">      &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="title function_">isInterpolation</span>(node)) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;编译插值⽂本&quot;</span> + node.<span class="property">textContent</span>);  <span class="comment">// 判断是否为插值文本 &#123;&#123;&#125;&#125;</span></span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">if</span> (node.<span class="property">childNodes</span> &amp;&amp; node.<span class="property">childNodes</span>.<span class="property">length</span> &gt; <span class="number">0</span>) &#123;  <span class="comment">// 判断是否有子元素</span></span><br><span class="line">        <span class="variable language_">this</span>.<span class="title function_">compile</span>(node);  <span class="comment">// 对子元素进行递归遍历</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="title function_">isElement</span>(<span class="params">node</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> node.<span class="property">nodeType</span> == <span class="number">1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="title function_">isInterpolation</span>(<span class="params">node</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> node.<span class="property">nodeType</span> == <span class="number">3</span> &amp;&amp; <span class="regexp">/\&#123;\&#123;(.*)\&#125;\&#125;/</span>.<span class="title function_">test</span>(node.<span class="property">textContent</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="依赖收集"><a href="#依赖收集" class="headerlink" title="依赖收集"></a>依赖收集</h4><p>视图中会用到<code>data</code>中某<code>key</code>，这称为依赖。同⼀个<code>key</code>可能出现多次，每次都需要收集出来用⼀个<code>Watcher</code>来维护它们，此过程称为依赖收集</p>
+<h4 id="依赖收集"><a class="markdownIt-Anchor" href="#依赖收集"></a> 依赖收集</h4>
+<p>视图中会用到<code>data</code>中某<code>key</code>，这称为依赖。同⼀个<code>key</code>可能出现多次，每次都需要收集出来用⼀个<code>Watcher</code>来维护它们，此过程称为依赖收集</p>
 <p>多个<code>Watcher</code>需要⼀个<code>Dep</code>来管理，需要更新时由<code>Dep</code>统⼀通知</p>
-<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928220828671" alt="图片"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928220828671" alt="图片" /></p>
 <p>实现思路</p>
 <ol>
 <li><code>defineReactive</code>时为每⼀个<code>key</code>创建⼀个<code>Dep</code>实例</li>
@@ -2351,13 +2340,10 @@
 <li>当<code>name1</code>更新，<code>setter</code>触发时，便可通过对应<code>Dep</code>通知其管理所有<code>Watcher</code>更新</li>
 </ol>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 负责更新视图</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Watcher</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">vm, key, updater</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">vm</span> = vm</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">key</span> = key</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">updaterFn</span> = updater</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 创建实例时，把当前实例指定到Dep.target静态属性上</span></span><br><span class="line">    <span class="title class_">Dep</span>.<span class="property">target</span> = <span class="variable language_">this</span></span><br><span class="line">    <span class="comment">// 读一下key，触发get</span></span><br><span class="line">    vm[key]</span><br><span class="line">    <span class="comment">// 置空</span></span><br><span class="line">    <span class="title class_">Dep</span>.<span class="property">target</span> = <span class="literal">null</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 未来执行dom更新函数，由dep调用的</span></span><br><span class="line">  <span class="title function_">update</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">updaterFn</span>.<span class="title function_">call</span>(<span class="variable language_">this</span>.<span class="property">vm</span>, <span class="variable language_">this</span>.<span class="property">vm</span>[<span class="variable language_">this</span>.<span class="property">key</span>])</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>声明<code>Dep</code></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Dep</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">deps</span> = [];  <span class="comment">// 依赖管理</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="title function_">addDep</span>(<span class="params">dep</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">deps</span>.<span class="title function_">push</span>(dep);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="title function_">notify</span>(<span class="params"></span>) &#123; </span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">deps</span>.<span class="title function_">forEach</span>(<span class="function">(<span class="params">dep</span>) =&gt;</span> dep.<span class="title function_">update</span>());</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>创建<code>watcher</code>时触发<code>getter</code></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Watcher</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">vm, key, updateFn</span>) &#123;</span><br><span class="line">    <span class="title class_">Dep</span>.<span class="property">target</span> = <span class="variable language_">this</span>;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">vm</span>[<span class="variable language_">this</span>.<span class="property">key</span>];</span><br><span class="line">    <span class="title class_">Dep</span>.<span class="property">target</span> = <span class="literal">null</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>依赖收集，创建<code>Dep</code>实例</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">defineReactive</span>(<span class="params">obj, key, val</span>) &#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="title function_">observe</span>(val);</span><br><span class="line">  <span class="keyword">const</span> dep = <span class="keyword">new</span> <span class="title class_">Dep</span>();</span><br><span class="line">  <span class="title class_">Object</span>.<span class="title function_">defineProperty</span>(obj, key, &#123;</span><br><span class="line">    <span class="title function_">get</span>(<span class="params"></span>) &#123;</span><br><span class="line">      <span class="title class_">Dep</span>.<span class="property">target</span> &amp;&amp; dep.<span class="title function_">addDep</span>(<span class="title class_">Dep</span>.<span class="property">target</span>);<span class="comment">// Dep.target也就是Watcher实例</span></span><br><span class="line">      <span class="keyword">return</span> val;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="title function_">set</span>(<span class="params">newVal</span>) &#123;</span><br><span class="line">      <span class="keyword">if</span> (newVal === val) <span class="keyword">return</span>;</span><br><span class="line">      dep.<span class="title function_">notify</span>(); <span class="comment">// 通知dep执行更新方法</span></span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       

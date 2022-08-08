@@ -6,35 +6,21 @@
   <meta name="keywords" content="">
   <meta name="description" content="说说 React 生命周期有哪些不同阶段？每个阶段对应的方法是？ | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="一、CSS基础1. CSS选择器及其优先级   选择器 格式 优先级权重    id选择器 #id 100   类选择器 #classname 10   属性选择器 a[ref&#x3D;“eee”] 10   伪类选择器 li:last-child 10   标签选择器 div 1   伪元素选择器 li:after 1   相邻兄弟选择器 h1+p 0   子选择器 ul&gt;li 0   后代选择器">
-<meta property="og:type" content="article">
-<meta property="og:title" content="CSS总结">
-<meta property="og:url" content="https://liuliushaoyang0723.gitee.io/2022/08/07/css.css%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="https://liuliushaoyang0723.gitee.io/abu/categories/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一、CSS基础1. CSS选择器及其优先级   选择器 格式 优先级权重    id选择器 #id 100   类选择器 #classname 10   属性选择器 a[ref&#x3D;“eee”] 10   伪类选择器 li:last-child 10   标签选择器 div 1   伪元素选择器 li:after 1   相邻兄弟选择器 h1+p 0   子选择器 ul&gt;li 0   后代选择器">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4544d45b5a0c47a58c0c33a7d8fbac09~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4040de9fef1a49f4ae0ae66039edcfe0~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5f1da1cbae9b45528cc2b33f74eb32f2~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3d58c5313e884e38b1545a5896613250~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2911f98bbacf4b1cbffbb9e1527a4977~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c57fc165a4ce4d5b9a2885867d4f1cab~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fbc59ae1adb5454c8c7f60582df10ff9~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6523548b65834c578202acc5e6388af4~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4b35e646aa3c4d9cac803753d8b67c39~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d6d4f199b3f842f090890eea32318e11~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d2c7150bd7614a548f04a2919f1ea12a~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cba8731fea9842a8b8103c2b387fe64f~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab996951a0cc42cf9e6d9e12eb827f8b~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/531c6c250dd8446fb0f264e7b3df6fba~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e4beaf4e4a0140ad9e7252f8a6e4e8e6~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/445f50ad19164b0f863ad8dfef2a29b1~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a1ac630463164e42a027b54bb95f56ba~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="article:published_time" content="2022-08-07T11:46:05.638Z">
-<meta property="article:modified_time" content="2022-08-08T03:58:03.168Z">
+<meta property="article:published_time" content="2022-08-04T08:19:38.000Z">
+<meta property="article:modified_time" content="2022-08-04T08:23:32.938Z">
 <meta property="article:author" content="Abu">
+<meta property="article:tag" content="html">
+<meta property="article:tag" content="css">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="Vue">
+<meta property="article:tag" content="React">
+<meta property="article:tag" content="TypeScript">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4544d45b5a0c47a58c0c33a7d8fbac09~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -2055,15 +2041,6 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="如何实现文件上传？说说你的思路">如何实现文件上传？说说你的思路</span>
-            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
-        </a>
-        
-        
-        <a  class="全部文章 Node "
            href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0JWT%E9%89%B4%E6%9D%83%E6%9C%BA%E5%88%B6%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
            data-tag=""
            data-author="" >
@@ -2082,10 +2059,10 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%20Node%20%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7%E4%BB%A5%E5%8F%8A%20Require%20%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%AD%96%E7%95%A5_/"
+           href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?">说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?</span>
+            <span class="post-title" title="如何实现文件上传？说说你的思路">如何实现文件上传？说说你的思路</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2109,19 +2086,19 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Node.js%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%20Node%20%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7%E4%BB%A5%E5%8F%8A%20Require%20%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%AD%96%E7%95%A5_/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说你对Node.js 的理解？优缺点？应用场景？">说说你对Node.js 的理解？优缺点？应用场景？</span>
+            <span class="post-title" title="说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?">说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4Node%E4%B8%AD%E7%9A%84EventEmitter_%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAEventEmitter_/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Node.js%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说Node中的EventEmitter? 如何实现一个EventEmitter?">说说Node中的EventEmitter? 如何实现一个EventEmitter?</span>
+            <span class="post-title" title="说说你对Node.js 的理解？优缺点？应用场景？">说说你对Node.js 的理解？优缺点？应用场景？</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2136,19 +2113,19 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20fs%20%E6%A8%A1%E5%9D%97%E7%9A%84%E7%90%86%E8%A7%A3_%20%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95_/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20Stream%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说对 Node 中的 fs 模块的理解? 有哪些常用方法?">说说对 Node 中的 fs 模块的理解? 有哪些常用方法?</span>
+            <span class="post-title" title="说说对 Node 中的 Stream 的理解？应用场景？">说说对 Node 中的 Stream 的理解？应用场景？</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20Stream%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4Node%E4%B8%AD%E7%9A%84EventEmitter_%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAEventEmitter_/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说对 Node 中的 Stream 的理解？应用场景？">说说对 Node 中的 Stream 的理解？应用场景？</span>
+            <span class="post-title" title="说说Node中的EventEmitter? 如何实现一个EventEmitter?">说说Node中的EventEmitter? 如何实现一个EventEmitter?</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2171,6 +2148,15 @@
         </a>
         
         
+        <a  class="全部文章 Node "
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20fs%20%E6%A8%A1%E5%9D%97%E7%9A%84%E7%90%86%E8%A7%A3_%20%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对 Node 中的 fs 模块的理解? 有哪些常用方法?">说说对 Node 中的 fs 模块的理解? 有哪些常用方法?</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
         <a  class="全部文章 CSS "
            href="/abu/2019/09/11/css.%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8BCSS%E4%B8%AD%E7%9A%84Grid%E7%BD%91%E6%A0%BC%E5%B8%83%E5%B1%80/"
            data-tag=""
@@ -2181,10 +2167,10 @@
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80%EF%BC%8C%E5%8F%B3%E4%BE%A7%E8%87%AA%E9%80%82%E5%BA%94%EF%BC%9F%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80%E4%B8%AD%E9%97%B4%E8%87%AA%E9%80%82%E5%BA%94%E5%91%A2%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%EF%BC%8F%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E7%9C%81%E7%95%A5%E6%A0%B7%E5%BC%8F%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？">如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？</span>
+            <span class="post-title" title="如何实现单行／多行文本溢出的省略样式？">如何实现单行／多行文本溢出的省略样式？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
@@ -2199,19 +2185,19 @@
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E8%AE%A9Chrome%E6%94%AF%E6%8C%81%E5%B0%8F%E4%BA%8E12px%20%E7%9A%84%E6%96%87%E5%AD%97%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80%EF%BC%8C%E5%8F%B3%E4%BE%A7%E8%87%AA%E9%80%82%E5%BA%94%EF%BC%9F%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80%E4%B8%AD%E9%97%B4%E8%87%AA%E9%80%82%E5%BA%94%E5%91%A2%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="让Chrome支持小于12px 的文字方式有哪些？区别？">让Chrome支持小于12px 的文字方式有哪些？区别？</span>
+            <span class="post-title" title="如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？">如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%EF%BC%8F%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E7%9C%81%E7%95%A5%E6%A0%B7%E5%BC%8F%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E8%AE%A9Chrome%E6%94%AF%E6%8C%81%E5%B0%8F%E4%BA%8E12px%20%E7%9A%84%E6%96%87%E5%AD%97%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="如何实现单行／多行文本溢出的省略样式？">如何实现单行／多行文本溢出的省略样式？</span>
+            <span class="post-title" title="让Chrome支持小于12px 的文字方式有哪些？区别？">让Chrome支持小于12px 的文字方式有哪些？区别？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
@@ -2275,7 +2261,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%B4%E8%AF%B4-React-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%9C%89%E5%93%AA%E4%BA%9B%E4%B8%8D%E5%90%8C%E9%98%B6%E6%AE%B5%EF%BC%9F%E6%AF%8F%E4%B8%AA%E9%98%B6%E6%AE%B5%E5%AF%B9%E5%BA%94%E7%9A%84%E6%96%B9%E6%B3%95%E6%98%AF%EF%BC%9F"><span class="toc-text">说说 React 生命周期有哪些不同阶段？每个阶段对应的方法是？</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">一、是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%B5%81%E7%A8%8B"><span class="toc-text">二、流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E9%98%B6%E6%AE%B5"><span class="toc-text">创建阶段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="toc-text">构造函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#getDerivedStateFromProps"><span class="toc-text">getDerivedStateFromProps</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#render"><span class="toc-text">render</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#componentDidMount"><span class="toc-text">componentDidMount</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E9%98%B6%E6%AE%B5"><span class="toc-text">更新阶段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#getDerivedStateFromProps-1"><span class="toc-text">getDerivedStateFromProps</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#shouldComponentUpdate"><span class="toc-text">shouldComponentUpdate</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#render-1"><span class="toc-text">render</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#getSnapshotBeforeUpdate"><span class="toc-text">getSnapshotBeforeUpdate</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#componentDidUpdate"><span class="toc-text">componentDidUpdate</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%B8%E8%BD%BD%E9%98%B6%E6%AE%B5"><span class="toc-text">卸载阶段</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#componentWillUnmount"><span class="toc-text">componentWillUnmount</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%80%BB%E7%BB%93"><span class="toc-text">三、总结</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%B4%E8%AF%B4-react-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%9C%89%E5%93%AA%E4%BA%9B%E4%B8%8D%E5%90%8C%E9%98%B6%E6%AE%B5%E6%AF%8F%E4%B8%AA%E9%98%B6%E6%AE%B5%E5%AF%B9%E5%BA%94%E7%9A%84%E6%96%B9%E6%B3%95%E6%98%AF"><span class="toc-text"> 说说 React 生命周期有哪些不同阶段？每个阶段对应的方法是？</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text"> 一、是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E6%B5%81%E7%A8%8B"><span class="toc-text"> 二、流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E9%98%B6%E6%AE%B5"><span class="toc-text"> 创建阶段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="toc-text"> 构造函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#getderivedstatefromprops"><span class="toc-text"> getDerivedStateFromProps</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#render"><span class="toc-text"> render</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#componentdidmount"><span class="toc-text"> componentDidMount</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E9%98%B6%E6%AE%B5"><span class="toc-text"> 更新阶段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#getderivedstatefromprops-2"><span class="toc-text"> getDerivedStateFromProps</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#shouldcomponentupdate"><span class="toc-text"> shouldComponentUpdate</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#render-2"><span class="toc-text"> render</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#getsnapshotbeforeupdate"><span class="toc-text"> getSnapshotBeforeUpdate</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#componentdidupdate"><span class="toc-text"> componentDidUpdate</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%B8%E8%BD%BD%E9%98%B6%E6%AE%B5"><span class="toc-text"> 卸载阶段</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#componentwillunmount"><span class="toc-text"> componentWillUnmount</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-%E6%80%BB%E7%BB%93"><span class="toc-text"> 三、总结</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -2291,34 +2277,43 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="说说-React-生命周期有哪些不同阶段？每个阶段对应的方法是？"><a href="#说说-React-生命周期有哪些不同阶段？每个阶段对应的方法是？" class="headerlink" title="说说 React 生命周期有哪些不同阶段？每个阶段对应的方法是？"></a>说说 React 生命周期有哪些不同阶段？每个阶段对应的方法是？</h1><p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928182332151" alt="图片"></p>
-<h2 id="一、是什么"><a href="#一、是什么" class="headerlink" title="一、是什么"></a>一、是什么</h2><p>在<a href="https://mp.weixin.qq.com/s?__biz=MzU1OTgxNDQ1Nw==&mid=2247484176&idx=1&sn=5623421ed2678046ed9e438aadf6e26f&chksm=fc10c146cb67485015f24f7e9f5862c4c685fc33485fe30e1b375a534b4031978439c554e0c0&scene=21&cur_album_id=1711105826272116736#wechat_redirect">Vue系列</a>中，我们了解到生命周期定义</p>
+        <h1 id="说说-react-生命周期有哪些不同阶段每个阶段对应的方法是"><a class="markdownIt-Anchor" href="#说说-react-生命周期有哪些不同阶段每个阶段对应的方法是"></a> 说说 React 生命周期有哪些不同阶段？每个阶段对应的方法是？</h1>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928182332151" alt="图片" /></p>
+<h2 id="一-是什么"><a class="markdownIt-Anchor" href="#一-是什么"></a> 一、是什么</h2>
+<p>在<a href="https://mp.weixin.qq.com/s?__biz=MzU1OTgxNDQ1Nw==&amp;mid=2247484176&amp;idx=1&amp;sn=5623421ed2678046ed9e438aadf6e26f&amp;chksm=fc10c146cb67485015f24f7e9f5862c4c685fc33485fe30e1b375a534b4031978439c554e0c0&amp;scene=21&amp;cur_album_id=1711105826272116736#wechat_redirect">Vue系列</a>中，我们了解到生命周期定义</p>
 <p>生命周期<code>（Life Cycle）</code>的概念应用很广泛，特别是在经济、环境、技术、社会等诸多领域经常出现，其基本涵义可以通俗地理解为“从摇篮到坟墓”<code>（Cradle-to-Grave）</code>的整个过程</p>
 <p>跟<code>Vue</code>一样，<code>React</code>整个组件生命周期包括从创建、初始化数据、编译模板、挂载Dom→渲染、更新→渲染、卸载等一系列过程</p>
-<h2 id="二、流程"><a href="#二、流程" class="headerlink" title="二、流程"></a>二、流程</h2><p>这里主要讲述<code>react16.4</code>之后的生命周期，可以分成三个阶段：</p>
+<h2 id="二-流程"><a class="markdownIt-Anchor" href="#二-流程"></a> 二、流程</h2>
+<p>这里主要讲述<code>react16.4</code>之后的生命周期，可以分成三个阶段：</p>
 <ul>
 <li>创建阶段</li>
 <li>更新阶段</li>
 <li>卸载阶段</li>
 </ul>
-<h3 id="创建阶段"><a href="#创建阶段" class="headerlink" title="创建阶段"></a>创建阶段</h3><p>创建阶段主要分成了以下几个生命周期方法：</p>
+<h3 id="创建阶段"><a class="markdownIt-Anchor" href="#创建阶段"></a> 创建阶段</h3>
+<p>创建阶段主要分成了以下几个生命周期方法：</p>
 <ul>
 <li>构造函数（不要问我为什么用中文，因为英文会被吞掉，太难了）</li>
 <li>getDerivedStateFromProps</li>
 <li>render</li>
 <li>componentDidMount</li>
 </ul>
-<h3 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h3><p>实例过程中自动调用的方法，在方法内部通过<code>super</code>关键字获取来自父组件的<code>props</code></p>
+<h3 id="构造函数"><a class="markdownIt-Anchor" href="#构造函数"></a> 构造函数</h3>
+<p>实例过程中自动调用的方法，在方法内部通过<code>super</code>关键字获取来自父组件的<code>props</code></p>
 <p>在该方法中，通常的操作为初始化<code>state</code>状态或者在<code>this</code>上挂载方法</p>
-<h3 id="getDerivedStateFromProps"><a href="#getDerivedStateFromProps" class="headerlink" title="getDerivedStateFromProps"></a>getDerivedStateFromProps</h3><p>该方法是新增的生命周期方法，是一个静态的方法，因此不能访问到组件的实例</p>
+<h3 id="getderivedstatefromprops"><a class="markdownIt-Anchor" href="#getderivedstatefromprops"></a> getDerivedStateFromProps</h3>
+<p>该方法是新增的生命周期方法，是一个静态的方法，因此不能访问到组件的实例</p>
 <p>执行时机：组件创建和更新阶段，不论是<code>props</code>变化还是<code>state</code>变化，也会调用</p>
 <p>在每次<code>render</code>方法前调用，第一个参数为即将更新的<code>props</code>，第二个参数为上一个状态的<code>state</code>，可以比较<code>props</code> 和 <code>state</code>来加一些限制条件，防止无用的state更新</p>
 <p>该方法需要返回一个新的对象作为新的<code>state</code>或者返回<code>null</code>表示<code>state</code>状态不需要更新</p>
-<h3 id="render"><a href="#render" class="headerlink" title="render"></a>render</h3><p>类组件必须实现的方法，用于渲染<code>DOM</code>结构，可以访问组件<code>state</code>与<code>prop</code>属性</p>
+<h3 id="render"><a class="markdownIt-Anchor" href="#render"></a> render</h3>
+<p>类组件必须实现的方法，用于渲染<code>DOM</code>结构，可以访问组件<code>state</code>与<code>prop</code>属性</p>
 <p>注意：不要在 <code>render</code> 里面 <code>setState</code>, 否则会触发死循环导致内存崩溃</p>
-<h3 id="componentDidMount"><a href="#componentDidMount" class="headerlink" title="componentDidMount"></a>componentDidMount</h3><p>组件挂载到真实<code>DOM</code>节点后执行，其在<code>render</code>方法之后执行</p>
+<h3 id="componentdidmount"><a class="markdownIt-Anchor" href="#componentdidmount"></a> componentDidMount</h3>
+<p>组件挂载到真实<code>DOM</code>节点后执行，其在<code>render</code>方法之后执行</p>
 <p>此方法多用于执行一些数据获取，事件监听等操作</p>
-<h3 id="更新阶段"><a href="#更新阶段" class="headerlink" title="更新阶段"></a>更新阶段</h3><p>该阶段的函数主要为如下方法：</p>
+<h3 id="更新阶段"><a class="markdownIt-Anchor" href="#更新阶段"></a> 更新阶段</h3>
+<p>该阶段的函数主要为如下方法：</p>
 <ul>
 <li>getDerivedStateFromProps</li>
 <li>shouldComponentUpdate</li>
@@ -2326,25 +2321,32 @@
 <li>getSnapshotBeforeUpdate</li>
 <li>componentDidUpdate</li>
 </ul>
-<h3 id="getDerivedStateFromProps-1"><a href="#getDerivedStateFromProps-1" class="headerlink" title="getDerivedStateFromProps"></a>getDerivedStateFromProps</h3><p>该方法介绍同上</p>
-<h2 id="shouldComponentUpdate"><a href="#shouldComponentUpdate" class="headerlink" title="shouldComponentUpdate"></a>shouldComponentUpdate</h2><p>用于告知组件本身基于当前的<code>props</code>和<code>state</code>是否需要重新渲染组件，默认情况返回<code>true</code></p>
+<h3 id="getderivedstatefromprops-2"><a class="markdownIt-Anchor" href="#getderivedstatefromprops-2"></a> getDerivedStateFromProps</h3>
+<p>该方法介绍同上</p>
+<h2 id="shouldcomponentupdate"><a class="markdownIt-Anchor" href="#shouldcomponentupdate"></a> shouldComponentUpdate</h2>
+<p>用于告知组件本身基于当前的<code>props</code>和<code>state</code>是否需要重新渲染组件，默认情况返回<code>true</code></p>
 <p>执行时机：到新的props或者state时都会调用，通过返回true或者false告知组件更新与否</p>
 <p>一般情况，不建议在该周期方法中进行深层比较，会影响效率</p>
 <p>同时也不能调用<code>setState</code>，否则会导致无限循环调用更新</p>
-<h3 id="render-1"><a href="#render-1" class="headerlink" title="render"></a>render</h3><p>介绍如上</p>
-<h3 id="getSnapshotBeforeUpdate"><a href="#getSnapshotBeforeUpdate" class="headerlink" title="getSnapshotBeforeUpdate"></a>getSnapshotBeforeUpdate</h3><p>该周期函数在<code>render</code>后执行，执行之时<code>DOM</code>元素还没有被更新</p>
+<h3 id="render-2"><a class="markdownIt-Anchor" href="#render-2"></a> render</h3>
+<p>介绍如上</p>
+<h3 id="getsnapshotbeforeupdate"><a class="markdownIt-Anchor" href="#getsnapshotbeforeupdate"></a> getSnapshotBeforeUpdate</h3>
+<p>该周期函数在<code>render</code>后执行，执行之时<code>DOM</code>元素还没有被更新</p>
 <p>该方法返回的一个<code>Snapshot</code>值，作为<code>componentDidUpdate</code>第三个参数传入</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">getSnapshotBeforeUpdate</span>(<span class="params">prevProps, prevState</span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;#enter getSnapshotBeforeUpdate&#x27;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;foo&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">componentDidUpdate</span>(<span class="params">prevProps, prevState, snapshot</span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;#enter componentDidUpdate snapshot = &#x27;</span>, snapshot);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>此方法的目的在于获取组件更新前的一些信息，比如组件的滚动位置之类的，在组件更新后可以根据这些信息恢复一些UI视觉上的状态</p>
-<h3 id="componentDidUpdate"><a href="#componentDidUpdate" class="headerlink" title="componentDidUpdate"></a>componentDidUpdate</h3><p>执行时机：组件更新结束后触发</p>
+<h3 id="componentdidupdate"><a class="markdownIt-Anchor" href="#componentdidupdate"></a> componentDidUpdate</h3>
+<p>执行时机：组件更新结束后触发</p>
 <p>在该方法中，可以根据前后的<code>props</code>和<code>state</code>的变化做相应的操作，如获取数据，修改<code>DOM</code>样式等</p>
-<h3 id="卸载阶段"><a href="#卸载阶段" class="headerlink" title="卸载阶段"></a>卸载阶段</h3><h2 id="componentWillUnmount"><a href="#componentWillUnmount" class="headerlink" title="componentWillUnmount"></a>componentWillUnmount</h2><p>此方法用于组件卸载前，清理一些注册监听事件，或者取消订阅的网络请求等</p>
+<h3 id="卸载阶段"><a class="markdownIt-Anchor" href="#卸载阶段"></a> 卸载阶段</h3>
+<h2 id="componentwillunmount"><a class="markdownIt-Anchor" href="#componentwillunmount"></a> componentWillUnmount</h2>
+<p>此方法用于组件卸载前，清理一些注册监听事件，或者取消订阅的网络请求等</p>
 <p>一旦一个组件实例被卸载，其不会被再次挂载，而只可能是被重新创建</p>
-<h2 id="三、总结"><a href="#三、总结" class="headerlink" title="三、总结"></a>三、总结</h2><p>新版生命周期整体流程如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928182338680" alt="图片"></p>
+<h2 id="三-总结"><a class="markdownIt-Anchor" href="#三-总结"></a> 三、总结</h2>
+<p>新版生命周期整体流程如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928182338680" alt="图片" /></p>
 <p>旧的生命周期流程图如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928182345142" alt="图片"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928182345142" alt="图片" /></p>
 <p>通过两个图的对比，可以发现新版的生命周期减少了以下三种方法：</p>
 <ul>
 <li>componentWillMount</li>

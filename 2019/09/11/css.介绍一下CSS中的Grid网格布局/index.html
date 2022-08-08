@@ -6,35 +6,21 @@
   <meta name="keywords" content="">
   <meta name="description" content="介绍一下CSS中的Grid网格布局 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="一、CSS基础1. CSS选择器及其优先级   选择器 格式 优先级权重    id选择器 #id 100   类选择器 #classname 10   属性选择器 a[ref&#x3D;“eee”] 10   伪类选择器 li:last-child 10   标签选择器 div 1   伪元素选择器 li:after 1   相邻兄弟选择器 h1+p 0   子选择器 ul&gt;li 0   后代选择器">
-<meta property="og:type" content="article">
-<meta property="og:title" content="CSS总结">
-<meta property="og:url" content="https://liuliushaoyang0723.gitee.io/2022/08/07/css.css%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="https://liuliushaoyang0723.gitee.io/abu/categories/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一、CSS基础1. CSS选择器及其优先级   选择器 格式 优先级权重    id选择器 #id 100   类选择器 #classname 10   属性选择器 a[ref&#x3D;“eee”] 10   伪类选择器 li:last-child 10   标签选择器 div 1   伪元素选择器 li:after 1   相邻兄弟选择器 h1+p 0   子选择器 ul&gt;li 0   后代选择器">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4544d45b5a0c47a58c0c33a7d8fbac09~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4040de9fef1a49f4ae0ae66039edcfe0~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5f1da1cbae9b45528cc2b33f74eb32f2~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3d58c5313e884e38b1545a5896613250~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2911f98bbacf4b1cbffbb9e1527a4977~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c57fc165a4ce4d5b9a2885867d4f1cab~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fbc59ae1adb5454c8c7f60582df10ff9~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6523548b65834c578202acc5e6388af4~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4b35e646aa3c4d9cac803753d8b67c39~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d6d4f199b3f842f090890eea32318e11~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d2c7150bd7614a548f04a2919f1ea12a~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cba8731fea9842a8b8103c2b387fe64f~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab996951a0cc42cf9e6d9e12eb827f8b~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/531c6c250dd8446fb0f264e7b3df6fba~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e4beaf4e4a0140ad9e7252f8a6e4e8e6~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/445f50ad19164b0f863ad8dfef2a29b1~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a1ac630463164e42a027b54bb95f56ba~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="article:published_time" content="2022-08-07T11:46:05.638Z">
-<meta property="article:modified_time" content="2022-08-08T03:58:03.168Z">
+<meta property="article:published_time" content="2022-08-04T08:19:38.000Z">
+<meta property="article:modified_time" content="2022-08-04T08:23:32.938Z">
 <meta property="article:author" content="Abu">
+<meta property="article:tag" content="html">
+<meta property="article:tag" content="css">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="Vue">
+<meta property="article:tag" content="React">
+<meta property="article:tag" content="TypeScript">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4544d45b5a0c47a58c0c33a7d8fbac09~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -2055,15 +2041,6 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="如何实现文件上传？说说你的思路">如何实现文件上传？说说你的思路</span>
-            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
-        </a>
-        
-        
-        <a  class="全部文章 Node "
            href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0JWT%E9%89%B4%E6%9D%83%E6%9C%BA%E5%88%B6%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
            data-tag=""
            data-author="" >
@@ -2082,10 +2059,10 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%20Node%20%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7%E4%BB%A5%E5%8F%8A%20Require%20%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%AD%96%E7%95%A5_/"
+           href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?">说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?</span>
+            <span class="post-title" title="如何实现文件上传？说说你的思路">如何实现文件上传？说说你的思路</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2109,19 +2086,19 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Node.js%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%20Node%20%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7%E4%BB%A5%E5%8F%8A%20Require%20%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%AD%96%E7%95%A5_/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说你对Node.js 的理解？优缺点？应用场景？">说说你对Node.js 的理解？优缺点？应用场景？</span>
+            <span class="post-title" title="说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?">说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4Node%E4%B8%AD%E7%9A%84EventEmitter_%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAEventEmitter_/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Node.js%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说Node中的EventEmitter? 如何实现一个EventEmitter?">说说Node中的EventEmitter? 如何实现一个EventEmitter?</span>
+            <span class="post-title" title="说说你对Node.js 的理解？优缺点？应用场景？">说说你对Node.js 的理解？优缺点？应用场景？</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2136,19 +2113,19 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20fs%20%E6%A8%A1%E5%9D%97%E7%9A%84%E7%90%86%E8%A7%A3_%20%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95_/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20Stream%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说对 Node 中的 fs 模块的理解? 有哪些常用方法?">说说对 Node 中的 fs 模块的理解? 有哪些常用方法?</span>
+            <span class="post-title" title="说说对 Node 中的 Stream 的理解？应用场景？">说说对 Node 中的 Stream 的理解？应用场景？</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20Stream%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4Node%E4%B8%AD%E7%9A%84EventEmitter_%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAEventEmitter_/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说对 Node 中的 Stream 的理解？应用场景？">说说对 Node 中的 Stream 的理解？应用场景？</span>
+            <span class="post-title" title="说说Node中的EventEmitter? 如何实现一个EventEmitter?">说说Node中的EventEmitter? 如何实现一个EventEmitter?</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2171,6 +2148,15 @@
         </a>
         
         
+        <a  class="全部文章 Node "
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20fs%20%E6%A8%A1%E5%9D%97%E7%9A%84%E7%90%86%E8%A7%A3_%20%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对 Node 中的 fs 模块的理解? 有哪些常用方法?">说说对 Node 中的 fs 模块的理解? 有哪些常用方法?</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
         <a  class="全部文章 CSS "
            href="/abu/2019/09/11/css.%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8BCSS%E4%B8%AD%E7%9A%84Grid%E7%BD%91%E6%A0%BC%E5%B8%83%E5%B1%80/"
            data-tag=""
@@ -2181,10 +2167,10 @@
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80%EF%BC%8C%E5%8F%B3%E4%BE%A7%E8%87%AA%E9%80%82%E5%BA%94%EF%BC%9F%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80%E4%B8%AD%E9%97%B4%E8%87%AA%E9%80%82%E5%BA%94%E5%91%A2%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%EF%BC%8F%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E7%9C%81%E7%95%A5%E6%A0%B7%E5%BC%8F%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？">如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？</span>
+            <span class="post-title" title="如何实现单行／多行文本溢出的省略样式？">如何实现单行／多行文本溢出的省略样式？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
@@ -2199,19 +2185,19 @@
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E8%AE%A9Chrome%E6%94%AF%E6%8C%81%E5%B0%8F%E4%BA%8E12px%20%E7%9A%84%E6%96%87%E5%AD%97%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80%EF%BC%8C%E5%8F%B3%E4%BE%A7%E8%87%AA%E9%80%82%E5%BA%94%EF%BC%9F%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80%E4%B8%AD%E9%97%B4%E8%87%AA%E9%80%82%E5%BA%94%E5%91%A2%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="让Chrome支持小于12px 的文字方式有哪些？区别？">让Chrome支持小于12px 的文字方式有哪些？区别？</span>
+            <span class="post-title" title="如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？">如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%EF%BC%8F%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E7%9C%81%E7%95%A5%E6%A0%B7%E5%BC%8F%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E8%AE%A9Chrome%E6%94%AF%E6%8C%81%E5%B0%8F%E4%BA%8E12px%20%E7%9A%84%E6%96%87%E5%AD%97%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="如何实现单行／多行文本溢出的省略样式？">如何实现单行／多行文本溢出的省略样式？</span>
+            <span class="post-title" title="让Chrome支持小于12px 的文字方式有哪些？区别？">让Chrome支持小于12px 的文字方式有哪些？区别？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
@@ -2275,7 +2261,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8BCSS%E4%B8%AD%E7%9A%84Grid%E7%BD%91%E6%A0%BC%E5%B8%83%E5%B1%80"><span class="toc-text">介绍一下CSS中的Grid网格布局?</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">一、是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%B1%9E%E6%80%A7"><span class="toc-text">二、属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#display-%E5%B1%9E%E6%80%A7"><span class="toc-text">display 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grid-template-columns-%E5%B1%9E%E6%80%A7%EF%BC%8Cgrid-template-rows-%E5%B1%9E%E6%80%A7"><span class="toc-text">grid-template-columns 属性，grid-template-rows 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grid-row-gap-%E5%B1%9E%E6%80%A7%EF%BC%8C-grid-column-gap-%E5%B1%9E%E6%80%A7%EF%BC%8C-grid-gap-%E5%B1%9E%E6%80%A7"><span class="toc-text">grid-row-gap 属性， grid-column-gap 属性， grid-gap 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grid-template-areas-%E5%B1%9E%E6%80%A7"><span class="toc-text">grid-template-areas 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grid-auto-flow-%E5%B1%9E%E6%80%A7"><span class="toc-text">grid-auto-flow 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#justify-items-%E5%B1%9E%E6%80%A7%EF%BC%8C-align-items-%E5%B1%9E%E6%80%A7%EF%BC%8C-place-items-%E5%B1%9E%E6%80%A7"><span class="toc-text">justify-items 属性， align-items 属性， place-items 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#justify-content-%E5%B1%9E%E6%80%A7%EF%BC%8C-align-content-%E5%B1%9E%E6%80%A7%EF%BC%8C-place-content-%E5%B1%9E%E6%80%A7"><span class="toc-text">justify-content 属性， align-content 属性， place-content 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grid-auto-columns-%E5%B1%9E%E6%80%A7%E5%92%8C-grid-auto-rows-%E5%B1%9E%E6%80%A7"><span class="toc-text">grid-auto-columns 属性和 grid-auto-rows 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grid-column-start-%E5%B1%9E%E6%80%A7%E3%80%81grid-column-end-%E5%B1%9E%E6%80%A7%E3%80%81grid-row-start-%E5%B1%9E%E6%80%A7%E4%BB%A5%E5%8F%8Agrid-row-end-%E5%B1%9E%E6%80%A7"><span class="toc-text">grid-column-start 属性、grid-column-end 属性、grid-row-start 属性以及grid-row-end 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grid-area-%E5%B1%9E%E6%80%A7"><span class="toc-text">grid-area 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#justify-self-%E5%B1%9E%E6%80%A7%E3%80%81align-self-%E5%B1%9E%E6%80%A7%E4%BB%A5%E5%8F%8A-place-self-%E5%B1%9E%E6%80%A7"><span class="toc-text">justify-self 属性、align-self 属性以及 place-self 属性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-text">三、应用场景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="toc-text">参考文献</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8Bcss%E4%B8%AD%E7%9A%84grid%E7%BD%91%E6%A0%BC%E5%B8%83%E5%B1%80"><span class="toc-text"> 介绍一下CSS中的Grid网格布局?</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text"> 一、是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E5%B1%9E%E6%80%A7"><span class="toc-text"> 二、属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#display-%E5%B1%9E%E6%80%A7"><span class="toc-text"> display 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grid-template-columns-%E5%B1%9E%E6%80%A7grid-template-rows-%E5%B1%9E%E6%80%A7"><span class="toc-text"> grid-template-columns 属性，grid-template-rows 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grid-row-gap-%E5%B1%9E%E6%80%A7-grid-column-gap-%E5%B1%9E%E6%80%A7-grid-gap-%E5%B1%9E%E6%80%A7"><span class="toc-text"> grid-row-gap 属性， grid-column-gap 属性， grid-gap 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grid-template-areas-%E5%B1%9E%E6%80%A7"><span class="toc-text"> grid-template-areas 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grid-auto-flow-%E5%B1%9E%E6%80%A7"><span class="toc-text"> grid-auto-flow 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#justify-items-%E5%B1%9E%E6%80%A7-align-items-%E5%B1%9E%E6%80%A7-place-items-%E5%B1%9E%E6%80%A7"><span class="toc-text"> justify-items 属性， align-items 属性， place-items 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#justify-content-%E5%B1%9E%E6%80%A7-align-content-%E5%B1%9E%E6%80%A7-place-content-%E5%B1%9E%E6%80%A7"><span class="toc-text"> justify-content 属性， align-content 属性， place-content 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grid-auto-columns-%E5%B1%9E%E6%80%A7%E5%92%8C-grid-auto-rows-%E5%B1%9E%E6%80%A7"><span class="toc-text"> grid-auto-columns 属性和 grid-auto-rows 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grid-column-start-%E5%B1%9E%E6%80%A7-grid-column-end-%E5%B1%9E%E6%80%A7-grid-row-start-%E5%B1%9E%E6%80%A7%E4%BB%A5%E5%8F%8Agrid-row-end-%E5%B1%9E%E6%80%A7"><span class="toc-text"> grid-column-start 属性、grid-column-end 属性、grid-row-start 属性以及grid-row-end 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grid-area-%E5%B1%9E%E6%80%A7"><span class="toc-text"> grid-area 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#justify-self-%E5%B1%9E%E6%80%A7-align-self-%E5%B1%9E%E6%80%A7%E4%BB%A5%E5%8F%8A-place-self-%E5%B1%9E%E6%80%A7"><span class="toc-text"> justify-self 属性、align-self 属性以及 place-self 属性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-text"> 三、应用场景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="toc-text"> 参考文献</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -2291,33 +2277,36 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="介绍一下CSS中的Grid网格布局"><a href="#介绍一下CSS中的Grid网格布局" class="headerlink" title="介绍一下CSS中的Grid网格布局?"></a>介绍一下CSS中的Grid网格布局?</h1><p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928112309273" alt="图片"></p>
-<h2 id="一、是什么"><a href="#一、是什么" class="headerlink" title="一、是什么"></a>一、是什么</h2><p><code>Grid</code> 布局即网格布局，是一个二维的布局方式，由纵横相交的两组网格线形成的框架性布局结构，能够同时处理行与列</p>
+        <h1 id="介绍一下css中的grid网格布局"><a class="markdownIt-Anchor" href="#介绍一下css中的grid网格布局"></a> 介绍一下CSS中的Grid网格布局?</h1>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928112309273" alt="图片" /></p>
+<h2 id="一-是什么"><a class="markdownIt-Anchor" href="#一-是什么"></a> 一、是什么</h2>
+<p><code>Grid</code> 布局即网格布局，是一个二维的布局方式，由纵横相交的两组网格线形成的框架性布局结构，能够同时处理行与列</p>
 <p>擅长将一个页面划分为几个主要区域，以及定义这些区域的大小、位置、层次等关系</p>
-<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928112312563" alt="图片"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928112312563" alt="图片" /></p>
 <p>这与之前讲到的<code>flex</code>一维布局不相同</p>
 <p>设置<code>display:grid/inline-grid</code>的元素就是网格布局容器，这样就能出发浏览器渲染引擎的网格布局算法</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;container&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;item item-1&quot;&gt;</span><br><span class="line">        &lt;p class=&quot;sub-item&quot;&gt;&lt;/p&gt;</span><br><span class="line"> &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;item item-2&quot;&gt;&lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;item item-3&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt; </span><br></pre></td></tr></table></figure>
-
 <p>上述代码实例中，<code>.container</code>元素就是网格布局容器，<code>.item</code>元素就是网格的项目，由于网格元素只能是容器的顶层子元素，所以<code>p</code>元素并不是网格元素</p>
 <p>这里提一下，网格线概念，有助于下面对<code>grid-column</code>系列属性的理解</p>
 <p>网格线，即划分网格的线，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928112317689" alt="图片"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928112317689" alt="图片" /></p>
 <p>上图是一个 2 x 3 的网格，共有3根水平网格线和4根垂直网格线</p>
-<h2 id="二、属性"><a href="#二、属性" class="headerlink" title="二、属性"></a>二、属性</h2><p>同样，<code>Grid</code> 布局属性可以分为两大类：</p>
+<h2 id="二-属性"><a class="markdownIt-Anchor" href="#二-属性"></a> 二、属性</h2>
+<p>同样，<code>Grid</code> 布局属性可以分为两大类：</p>
 <ul>
 <li>容器属性，</li>
 <li>项目属性</li>
 </ul>
 <p>关于容器属性有如下：</p>
-<h3 id="display-属性"><a href="#display-属性" class="headerlink" title="display 属性"></a>display 属性</h3><p>文章开头讲到，在元素上设置<code>display：grid</code> 或 <code>display：inline-grid</code> 来创建一个网格容器</p>
+<h3 id="display-属性"><a class="markdownIt-Anchor" href="#display-属性"></a> display 属性</h3>
+<p>文章开头讲到，在元素上设置<code>display：grid</code> 或 <code>display：inline-grid</code> 来创建一个网格容器</p>
 <ul>
 <li>display：grid 则该容器是一个块级元素</li>
 <li>display: inline-grid 则容器元素为行内元素</li>
 </ul>
-<h3 id="grid-template-columns-属性，grid-template-rows-属性"><a href="#grid-template-columns-属性，grid-template-rows-属性" class="headerlink" title="grid-template-columns 属性，grid-template-rows 属性"></a>grid-template-columns 属性，grid-template-rows 属性</h3><p><code>grid-template-columns</code> 属性设置列宽，<code>grid-template-rows</code> 属性设置行高</p>
+<h3 id="grid-template-columns-属性grid-template-rows-属性"><a class="markdownIt-Anchor" href="#grid-template-columns-属性grid-template-rows-属性"></a> grid-template-columns 属性，grid-template-rows 属性</h3>
+<p><code>grid-template-columns</code> 属性设置列宽，<code>grid-template-rows</code> 属性设置行高</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.wrapper</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  <span class="comment">/*  声明了三列，宽度分别为 200px 200px 200px */</span></span><br><span class="line">  <span class="attribute">grid-template-columns</span>: <span class="number">200px</span> <span class="number">200px</span> <span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">grid-gap</span>: <span class="number">5px</span>;</span><br><span class="line">  <span class="comment">/*  声明了两行，行高分别为 50px 50px  */</span></span><br><span class="line">  <span class="attribute">grid-template-rows</span>: <span class="number">50px</span> <span class="number">50px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>以上表示固定列宽为 200px 200px 200px，行高为 50px 50px</p>
 <p>上述代码可以看到重复写单元格宽高，通过使用<code>repeat()</code>函数，可以简写重复的值</p>
 <ul>
@@ -2326,7 +2315,6 @@
 </ul>
 <p>所以上述代码可以简写成</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.wrapper</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  <span class="attribute">grid-template-columns</span>: <span class="built_in">repeat</span>(<span class="number">3</span>,<span class="number">200px</span>);</span><br><span class="line">  <span class="attribute">grid-gap</span>: <span class="number">5px</span>;</span><br><span class="line">  <span class="attribute">grid-template-rows</span>:<span class="built_in">repeat</span>(<span class="number">2</span>,<span class="number">50px</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>除了上述的<code>repeact</code>关键字，还有：</p>
 <ul>
 <li>auto-fill：示自动填充，让一行（或者一列）中尽可能的容纳更多的单元格</li>
@@ -2345,7 +2333,6 @@
 </ul>
 <blockquote>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;minmax(<span class="number">100px</span>, <span class="number">1</span>fr)`表示列宽不小于`<span class="number">100px</span>`，不大于`<span class="number">1</span>fr</span><br></pre></td></tr></table></figure>
-
 </blockquote>
 <ul>
 <li>auto：由浏览器自己决定长度</li>
@@ -2353,28 +2340,29 @@
 <blockquote>
 <p><code>grid-template-columns: 100px auto 100px</code> 表示第一第三列为 100px，中间由浏览器决定长度</p>
 </blockquote>
-<h3 id="grid-row-gap-属性，-grid-column-gap-属性，-grid-gap-属性"><a href="#grid-row-gap-属性，-grid-column-gap-属性，-grid-gap-属性" class="headerlink" title="grid-row-gap 属性， grid-column-gap 属性， grid-gap 属性"></a>grid-row-gap 属性， grid-column-gap 属性， grid-gap 属性</h3><p><code>grid-row-gap</code> 属性、<code>grid-column-gap</code> 属性分别设置行间距和列间距。<code>grid-gap</code> 属性是两者的简写形式</p>
+<h3 id="grid-row-gap-属性-grid-column-gap-属性-grid-gap-属性"><a class="markdownIt-Anchor" href="#grid-row-gap-属性-grid-column-gap-属性-grid-gap-属性"></a> grid-row-gap 属性， grid-column-gap 属性， grid-gap 属性</h3>
+<p><code>grid-row-gap</code> 属性、<code>grid-column-gap</code> 属性分别设置行间距和列间距。<code>grid-gap</code> 属性是两者的简写形式</p>
 <p><code>grid-row-gap: 10px</code> 表示行间距是 10px</p>
 <p><code>grid-column-gap: 20px</code> 表示列间距是 20px</p>
 <p><code>grid-gap: 10px 20px</code> 等同上述两个属性</p>
-<h3 id="grid-template-areas-属性"><a href="#grid-template-areas-属性" class="headerlink" title="grid-template-areas 属性"></a>grid-template-areas 属性</h3><p>用于定义区域，一个区域由一个或者多个单元格组成</p>
+<h3 id="grid-template-areas-属性"><a class="markdownIt-Anchor" href="#grid-template-areas-属性"></a> grid-template-areas 属性</h3>
+<p>用于定义区域，一个区域由一个或者多个单元格组成</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  <span class="attribute">grid-template-columns</span>: <span class="number">100px</span> <span class="number">100px</span> <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">grid-template-rows</span>: <span class="number">100px</span> <span class="number">100px</span> <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">grid-template-areas</span>: <span class="string">&#x27;a b c&#x27;</span></span><br><span class="line">                       <span class="string">&#x27;d e f&#x27;</span></span><br><span class="line">                       <span class="string">&#x27;g h i&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>上面代码先划分出9个单元格，然后将其定名为<code>a</code>到<code>i</code>的九个区域，分别对应这九个单元格。</p>
 <p>多个单元格合并成一个区域的写法如下</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">grid-template-areas</span>: <span class="string">&#x27;a a a&#x27;</span></span><br><span class="line">                     <span class="string">&#x27;b b b&#x27;</span></span><br><span class="line">                     <span class="string">&#x27;c c c&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
 <p>上面代码将9个单元格分成<code>a</code>、<code>b</code>、<code>c</code>三个区域</p>
-<p>如果某些区域不需要利用，则使用”点”（<code>.</code>）表示</p>
-<h3 id="grid-auto-flow-属性"><a href="#grid-auto-flow-属性" class="headerlink" title="grid-auto-flow 属性"></a>grid-auto-flow 属性</h3><p>划分网格以后，容器的子元素会按照顺序，自动放置在每一个网格。</p>
-<p>顺序就是由<code>grid-auto-flow</code>决定，默认为行，代表”先行后列”，即先填满第一行，再开始放入第二行</p>
-<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928112332322" alt="图片"></p>
+<p>如果某些区域不需要利用，则使用&quot;点&quot;（<code>.</code>）表示</p>
+<h3 id="grid-auto-flow-属性"><a class="markdownIt-Anchor" href="#grid-auto-flow-属性"></a> grid-auto-flow 属性</h3>
+<p>划分网格以后，容器的子元素会按照顺序，自动放置在每一个网格。</p>
+<p>顺序就是由<code>grid-auto-flow</code>决定，默认为行，代表&quot;先行后列&quot;，即先填满第一行，再开始放入第二行</p>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928112332322" alt="图片" /></p>
 <p>当修改成<code>column</code>后，放置变为如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928112337431" alt="图片"></p>
-<h3 id="justify-items-属性，-align-items-属性，-place-items-属性"><a href="#justify-items-属性，-align-items-属性，-place-items-属性" class="headerlink" title="justify-items 属性， align-items 属性， place-items 属性"></a>justify-items 属性， align-items 属性， place-items 属性</h3><p><code>justify-items</code> 属性设置单元格内容的水平位置（左中右），<code>align-items</code> 属性设置单元格的垂直位置（上中下）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928112337431" alt="图片" /></p>
+<h3 id="justify-items-属性-align-items-属性-place-items-属性"><a class="markdownIt-Anchor" href="#justify-items-属性-align-items-属性-place-items-属性"></a> justify-items 属性， align-items 属性， place-items 属性</h3>
+<p><code>justify-items</code> 属性设置单元格内容的水平位置（左中右），<code>align-items</code> 属性设置单元格的垂直位置（上中下）</p>
 <p>两者属性的值完成相同</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  justify-items: start | end | center | stretch;</span><br><span class="line">  <span class="attribute">align-items</span>: start | end | center | stretch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>属性对应如下：</p>
 <ul>
 <li>start：对齐单元格的起始边缘</li>
@@ -2383,28 +2371,30 @@
 <li>stretch：拉伸，占满单元格的整个宽度（默认值）</li>
 </ul>
 <p><code>place-items</code>属性是<code>align-items</code>属性和<code>justify-items</code>属性的合并简写形式</p>
-<h3 id="justify-content-属性，-align-content-属性，-place-content-属性"><a href="#justify-content-属性，-align-content-属性，-place-content-属性" class="headerlink" title="justify-content 属性， align-content 属性， place-content 属性"></a>justify-content 属性， align-content 属性， place-content 属性</h3><p><code>justify-content</code>属性是整个内容区域在容器里面的水平位置（左中右），<code>align-content</code>属性是整个内容区域的垂直位置（上中下）</p>
+<h3 id="justify-content-属性-align-content-属性-place-content-属性"><a class="markdownIt-Anchor" href="#justify-content-属性-align-content-属性-place-content-属性"></a> justify-content 属性， align-content 属性， place-content 属性</h3>
+<p><code>justify-content</code>属性是整个内容区域在容器里面的水平位置（左中右），<code>align-content</code>属性是整个内容区域的垂直位置（上中下）</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">justify-content</span>: start | end | center | stretch | space-around | space-between | space-evenly;</span><br><span class="line">  <span class="attribute">align-content</span>: start | end | center | stretch | space-around | space-between | space-evenly;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>两个属性的写法完全相同，都可以取下面这些值：</p>
 <ul>
 <li>start - 对齐容器的起始边框</li>
 <li>end - 对齐容器的结束边框</li>
 <li>center - 容器内部居中</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928112345728" alt="图片"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928112345728" alt="图片" /></p>
 <ul>
 <li>space-around - 每个项目两侧的间隔相等。所以，项目之间的间隔比项目与容器边框的间隔大一倍</li>
 <li>space-between - 项目与项目的间隔相等，项目与容器边框之间没有间隔</li>
 <li>space-evenly - 项目与项目的间隔相等，项目与容器边框之间也是同样长度的间隔</li>
 <li>stretch - 项目大小没有指定时，拉伸占据整个网格容器</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928112350895" alt="图片"></p>
-<h3 id="grid-auto-columns-属性和-grid-auto-rows-属性"><a href="#grid-auto-columns-属性和-grid-auto-rows-属性" class="headerlink" title="grid-auto-columns 属性和 grid-auto-rows 属性"></a>grid-auto-columns 属性和 grid-auto-rows 属性</h3><p>有时候，一些项目的指定位置，在现有网格的外部，就会产生显示网格和隐式网格</p>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928112350895" alt="图片" /></p>
+<h3 id="grid-auto-columns-属性和-grid-auto-rows-属性"><a class="markdownIt-Anchor" href="#grid-auto-columns-属性和-grid-auto-rows-属性"></a> grid-auto-columns 属性和 grid-auto-rows 属性</h3>
+<p>有时候，一些项目的指定位置，在现有网格的外部，就会产生显示网格和隐式网格</p>
 <p>比如网格只有3列，但是某一个项目指定在第5行。这时，浏览器会自动生成多余的网格，以便放置项目。超出的部分就是隐式网格</p>
 <p>而<code>grid-auto-rows</code>与<code>grid-auto-columns</code>就是专门用于指定隐式网格的宽高</p>
 <p>关于项目属性，有如下：</p>
-<h3 id="grid-column-start-属性、grid-column-end-属性、grid-row-start-属性以及grid-row-end-属性"><a href="#grid-column-start-属性、grid-column-end-属性、grid-row-start-属性以及grid-row-end-属性" class="headerlink" title="grid-column-start 属性、grid-column-end 属性、grid-row-start 属性以及grid-row-end 属性"></a>grid-column-start 属性、grid-column-end 属性、grid-row-start 属性以及grid-row-end 属性</h3><p>指定网格项目所在的四个边框，分别定位在哪根网格线，从而指定项目的位置</p>
+<h3 id="grid-column-start-属性-grid-column-end-属性-grid-row-start-属性以及grid-row-end-属性"><a class="markdownIt-Anchor" href="#grid-column-start-属性-grid-column-end-属性-grid-row-start-属性以及grid-row-end-属性"></a> grid-column-start 属性、grid-column-end 属性、grid-row-start 属性以及grid-row-end 属性</h3>
+<p>指定网格项目所在的四个边框，分别定位在哪根网格线，从而指定项目的位置</p>
 <ul>
 <li>grid-column-start 属性：左边框所在的垂直网格线</li>
 <li>grid-column-end 属性：右边框所在的垂直网格线</li>
@@ -2413,18 +2403,17 @@
 </ul>
 <p>举个例子：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">    <span class="selector-id">#container</span>&#123;</span><br><span class="line">        <span class="attribute">display</span>: grid;</span><br><span class="line">        <span class="attribute">grid-template-columns</span>: <span class="number">100px</span> <span class="number">100px</span> <span class="number">100px</span>;</span><br><span class="line">        <span class="attribute">grid-template-rows</span>: <span class="number">100px</span> <span class="number">100px</span> <span class="number">100px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.item-1</span> &#123;</span><br><span class="line">        <span class="attribute">grid-column-start</span>: <span class="number">2</span>;</span><br><span class="line">        <span class="attribute">grid-column-end</span>: <span class="number">4</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;<span class="selector-tag">div</span> id=&quot;container&quot;&gt;</span><br><span class="line">    &lt;<span class="selector-tag">div</span> class=&quot;item item-<span class="number">1</span>&quot;&gt;<span class="number">1</span>&lt;/<span class="selector-tag">div</span>&gt;</span><br><span class="line">    &lt;<span class="selector-tag">div</span> class=&quot;item item-<span class="number">2</span>&quot;&gt;<span class="number">2</span>&lt;/<span class="selector-tag">div</span>&gt;</span><br><span class="line">    &lt;<span class="selector-tag">div</span> class=&quot;item item-<span class="number">3</span>&quot;&gt;<span class="number">3</span>&lt;/<span class="selector-tag">div</span>&gt;</span><br><span class="line">&lt;/<span class="selector-tag">div</span>&gt;</span><br></pre></td></tr></table></figure>
-
 <p>通过设置<code>grid-column</code>属性，指定1号项目的左边框是第二根垂直网格线，右边框是第四根垂直网格线</p>
-<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928112357461" alt="图片"></p>
-<h3 id="grid-area-属性"><a href="#grid-area-属性" class="headerlink" title="grid-area 属性"></a>grid-area 属性</h3><p><code>grid-area</code> 属性指定项目放在哪一个区域</p>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928112357461" alt="图片" /></p>
+<h3 id="grid-area-属性"><a class="markdownIt-Anchor" href="#grid-area-属性"></a> grid-area 属性</h3>
+<p><code>grid-area</code> 属性指定项目放在哪一个区域</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item-1</span> &#123;</span><br><span class="line">  <span class="attribute">grid-area</span>: e;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>意思为将1号项目位于<code>e</code>区域</p>
 <p>与上述讲到的<code>grid-template-areas</code>搭配使用</p>
-<h3 id="justify-self-属性、align-self-属性以及-place-self-属性"><a href="#justify-self-属性、align-self-属性以及-place-self-属性" class="headerlink" title="justify-self 属性、align-self 属性以及 place-self 属性"></a>justify-self 属性、align-self 属性以及 place-self 属性</h3><p><code>justify-self</code>属性设置单元格内容的水平位置（左中右），跟<code>justify-items</code>属性的用法完全一致，但只作用于单个项目。</p>
+<h3 id="justify-self-属性-align-self-属性以及-place-self-属性"><a class="markdownIt-Anchor" href="#justify-self-属性-align-self-属性以及-place-self-属性"></a> justify-self 属性、align-self 属性以及 place-self 属性</h3>
+<p><code>justify-self</code>属性设置单元格内容的水平位置（左中右），跟<code>justify-items</code>属性的用法完全一致，但只作用于单个项目。</p>
 <p><code>align-self</code>属性设置单元格内容的垂直位置（上中下），跟<code>align-items</code>属性的用法完全一致，也是只作用于单个项目</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  justify-self: start | end | center | stretch;</span><br><span class="line">  <span class="attribute">align-self</span>: start | end | center | stretch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>这两个属性都可以取下面四个值。</p>
 <ul>
 <li>start：对齐单元格的起始边缘。</li>
@@ -2432,12 +2421,14 @@
 <li>center：单元格内部居中。</li>
 <li>stretch：拉伸，占满单元格的整个宽度（默认值）</li>
 </ul>
-<h2 id="三、应用场景"><a href="#三、应用场景" class="headerlink" title="三、应用场景"></a>三、应用场景</h2><p>文章开头就讲到，<code>Grid</code>是一个强大的布局，如一些常见的 CSS 布局，如居中，两列布局，三列布局等等是很容易实现的，在以前的文章中，也有使用<code>Grid</code>布局完成对应的功能</p>
+<h2 id="三-应用场景"><a class="markdownIt-Anchor" href="#三-应用场景"></a> 三、应用场景</h2>
+<p>文章开头就讲到，<code>Grid</code>是一个强大的布局，如一些常见的 CSS 布局，如居中，两列布局，三列布局等等是很容易实现的，在以前的文章中，也有使用<code>Grid</code>布局完成对应的功能</p>
 <p>关于兼容性问题，结果如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928112402181" alt="图片"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928112402181" alt="图片" /></p>
 <p>总体兼容性还不错，但在 IE 10 以下不支持</p>
 <p>目前，<code>Grid</code>布局在手机端支持还不算太友好</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<h2 id="参考文献"><a class="markdownIt-Anchor" href="#参考文献"></a> 参考文献</h2>
+<ul>
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Grid_Layout">https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Grid_Layout</a></li>
 <li><a href="https://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html">https://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html</a></li>
 </ul>

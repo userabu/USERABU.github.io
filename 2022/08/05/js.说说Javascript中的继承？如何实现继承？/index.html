@@ -6,35 +6,21 @@
   <meta name="keywords" content="">
   <meta name="description" content="说说Javascript中的继承？如何实现继承？ | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="一、CSS基础1. CSS选择器及其优先级   选择器 格式 优先级权重    id选择器 #id 100   类选择器 #classname 10   属性选择器 a[ref&#x3D;“eee”] 10   伪类选择器 li:last-child 10   标签选择器 div 1   伪元素选择器 li:after 1   相邻兄弟选择器 h1+p 0   子选择器 ul&gt;li 0   后代选择器">
-<meta property="og:type" content="article">
-<meta property="og:title" content="CSS总结">
-<meta property="og:url" content="https://liuliushaoyang0723.gitee.io/2022/08/07/css.css%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="https://liuliushaoyang0723.gitee.io/abu/categories/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一、CSS基础1. CSS选择器及其优先级   选择器 格式 优先级权重    id选择器 #id 100   类选择器 #classname 10   属性选择器 a[ref&#x3D;“eee”] 10   伪类选择器 li:last-child 10   标签选择器 div 1   伪元素选择器 li:after 1   相邻兄弟选择器 h1+p 0   子选择器 ul&gt;li 0   后代选择器">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4544d45b5a0c47a58c0c33a7d8fbac09~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4040de9fef1a49f4ae0ae66039edcfe0~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5f1da1cbae9b45528cc2b33f74eb32f2~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3d58c5313e884e38b1545a5896613250~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2911f98bbacf4b1cbffbb9e1527a4977~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c57fc165a4ce4d5b9a2885867d4f1cab~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fbc59ae1adb5454c8c7f60582df10ff9~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6523548b65834c578202acc5e6388af4~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4b35e646aa3c4d9cac803753d8b67c39~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d6d4f199b3f842f090890eea32318e11~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d2c7150bd7614a548f04a2919f1ea12a~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cba8731fea9842a8b8103c2b387fe64f~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab996951a0cc42cf9e6d9e12eb827f8b~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/531c6c250dd8446fb0f264e7b3df6fba~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e4beaf4e4a0140ad9e7252f8a6e4e8e6~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/445f50ad19164b0f863ad8dfef2a29b1~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a1ac630463164e42a027b54bb95f56ba~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="article:published_time" content="2022-08-07T11:46:05.638Z">
-<meta property="article:modified_time" content="2022-08-08T03:58:03.168Z">
+<meta property="article:published_time" content="2022-08-04T08:19:38.000Z">
+<meta property="article:modified_time" content="2022-08-04T08:23:32.938Z">
 <meta property="article:author" content="Abu">
+<meta property="article:tag" content="html">
+<meta property="article:tag" content="css">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="Vue">
+<meta property="article:tag" content="React">
+<meta property="article:tag" content="TypeScript">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4544d45b5a0c47a58c0c33a7d8fbac09~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -2055,15 +2041,6 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="如何实现文件上传？说说你的思路">如何实现文件上传？说说你的思路</span>
-            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
-        </a>
-        
-        
-        <a  class="全部文章 Node "
            href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0JWT%E9%89%B4%E6%9D%83%E6%9C%BA%E5%88%B6%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
            data-tag=""
            data-author="" >
@@ -2082,10 +2059,10 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%20Node%20%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7%E4%BB%A5%E5%8F%8A%20Require%20%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%AD%96%E7%95%A5_/"
+           href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?">说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?</span>
+            <span class="post-title" title="如何实现文件上传？说说你的思路">如何实现文件上传？说说你的思路</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2109,19 +2086,19 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Node.js%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%20Node%20%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7%E4%BB%A5%E5%8F%8A%20Require%20%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%AD%96%E7%95%A5_/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说你对Node.js 的理解？优缺点？应用场景？">说说你对Node.js 的理解？优缺点？应用场景？</span>
+            <span class="post-title" title="说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?">说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4Node%E4%B8%AD%E7%9A%84EventEmitter_%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAEventEmitter_/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Node.js%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说Node中的EventEmitter? 如何实现一个EventEmitter?">说说Node中的EventEmitter? 如何实现一个EventEmitter?</span>
+            <span class="post-title" title="说说你对Node.js 的理解？优缺点？应用场景？">说说你对Node.js 的理解？优缺点？应用场景？</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2136,19 +2113,19 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20fs%20%E6%A8%A1%E5%9D%97%E7%9A%84%E7%90%86%E8%A7%A3_%20%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95_/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20Stream%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说对 Node 中的 fs 模块的理解? 有哪些常用方法?">说说对 Node 中的 fs 模块的理解? 有哪些常用方法?</span>
+            <span class="post-title" title="说说对 Node 中的 Stream 的理解？应用场景？">说说对 Node 中的 Stream 的理解？应用场景？</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20Stream%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4Node%E4%B8%AD%E7%9A%84EventEmitter_%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAEventEmitter_/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说对 Node 中的 Stream 的理解？应用场景？">说说对 Node 中的 Stream 的理解？应用场景？</span>
+            <span class="post-title" title="说说Node中的EventEmitter? 如何实现一个EventEmitter?">说说Node中的EventEmitter? 如何实现一个EventEmitter?</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2171,6 +2148,15 @@
         </a>
         
         
+        <a  class="全部文章 Node "
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20fs%20%E6%A8%A1%E5%9D%97%E7%9A%84%E7%90%86%E8%A7%A3_%20%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对 Node 中的 fs 模块的理解? 有哪些常用方法?">说说对 Node 中的 fs 模块的理解? 有哪些常用方法?</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
         <a  class="全部文章 CSS "
            href="/abu/2019/09/11/css.%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8BCSS%E4%B8%AD%E7%9A%84Grid%E7%BD%91%E6%A0%BC%E5%B8%83%E5%B1%80/"
            data-tag=""
@@ -2181,10 +2167,10 @@
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80%EF%BC%8C%E5%8F%B3%E4%BE%A7%E8%87%AA%E9%80%82%E5%BA%94%EF%BC%9F%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80%E4%B8%AD%E9%97%B4%E8%87%AA%E9%80%82%E5%BA%94%E5%91%A2%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%EF%BC%8F%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E7%9C%81%E7%95%A5%E6%A0%B7%E5%BC%8F%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？">如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？</span>
+            <span class="post-title" title="如何实现单行／多行文本溢出的省略样式？">如何实现单行／多行文本溢出的省略样式？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
@@ -2199,19 +2185,19 @@
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E8%AE%A9Chrome%E6%94%AF%E6%8C%81%E5%B0%8F%E4%BA%8E12px%20%E7%9A%84%E6%96%87%E5%AD%97%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80%EF%BC%8C%E5%8F%B3%E4%BE%A7%E8%87%AA%E9%80%82%E5%BA%94%EF%BC%9F%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80%E4%B8%AD%E9%97%B4%E8%87%AA%E9%80%82%E5%BA%94%E5%91%A2%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="让Chrome支持小于12px 的文字方式有哪些？区别？">让Chrome支持小于12px 的文字方式有哪些？区别？</span>
+            <span class="post-title" title="如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？">如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%EF%BC%8F%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E7%9C%81%E7%95%A5%E6%A0%B7%E5%BC%8F%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E8%AE%A9Chrome%E6%94%AF%E6%8C%81%E5%B0%8F%E4%BA%8E12px%20%E7%9A%84%E6%96%87%E5%AD%97%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="如何实现单行／多行文本溢出的省略样式？">如何实现单行／多行文本溢出的省略样式？</span>
+            <span class="post-title" title="让Chrome支持小于12px 的文字方式有哪些？区别？">让Chrome支持小于12px 的文字方式有哪些？区别？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
@@ -2275,7 +2261,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%B4%E8%AF%B4Javascript%E4%B8%AD%E7%9A%84%E7%BB%A7%E6%89%BF%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%BB%A7%E6%89%BF%EF%BC%9F"><span class="toc-text">说说Javascript中的继承？如何实现继承？</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">一、是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F"><span class="toc-text">二、实现方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E5%9E%8B%E9%93%BE%E7%BB%A7%E6%89%BF"><span class="toc-text">原型链继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E7%BB%A7%E6%89%BF"><span class="toc-text">构造函数继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%84%E5%90%88%E7%BB%A7%E6%89%BF"><span class="toc-text">组合继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E5%9E%8B%E5%BC%8F%E7%BB%A7%E6%89%BF"><span class="toc-text">原型式继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%84%E7%94%9F%E5%BC%8F%E7%BB%A7%E6%89%BF"><span class="toc-text">寄生式继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%84%E7%94%9F%E7%BB%84%E5%90%88%E5%BC%8F%E7%BB%A7%E6%89%BF"><span class="toc-text">寄生组合式继承</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%80%BB%E7%BB%93"><span class="toc-text">三、总结</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%B4%E8%AF%B4javascript%E4%B8%AD%E7%9A%84%E7%BB%A7%E6%89%BF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%BB%A7%E6%89%BF"><span class="toc-text"> 说说Javascript中的继承？如何实现继承？</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text"> 一、是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F"><span class="toc-text"> 二、实现方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E5%9E%8B%E9%93%BE%E7%BB%A7%E6%89%BF"><span class="toc-text"> 原型链继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E7%BB%A7%E6%89%BF"><span class="toc-text"> 构造函数继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%84%E5%90%88%E7%BB%A7%E6%89%BF"><span class="toc-text"> 组合继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E5%9E%8B%E5%BC%8F%E7%BB%A7%E6%89%BF"><span class="toc-text"> 原型式继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%84%E7%94%9F%E5%BC%8F%E7%BB%A7%E6%89%BF"><span class="toc-text"> 寄生式继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%84%E7%94%9F%E7%BB%84%E5%90%88%E5%BC%8F%E7%BB%A7%E6%89%BF"><span class="toc-text"> 寄生组合式继承</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-%E6%80%BB%E7%BB%93"><span class="toc-text"> 三、总结</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -2291,8 +2277,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="说说Javascript中的继承？如何实现继承？"><a href="#说说Javascript中的继承？如何实现继承？" class="headerlink" title="说说Javascript中的继承？如何实现继承？"></a>说说Javascript中的继承？如何实现继承？</h1><p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928091957659" alt="图片"></p>
-<h2 id="一、是什么"><a href="#一、是什么" class="headerlink" title="一、是什么"></a>一、是什么</h2><p>继承（inheritance）是面向对象软件技术当中的一个概念</p>
+        <h1 id="说说javascript中的继承如何实现继承"><a class="markdownIt-Anchor" href="#说说javascript中的继承如何实现继承"></a> 说说Javascript中的继承？如何实现继承？</h1>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928091957659" alt="图片" /></p>
+<h2 id="一-是什么"><a class="markdownIt-Anchor" href="#一-是什么"></a> 一、是什么</h2>
+<p>继承（inheritance）是面向对象软件技术当中的一个概念</p>
 <p>如果一个类别B“继承自”另一个类别A，就把这个B称为“A的子类”，而把A称为“B的父类别”也可以称“A是B的超类”</p>
 <ul>
 <li>继承的优点</li>
@@ -2303,16 +2291,14 @@
 <p>关于继承，我们举个形象的例子：</p>
 <p>定义一个类（Class）叫汽车，汽车的属性包括颜色、轮胎、品牌、速度、排气量等</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Car</span>&#123;</span><br><span class="line">    <span class="title function_">constructor</span>(<span class="params">color,speed</span>)&#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">color</span> = color</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">speed</span> = speed</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>由汽车这个类可以派生出“轿车”和“货车”两个类，在汽车的基础属性上，为轿车添加一个后备厢、给货车添加一个大货箱</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 货车</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Truck</span> <span class="keyword">extends</span> <span class="title class_ inherited__">Car</span>&#123;</span><br><span class="line">    <span class="title function_">constructor</span>(<span class="params">color,speed</span>)&#123;</span><br><span class="line">        <span class="variable language_">super</span>(color,speed)</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">Container</span> = <span class="literal">true</span> <span class="comment">// 货箱</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>这样轿车和货车就是不一样的，但是二者都属于汽车这个类，汽车、轿车继承了汽车的属性，而不需要再次在“轿车”中定义汽车已经有的属性</p>
 <p>在“轿车”继承“汽车”的同时，也可以重新定义汽车的某些属性，并重写或覆盖某些属性和方法，使其获得与“汽车”这个父类不同的属性和方法</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Truck</span> <span class="keyword">extends</span> <span class="title class_ inherited__">Car</span>&#123;</span><br><span class="line">    <span class="title function_">constructor</span>(<span class="params">color,speed</span>)&#123;</span><br><span class="line">        <span class="variable language_">super</span>(color,speed)</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">color</span> = <span class="string">&quot;black&quot;</span> <span class="comment">//覆盖</span></span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">Container</span> = <span class="literal">true</span> <span class="comment">// 货箱</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>从这个例子中就能详细说明汽车、轿车以及卡车之间的继承关系</p>
-<h2 id="二、实现方式"><a href="#二、实现方式" class="headerlink" title="二、实现方式"></a>二、实现方式</h2><p>下面给出<code>JavaScripy</code>常见的继承方式：</p>
+<h2 id="二-实现方式"><a class="markdownIt-Anchor" href="#二-实现方式"></a> 二、实现方式</h2>
+<p>下面给出<code>JavaScripy</code>常见的继承方式：</p>
 <ul>
 <li>原型链继承</li>
 <li>构造函数继承（借助 call）</li>
@@ -2321,42 +2307,41 @@
 <li>寄生式继承</li>
 <li>寄生组合式继承</li>
 </ul>
-<h3 id="原型链继承"><a href="#原型链继承" class="headerlink" title="原型链继承"></a>原型链继承</h3><p>原型链继承是比较常见的继承方式之一，其中涉及的构造函数、原型和实例，三者之间存在着一定的关系，即每一个构造函数都有一个原型对象，原型对象又包含一个指向构造函数的指针，而实例则包含一个原型对象的指针</p>
+<h3 id="原型链继承"><a class="markdownIt-Anchor" href="#原型链继承"></a> 原型链继承</h3>
+<p>原型链继承是比较常见的继承方式之一，其中涉及的构造函数、原型和实例，三者之间存在着一定的关系，即每一个构造函数都有一个原型对象，原型对象又包含一个指向构造函数的指针，而实例则包含一个原型对象的指针</p>
 <p>举个例子</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Parent</span>(<span class="params"></span>) &#123;</span><br><span class="line">   <span class="variable language_">this</span>.<span class="property">name</span> = <span class="string">&#x27;parent1&#x27;</span>;</span><br><span class="line">   <span class="variable language_">this</span>.<span class="property">play</span> = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"> &#125;</span><br><span class="line"> <span class="keyword">function</span> <span class="title function_">Child</span>(<span class="params"></span>) &#123;</span><br><span class="line">   <span class="variable language_">this</span>.<span class="property">type</span> = <span class="string">&#x27;child2&#x27;</span>;</span><br><span class="line"> &#125;</span><br><span class="line"> <span class="title class_">Child</span>.<span class="property"><span class="keyword">prototype</span></span> = <span class="keyword">new</span> <span class="title class_">Parent</span>();</span><br><span class="line"> <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">new</span> <span class="title class_">Child</span>())</span><br></pre></td></tr></table></figure>
-
 <p>上面代码看似没问题，实际存在潜在问题</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> s1 = <span class="keyword">new</span> <span class="title class_">Child</span>();</span><br><span class="line"><span class="keyword">var</span> s2 = <span class="keyword">new</span> <span class="title class_">Child</span>();</span><br><span class="line">s1.<span class="property">play</span>.<span class="title function_">push</span>(<span class="number">4</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(s1.<span class="property">play</span>, s2.<span class="property">play</span>); <span class="comment">// [1,2,3,4]</span></span><br></pre></td></tr></table></figure>
-
 <p>改变<code>s1</code>的<code>play</code>属性，会发现<code>s2</code>也跟着发生变化了，这是因为两个实例使用的是同一个原型对象，内存空间是共享的</p>
-<h3 id="构造函数继承"><a href="#构造函数继承" class="headerlink" title="构造函数继承"></a>构造函数继承</h3><p>借助 <code>call</code>调用<code>Parent</code>函数</p>
+<h3 id="构造函数继承"><a class="markdownIt-Anchor" href="#构造函数继承"></a> 构造函数继承</h3>
+<p>借助 <code>call</code>调用<code>Parent</code>函数</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Parent</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span> = <span class="string">&#x27;parent1&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Parent</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">getName</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">name</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Child</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="title class_">Parent1</span>.<span class="title function_">call</span>(<span class="variable language_">this</span>);</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">type</span> = <span class="string">&#x27;child&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> child = <span class="keyword">new</span> <span class="title class_">Child</span>();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(child);  <span class="comment">// 没问题</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(child.<span class="title function_">getName</span>());  <span class="comment">// 会报错</span></span><br></pre></td></tr></table></figure>
-
 <p>可以看到，父类原型对象中一旦存在父类之前自己定义的方法，那么子类将无法继承这些方法</p>
 <p>相比第一种原型链继承方式，父类的引用属性不会被共享，优化了第一种继承方式的弊端，但是只能继承父类的实例属性和方法，不能继承原型属性或者方法</p>
-<h3 id="组合继承"><a href="#组合继承" class="headerlink" title="组合继承"></a>组合继承</h3><p>前面我们讲到两种继承方式，各有优缺点。组合继承则将前两种方式继承起来</p>
+<h3 id="组合继承"><a class="markdownIt-Anchor" href="#组合继承"></a> 组合继承</h3>
+<p>前面我们讲到两种继承方式，各有优缺点。组合继承则将前两种方式继承起来</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Parent3</span> () &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span> = <span class="string">&#x27;parent3&#x27;</span>;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">play</span> = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Parent3</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">getName</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">name</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Child3</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 第二次调用 Parent3()</span></span><br><span class="line">    <span class="title class_">Parent3</span>.<span class="title function_">call</span>(<span class="variable language_">this</span>);</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">type</span> = <span class="string">&#x27;child3&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 第一次调用 Parent3()</span></span><br><span class="line"><span class="title class_">Child3</span>.<span class="property"><span class="keyword">prototype</span></span> = <span class="keyword">new</span> <span class="title class_">Parent3</span>();</span><br><span class="line"><span class="comment">// 手动挂上构造器，指向自己的构造函数</span></span><br><span class="line"><span class="title class_">Child3</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">constructor</span> = <span class="title class_">Child3</span>;</span><br><span class="line"><span class="keyword">var</span> s3 = <span class="keyword">new</span> <span class="title class_">Child3</span>();</span><br><span class="line"><span class="keyword">var</span> s4 = <span class="keyword">new</span> <span class="title class_">Child3</span>();</span><br><span class="line">s3.<span class="property">play</span>.<span class="title function_">push</span>(<span class="number">4</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(s3.<span class="property">play</span>, s4.<span class="property">play</span>);  <span class="comment">// 不互相影响</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(s3.<span class="title function_">getName</span>()); <span class="comment">// 正常输出&#x27;parent3&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(s4.<span class="title function_">getName</span>()); <span class="comment">// 正常输出&#x27;parent3&#x27;</span></span><br></pre></td></tr></table></figure>
-
 <p>这种方式看起来就没什么问题，方式一和方式二的问题都解决了，但是从上面代码我们也可以看到<code>Parent3</code> 执行了两次，造成了多构造一次的性能开销</p>
-<h3 id="原型式继承"><a href="#原型式继承" class="headerlink" title="原型式继承"></a>原型式继承</h3><p>这里主要借助<code>Object.create</code>方法实现普通对象的继承</p>
+<h3 id="原型式继承"><a class="markdownIt-Anchor" href="#原型式继承"></a> 原型式继承</h3>
+<p>这里主要借助<code>Object.create</code>方法实现普通对象的继承</p>
 <p>同样举个例子</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> parent4 = &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;parent4&quot;</span>,</span><br><span class="line">    <span class="attr">friends</span>: [<span class="string">&quot;p1&quot;</span>, <span class="string">&quot;p2&quot;</span>, <span class="string">&quot;p3&quot;</span>],</span><br><span class="line">    <span class="attr">getName</span>: <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">name</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">let</span> person4 = <span class="title class_">Object</span>.<span class="title function_">create</span>(parent4);</span><br><span class="line">  person4.<span class="property">name</span> = <span class="string">&quot;tom&quot;</span>;</span><br><span class="line">  person4.<span class="property">friends</span>.<span class="title function_">push</span>(<span class="string">&quot;jerry&quot;</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">let</span> person5 = <span class="title class_">Object</span>.<span class="title function_">create</span>(parent4);</span><br><span class="line">  person5.<span class="property">friends</span>.<span class="title function_">push</span>(<span class="string">&quot;lucy&quot;</span>);</span><br><span class="line"></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(person4.<span class="property">name</span>); <span class="comment">// tom</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(person4.<span class="property">name</span> === person4.<span class="title function_">getName</span>()); <span class="comment">// true</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(person5.<span class="property">name</span>); <span class="comment">// parent4</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(person4.<span class="property">friends</span>); <span class="comment">// [&quot;p1&quot;, &quot;p2&quot;, &quot;p3&quot;,&quot;jerry&quot;,&quot;lucy&quot;]</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(person5.<span class="property">friends</span>); <span class="comment">// [&quot;p1&quot;, &quot;p2&quot;, &quot;p3&quot;,&quot;jerry&quot;,&quot;lucy&quot;]</span></span><br></pre></td></tr></table></figure>
-
 <p>这种继承方式的缺点也很明显，因为<code>Object.create</code>方法实现的是浅拷贝，多个实例的引用类型属性指向相同的内存，存在篡改的可能</p>
-<h3 id="寄生式继承"><a href="#寄生式继承" class="headerlink" title="寄生式继承"></a>寄生式继承</h3><p>寄生式继承在上面继承基础上进行优化，利用这个浅拷贝的能力再进行增强，添加一些方法</p>
+<h3 id="寄生式继承"><a class="markdownIt-Anchor" href="#寄生式继承"></a> 寄生式继承</h3>
+<p>寄生式继承在上面继承基础上进行优化，利用这个浅拷贝的能力再进行增强，添加一些方法</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> parent5 = &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;parent5&quot;</span>,</span><br><span class="line">    <span class="attr">friends</span>: [<span class="string">&quot;p1&quot;</span>, <span class="string">&quot;p2&quot;</span>, <span class="string">&quot;p3&quot;</span>],</span><br><span class="line">    <span class="attr">getName</span>: <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">name</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">clone</span>(<span class="params">original</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> clone = <span class="title class_">Object</span>.<span class="title function_">create</span>(original);</span><br><span class="line">    clone.<span class="property">getFriends</span> = <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">friends</span>;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">return</span> clone;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> person5 = <span class="title function_">clone</span>(parent5);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person5.<span class="title function_">getName</span>()); <span class="comment">// parent5</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person5.<span class="title function_">getFriends</span>()); <span class="comment">// [&quot;p1&quot;, &quot;p2&quot;, &quot;p3&quot;]</span></span><br></pre></td></tr></table></figure>
-
 <p>其优缺点也很明显，跟上面讲的原型式继承一样</p>
-<h3 id="寄生组合式继承"><a href="#寄生组合式继承" class="headerlink" title="寄生组合式继承"></a>寄生组合式继承</h3><p>寄生组合式继承，借助解决普通对象的继承问题的<code>Object.create</code> 方法，在几种继承方式的优缺点基础上进行改造，这也是所有继承方式里面相对最优的继承方式</p>
+<h3 id="寄生组合式继承"><a class="markdownIt-Anchor" href="#寄生组合式继承"></a> 寄生组合式继承</h3>
+<p>寄生组合式继承，借助解决普通对象的继承问题的<code>Object.create</code> 方法，在几种继承方式的优缺点基础上进行改造，这也是所有继承方式里面相对最优的继承方式</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">clone</span> (parent, child) &#123;</span><br><span class="line">    <span class="comment">// 这里改用 Object.create 就可以减少组合继承中多进行一次构造的过程</span></span><br><span class="line">    child.<span class="property"><span class="keyword">prototype</span></span> = <span class="title class_">Object</span>.<span class="title function_">create</span>(parent.<span class="property"><span class="keyword">prototype</span></span>);</span><br><span class="line">    child.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">constructor</span> = child;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Parent6</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span> = <span class="string">&#x27;parent6&#x27;</span>;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">play</span> = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="title class_">Parent6</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">getName</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">name</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Child6</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title class_">Parent6</span>.<span class="title function_">call</span>(<span class="variable language_">this</span>);</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">friends</span> = <span class="string">&#x27;child5&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">clone</span>(<span class="title class_">Parent6</span>, <span class="title class_">Child6</span>);</span><br><span class="line"></span><br><span class="line"><span class="title class_">Child6</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">getFriends</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">friends</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> person6 = <span class="keyword">new</span> <span class="title class_">Child6</span>(); </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person6); <span class="comment">//&#123;friends:&quot;child5&quot;,name:&quot;child5&quot;,play:[1,2,3],__proto__:Parent6&#125;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person6.<span class="title function_">getName</span>()); <span class="comment">// parent6</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person6.<span class="title function_">getFriends</span>()); <span class="comment">// child5</span></span><br></pre></td></tr></table></figure>
-
 <p>可以看到 person6 打印出来的结果，属性都得到了继承，方法也没问题</p>
 <p>文章一开头，我们是使用<code>ES6</code> 中的<code>extends</code>关键字直接实现 <code>JavaScript</code>的继承</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">name</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span> = name</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 原型方法</span></span><br><span class="line">  <span class="comment">// 即 Person.prototype.getName = function() &#123; &#125;</span></span><br><span class="line">  <span class="comment">// 下面可以简写为 getName() &#123;...&#125;</span></span><br><span class="line">  getName = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Person:&#x27;</span>, <span class="variable language_">this</span>.<span class="property">name</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Gamer</span> <span class="keyword">extends</span> <span class="title class_ inherited__">Person</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">name, age</span>) &#123;</span><br><span class="line">    <span class="comment">// 子类中存在构造函数，则需要在使用“this”之前首先调用 super()。</span></span><br><span class="line">    <span class="variable language_">super</span>(name)</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">age</span> = age</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> asuna = <span class="keyword">new</span> <span class="title class_">Gamer</span>(<span class="string">&#x27;Asuna&#x27;</span>, <span class="number">20</span>)</span><br><span class="line">asuna.<span class="title function_">getName</span>() <span class="comment">// 成功访问到父类的方法</span></span><br></pre></td></tr></table></figure>
-
 <p>利用<code>babel</code>工具进行转换，我们会发现<code>extends</code>实际采用的也是寄生组合继承方式，因此也证明了这种方式是较优的解决继承的方式</p>
-<h2 id="三、总结"><a href="#三、总结" class="headerlink" title="三、总结"></a>三、总结</h2><p>下面以一张图作为总结：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928092008883" alt="图片"></p>
+<h2 id="三-总结"><a class="markdownIt-Anchor" href="#三-总结"></a> 三、总结</h2>
+<p>下面以一张图作为总结：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/640-20210928092008883" alt="图片" /></p>
 <p>通过<code>Object.create</code> 来划分不同的继承方式，最后的寄生式组合继承方式是通过组合继承改造之后的最优继承方式，而 <code>extends</code> 的语法糖和寄生组合继承的方式基本类似</p>
 
       

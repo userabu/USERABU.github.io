@@ -6,35 +6,21 @@
   <meta name="keywords" content="">
   <meta name="description" content="Vue常用的修饰符有哪些?有什么应用场景? | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="一、CSS基础1. CSS选择器及其优先级   选择器 格式 优先级权重    id选择器 #id 100   类选择器 #classname 10   属性选择器 a[ref&#x3D;“eee”] 10   伪类选择器 li:last-child 10   标签选择器 div 1   伪元素选择器 li:after 1   相邻兄弟选择器 h1+p 0   子选择器 ul&gt;li 0   后代选择器">
-<meta property="og:type" content="article">
-<meta property="og:title" content="CSS总结">
-<meta property="og:url" content="https://liuliushaoyang0723.gitee.io/2022/08/07/css.css%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="https://liuliushaoyang0723.gitee.io/abu/categories/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一、CSS基础1. CSS选择器及其优先级   选择器 格式 优先级权重    id选择器 #id 100   类选择器 #classname 10   属性选择器 a[ref&#x3D;“eee”] 10   伪类选择器 li:last-child 10   标签选择器 div 1   伪元素选择器 li:after 1   相邻兄弟选择器 h1+p 0   子选择器 ul&gt;li 0   后代选择器">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4544d45b5a0c47a58c0c33a7d8fbac09~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4040de9fef1a49f4ae0ae66039edcfe0~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5f1da1cbae9b45528cc2b33f74eb32f2~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3d58c5313e884e38b1545a5896613250~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2911f98bbacf4b1cbffbb9e1527a4977~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c57fc165a4ce4d5b9a2885867d4f1cab~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fbc59ae1adb5454c8c7f60582df10ff9~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6523548b65834c578202acc5e6388af4~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4b35e646aa3c4d9cac803753d8b67c39~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d6d4f199b3f842f090890eea32318e11~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d2c7150bd7614a548f04a2919f1ea12a~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cba8731fea9842a8b8103c2b387fe64f~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab996951a0cc42cf9e6d9e12eb827f8b~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/531c6c250dd8446fb0f264e7b3df6fba~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e4beaf4e4a0140ad9e7252f8a6e4e8e6~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/445f50ad19164b0f863ad8dfef2a29b1~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a1ac630463164e42a027b54bb95f56ba~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
-<meta property="article:published_time" content="2022-08-07T11:46:05.638Z">
-<meta property="article:modified_time" content="2022-08-08T03:58:03.168Z">
+<meta property="article:published_time" content="2022-08-04T08:19:38.000Z">
+<meta property="article:modified_time" content="2022-08-04T08:23:32.938Z">
 <meta property="article:author" content="Abu">
+<meta property="article:tag" content="html">
+<meta property="article:tag" content="css">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="Vue">
+<meta property="article:tag" content="React">
+<meta property="article:tag" content="TypeScript">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4544d45b5a0c47a58c0c33a7d8fbac09~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -2055,15 +2041,6 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="如何实现文件上传？说说你的思路">如何实现文件上传？说说你的思路</span>
-            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
-        </a>
-        
-        
-        <a  class="全部文章 Node "
            href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0JWT%E9%89%B4%E6%9D%83%E6%9C%BA%E5%88%B6%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
            data-tag=""
            data-author="" >
@@ -2082,10 +2059,10 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%20Node%20%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7%E4%BB%A5%E5%8F%8A%20Require%20%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%AD%96%E7%95%A5_/"
+           href="/abu/2019/11/10/node.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%EF%BC%9F%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?">说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?</span>
+            <span class="post-title" title="如何实现文件上传？说说你的思路">如何实现文件上传？说说你的思路</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2109,19 +2086,19 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Node.js%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%20Node%20%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7%E4%BB%A5%E5%8F%8A%20Require%20%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E7%AD%96%E7%95%A5_/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说你对Node.js 的理解？优缺点？应用场景？">说说你对Node.js 的理解？优缺点？应用场景？</span>
+            <span class="post-title" title="说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?">说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4Node%E4%B8%AD%E7%9A%84EventEmitter_%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAEventEmitter_/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9Node.js%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说Node中的EventEmitter? 如何实现一个EventEmitter?">说说Node中的EventEmitter? 如何实现一个EventEmitter?</span>
+            <span class="post-title" title="说说你对Node.js 的理解？优缺点？应用场景？">说说你对Node.js 的理解？优缺点？应用场景？</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2136,19 +2113,19 @@
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20fs%20%E6%A8%A1%E5%9D%97%E7%9A%84%E7%90%86%E8%A7%A3_%20%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95_/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20Stream%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说对 Node 中的 fs 模块的理解? 有哪些常用方法?">说说对 Node 中的 fs 模块的理解? 有哪些常用方法?</span>
+            <span class="post-title" title="说说对 Node 中的 Stream 的理解？应用场景？">说说对 Node 中的 Stream 的理解？应用场景？</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
         
         <a  class="全部文章 Node "
-           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20Stream%20%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F/"
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4Node%E4%B8%AD%E7%9A%84EventEmitter_%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAEventEmitter_/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="说说对 Node 中的 Stream 的理解？应用场景？">说说对 Node 中的 Stream 的理解？应用场景？</span>
+            <span class="post-title" title="说说Node中的EventEmitter? 如何实现一个EventEmitter?">说说Node中的EventEmitter? 如何实现一个EventEmitter?</span>
             <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
         </a>
         
@@ -2171,6 +2148,15 @@
         </a>
         
         
+        <a  class="全部文章 Node "
+           href="/abu/2019/11/10/node.%E8%AF%B4%E8%AF%B4%E5%AF%B9%20Node%20%E4%B8%AD%E7%9A%84%20fs%20%E6%A8%A1%E5%9D%97%E7%9A%84%E7%90%86%E8%A7%A3_%20%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95_/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="说说对 Node 中的 fs 模块的理解? 有哪些常用方法?">说说对 Node 中的 fs 模块的理解? 有哪些常用方法?</span>
+            <span class="post-date" title="2019-11-10 00:00:00">2019/11/10</span>
+        </a>
+        
+        
         <a  class="全部文章 CSS "
            href="/abu/2019/09/11/css.%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8BCSS%E4%B8%AD%E7%9A%84Grid%E7%BD%91%E6%A0%BC%E5%B8%83%E5%B1%80/"
            data-tag=""
@@ -2181,10 +2167,10 @@
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80%EF%BC%8C%E5%8F%B3%E4%BE%A7%E8%87%AA%E9%80%82%E5%BA%94%EF%BC%9F%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80%E4%B8%AD%E9%97%B4%E8%87%AA%E9%80%82%E5%BA%94%E5%91%A2%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%EF%BC%8F%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E7%9C%81%E7%95%A5%E6%A0%B7%E5%BC%8F%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？">如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？</span>
+            <span class="post-title" title="如何实现单行／多行文本溢出的省略样式？">如何实现单行／多行文本溢出的省略样式？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
@@ -2199,19 +2185,19 @@
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E8%AE%A9Chrome%E6%94%AF%E6%8C%81%E5%B0%8F%E4%BA%8E12px%20%E7%9A%84%E6%96%87%E5%AD%97%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80%EF%BC%8C%E5%8F%B3%E4%BE%A7%E8%87%AA%E9%80%82%E5%BA%94%EF%BC%9F%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80%E4%B8%AD%E9%97%B4%E8%87%AA%E9%80%82%E5%BA%94%E5%91%A2%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="让Chrome支持小于12px 的文字方式有哪些？区别？">让Chrome支持小于12px 的文字方式有哪些？区别？</span>
+            <span class="post-title" title="如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？">如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
         
         <a  class="全部文章 CSS "
-           href="/abu/2019/09/11/css.%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%EF%BC%8F%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E7%9C%81%E7%95%A5%E6%A0%B7%E5%BC%8F%EF%BC%9F/"
+           href="/abu/2019/09/11/css.%E8%AE%A9Chrome%E6%94%AF%E6%8C%81%E5%B0%8F%E4%BA%8E12px%20%E7%9A%84%E6%96%87%E5%AD%97%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="如何实现单行／多行文本溢出的省略样式？">如何实现单行／多行文本溢出的省略样式？</span>
+            <span class="post-title" title="让Chrome支持小于12px 的文字方式有哪些？区别？">让Chrome支持小于12px 的文字方式有哪些？区别？</span>
             <span class="post-date" title="2019-09-11 00:00:00">2019/09/11</span>
         </a>
         
@@ -2275,7 +2261,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Vue%E5%B8%B8%E7%94%A8%E7%9A%84%E4%BF%AE%E9%A5%B0%E7%AC%A6%E6%9C%89%E5%93%AA%E4%BA%9B-%E6%9C%89%E4%BB%80%E4%B9%88%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-text">Vue常用的修饰符有哪些?有什么应用场景?</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%BF%AE%E9%A5%B0%E7%AC%A6%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">一、修饰符是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E4%BF%AE%E9%A5%B0%E7%AC%A6%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-text">二、修饰符的作用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E5%8D%95%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="toc-text">表单修饰符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#lazy"><span class="toc-text">lazy</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#trim"><span class="toc-text">trim</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#number"><span class="toc-text">number</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="toc-text">事件修饰符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#stop"><span class="toc-text">stop</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#prevent"><span class="toc-text">prevent</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#self"><span class="toc-text">self</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#once"><span class="toc-text">once</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#capture"><span class="toc-text">capture</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#passive"><span class="toc-text">passive</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#native"><span class="toc-text">native</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%BC%A0%E6%A0%87%E6%8C%89%E9%92%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="toc-text">鼠标按钮修饰符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%94%AE%E7%9B%98%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="toc-text">键盘修饰符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-bind%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="toc-text">v-bind修饰符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#async"><span class="toc-text">async</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#props"><span class="toc-text">props</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#camel"><span class="toc-text">camel</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-text">三、应用场景</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#vue%E5%B8%B8%E7%94%A8%E7%9A%84%E4%BF%AE%E9%A5%B0%E7%AC%A6%E6%9C%89%E5%93%AA%E4%BA%9B%E6%9C%89%E4%BB%80%E4%B9%88%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-text"> Vue常用的修饰符有哪些?有什么应用场景?</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E4%BF%AE%E9%A5%B0%E7%AC%A6%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text"> 一、修饰符是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E4%BF%AE%E9%A5%B0%E7%AC%A6%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-text"> 二、修饰符的作用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E5%8D%95%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="toc-text"> 表单修饰符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#lazy"><span class="toc-text"> lazy</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#trim"><span class="toc-text"> trim</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#number"><span class="toc-text"> number</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="toc-text"> 事件修饰符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#stop"><span class="toc-text"> stop</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#prevent"><span class="toc-text"> prevent</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#self"><span class="toc-text"> self</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#once"><span class="toc-text"> once</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#capture"><span class="toc-text"> capture</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#passive"><span class="toc-text"> passive</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#native"><span class="toc-text"> native</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%BC%A0%E6%A0%87%E6%8C%89%E9%92%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="toc-text"> 鼠标按钮修饰符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%94%AE%E7%9B%98%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="toc-text"> 键盘修饰符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-bind%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="toc-text"> v-bind修饰符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#async"><span class="toc-text"> async</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#props"><span class="toc-text"> props</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#camel"><span class="toc-text"> camel</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-text"> 三、应用场景</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -2291,8 +2277,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Vue常用的修饰符有哪些-有什么应用场景"><a href="#Vue常用的修饰符有哪些-有什么应用场景" class="headerlink" title="Vue常用的修饰符有哪些?有什么应用场景?"></a>Vue常用的修饰符有哪些?有什么应用场景?</h1><p><img src="https://mmbiz.qpic.cn/mmbiz_png/gH31uF9VIibSEdwPN85YVV5nTXAqEpdyPob9Tb6wAoW3SlFqnicFIK3I4luZkVONETTCK6dm0Toer43YEzFF0lYQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
-<h2 id="一、修饰符是什么"><a href="#一、修饰符是什么" class="headerlink" title="一、修饰符是什么"></a>一、修饰符是什么</h2><p>在程序世界里，修饰符是用于限定类型以及类型成员的声明的一种符号</p>
+        <h1 id="vue常用的修饰符有哪些有什么应用场景"><a class="markdownIt-Anchor" href="#vue常用的修饰符有哪些有什么应用场景"></a> Vue常用的修饰符有哪些?有什么应用场景?</h1>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/gH31uF9VIibSEdwPN85YVV5nTXAqEpdyPob9Tb6wAoW3SlFqnicFIK3I4luZkVONETTCK6dm0Toer43YEzFF0lYQ/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片" /></p>
+<h2 id="一-修饰符是什么"><a class="markdownIt-Anchor" href="#一-修饰符是什么"></a> 一、修饰符是什么</h2>
+<p>在程序世界里，修饰符是用于限定类型以及类型成员的声明的一种符号</p>
 <p>在<code>Vue</code>中，修饰符处理了许多<code>DOM</code>事件的细节，让我们不再需要花大量的时间去处理这些烦恼的事情，而能有更多的精力专注于程序的逻辑处理</p>
 <p><code>vue</code>中修饰符分为以下五种：</p>
 <ul>
@@ -2302,23 +2290,26 @@
 <li>键值修饰符</li>
 <li>v-bind修饰符</li>
 </ul>
-<h2 id="二、修饰符的作用"><a href="#二、修饰符的作用" class="headerlink" title="二、修饰符的作用"></a>二、修饰符的作用</h2><h3 id="表单修饰符"><a href="#表单修饰符" class="headerlink" title="表单修饰符"></a>表单修饰符</h3><p>在我们填写表单的时候用得最多的是<code>input</code>标签，指令用得最多的是<code>v-model</code></p>
+<h2 id="二-修饰符的作用"><a class="markdownIt-Anchor" href="#二-修饰符的作用"></a> 二、修饰符的作用</h2>
+<h3 id="表单修饰符"><a class="markdownIt-Anchor" href="#表单修饰符"></a> 表单修饰符</h3>
+<p>在我们填写表单的时候用得最多的是<code>input</code>标签，指令用得最多的是<code>v-model</code></p>
 <p>关于表单的修饰符有如下：</p>
 <ul>
 <li>lazy</li>
 <li>trim</li>
 <li>number</li>
 </ul>
-<h4 id="lazy"><a href="#lazy" class="headerlink" title="lazy"></a>lazy</h4><p>在我们填完信息，光标离开标签的时候，才会将值赋予给<code>value</code>，也就是在<code>change</code>事件之后再进行信息同步</p>
+<h4 id="lazy"><a class="markdownIt-Anchor" href="#lazy"></a> lazy</h4>
+<p>在我们填完信息，光标离开标签的时候，才会将值赋予给<code>value</code>，也就是在<code>change</code>事件之后再进行信息同步</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;text&quot; v-model.lazy=&quot;value&quot;&gt;</span><br><span class="line">&lt;p&gt;&#123;&#123;value&#125;&#125;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-
-<h4 id="trim"><a href="#trim" class="headerlink" title="trim"></a>trim</h4><p>自动过滤用户输入的首空格字符，而中间的空格不会过滤</p>
+<h4 id="trim"><a class="markdownIt-Anchor" href="#trim"></a> trim</h4>
+<p>自动过滤用户输入的首空格字符，而中间的空格不会过滤</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;text&quot; v-model.trim=&quot;value&quot;&gt;</span><br></pre></td></tr></table></figure>
-
-<h4 id="number"><a href="#number" class="headerlink" title="number"></a>number</h4><p>自动将用户的输入值转为数值类型，但如果这个值无法被<code>parseFloat</code>解析，则会返回原来的值</p>
+<h4 id="number"><a class="markdownIt-Anchor" href="#number"></a> number</h4>
+<p>自动将用户的输入值转为数值类型，但如果这个值无法被<code>parseFloat</code>解析，则会返回原来的值</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input v-model.number=&quot;age&quot; type=&quot;number&quot;&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="事件修饰符"><a href="#事件修饰符" class="headerlink" title="事件修饰符"></a>事件修饰符</h3><p>事件修饰符是对事件捕获以及目标进行了处理，有如下修饰符：</p>
+<h3 id="事件修饰符"><a class="markdownIt-Anchor" href="#事件修饰符"></a> 事件修饰符</h3>
+<p>事件修饰符是对事件捕获以及目标进行了处理，有如下修饰符：</p>
 <ul>
 <li>stop</li>
 <li>prevent</li>
@@ -2328,81 +2319,81 @@
 <li>passive</li>
 <li>native</li>
 </ul>
-<h4 id="stop"><a href="#stop" class="headerlink" title="stop"></a>stop</h4><p>阻止了事件冒泡，相当于调用了<code>event.stopPropagation</code>方法</p>
+<h4 id="stop"><a class="markdownIt-Anchor" href="#stop"></a> stop</h4>
+<p>阻止了事件冒泡，相当于调用了<code>event.stopPropagation</code>方法</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div @click=&quot;shout(2)&quot;&gt;</span><br><span class="line">  &lt;button @click.stop=&quot;shout(1)&quot;&gt;ok&lt;/button&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">//只输出1</span><br></pre></td></tr></table></figure>
-
-<h4 id="prevent"><a href="#prevent" class="headerlink" title="prevent"></a>prevent</h4><p>阻止了事件的默认行为，相当于调用了<code>event.preventDefault</code>方法</p>
+<h4 id="prevent"><a class="markdownIt-Anchor" href="#prevent"></a> prevent</h4>
+<p>阻止了事件的默认行为，相当于调用了<code>event.preventDefault</code>方法</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;form v-on:submit.prevent=&quot;onSubmit&quot;&gt;&lt;/form&gt;</span><br></pre></td></tr></table></figure>
-
-<h4 id="self"><a href="#self" class="headerlink" title="self"></a>self</h4><p>只当在 <code>event.target</code> 是当前元素自身时触发处理函数</p>
+<h4 id="self"><a class="markdownIt-Anchor" href="#self"></a> self</h4>
+<p>只当在 <code>event.target</code> 是当前元素自身时触发处理函数</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div v-on:click.self=&quot;doThat&quot;&gt;...&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-
 <blockquote>
 <p>使用修饰符时，顺序很重要；相应的代码会以同样的顺序产生。因此，用 <code>v-on:click.prevent.self</code> 会阻止<strong>所有的点击</strong>，而 <code>v-on:click.self.prevent</code> 只会阻止对元素自身的点击</p>
 </blockquote>
-<h4 id="once"><a href="#once" class="headerlink" title="once"></a>once</h4><p>绑定了事件以后只能触发一次，第二次就不会触发</p>
+<h4 id="once"><a class="markdownIt-Anchor" href="#once"></a> once</h4>
+<p>绑定了事件以后只能触发一次，第二次就不会触发</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;button @click.once=&quot;shout(1)&quot;&gt;ok&lt;/button&gt;</span><br></pre></td></tr></table></figure>
-
-<h4 id="capture"><a href="#capture" class="headerlink" title="capture"></a>capture</h4><p>使事件触发从包含这个元素的顶层开始往下触发</p>
+<h4 id="capture"><a class="markdownIt-Anchor" href="#capture"></a> capture</h4>
+<p>使事件触发从包含这个元素的顶层开始往下触发</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;div @click.capture=&quot;shout(1)&quot;&gt;</span><br><span class="line">    obj1</span><br><span class="line">&lt;div @click.capture=&quot;shout(2)&quot;&gt;</span><br><span class="line">    obj2</span><br><span class="line">&lt;div @click=&quot;shout(3)&quot;&gt;</span><br><span class="line">    obj3</span><br><span class="line">&lt;div @click=&quot;shout(4)&quot;&gt;</span><br><span class="line">    obj4</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">// 输出结构: 1 2 4 3 </span><br></pre></td></tr></table></figure>
-
-<h4 id="passive"><a href="#passive" class="headerlink" title="passive"></a>passive</h4><p>在移动端，当我们在监听元素滚动事件的时候，会一直触发<code>onscroll</code>事件会让我们的网页变卡，因此我们使用这个修饰符的时候，相当于给<code>onscroll</code>事件整了一个<code>.lazy</code>修饰符</p>
+<h4 id="passive"><a class="markdownIt-Anchor" href="#passive"></a> passive</h4>
+<p>在移动端，当我们在监听元素滚动事件的时候，会一直触发<code>onscroll</code>事件会让我们的网页变卡，因此我们使用这个修饰符的时候，相当于给<code>onscroll</code>事件整了一个<code>.lazy</code>修饰符</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 滚动事件的默认行为 (即滚动行为) 将会立即触发 --&gt;</span><br><span class="line">&lt;!-- 而不会等待 `onScroll` 完成  --&gt;</span><br><span class="line">&lt;!-- 这其中包含 `event.preventDefault()` 的情况 --&gt;</span><br><span class="line">&lt;div v-on:scroll.passive=&quot;onScroll&quot;&gt;...&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-
 <blockquote>
 <p>不要把 <code>.passive</code> 和 <code>.prevent</code> 一起使用,因为 <code>.prevent</code> 将会被忽略，同时浏览器可能会向你展示一个警告。</p>
 <p><code>passive</code> 会告诉浏览器你不想阻止事件的默认行为</p>
 </blockquote>
-<h4 id="native"><a href="#native" class="headerlink" title="native"></a>native</h4><p>让组件变成像<code>html</code>内置标签那样监听根元素的原生事件，否则组件上使用 <code>v-on</code> 只会监听自定义事件</p>
+<h4 id="native"><a class="markdownIt-Anchor" href="#native"></a> native</h4>
+<p>让组件变成像<code>html</code>内置标签那样监听根元素的原生事件，否则组件上使用 <code>v-on</code> 只会监听自定义事件</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;my-component v-on:click.native=&quot;doSomething&quot;&gt;&lt;/my-component&gt;</span><br></pre></td></tr></table></figure>
-
 <blockquote>
 <p>使用.native修饰符来操作普通HTML标签是会令事件失效的</p>
 </blockquote>
-<h3 id="鼠标按钮修饰符"><a href="#鼠标按钮修饰符" class="headerlink" title="鼠标按钮修饰符"></a>鼠标按钮修饰符</h3><p>鼠标按钮修饰符针对的就是左键、右键、中键点击，有如下：</p>
+<h3 id="鼠标按钮修饰符"><a class="markdownIt-Anchor" href="#鼠标按钮修饰符"></a> 鼠标按钮修饰符</h3>
+<p>鼠标按钮修饰符针对的就是左键、右键、中键点击，有如下：</p>
 <ul>
 <li>left 左键点击</li>
 <li>right 右键点击</li>
 <li>middle 中键点击</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;button @click.left=&quot;shout(1)&quot;&gt;ok&lt;/button&gt;</span><br><span class="line">&lt;button @click.right=&quot;shout(1)&quot;&gt;ok&lt;/button&gt;</span><br><span class="line">&lt;button @click.middle=&quot;shout(1)&quot;&gt;ok&lt;/button&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="键盘修饰符"><a href="#键盘修饰符" class="headerlink" title="键盘修饰符"></a>键盘修饰符</h3><p>键盘修饰符是用来修饰键盘事件（<code>onkeyup</code>，<code>onkeydown</code>）的，有如下：</p>
+<h3 id="键盘修饰符"><a class="markdownIt-Anchor" href="#键盘修饰符"></a> 键盘修饰符</h3>
+<p>键盘修饰符是用来修饰键盘事件（<code>onkeyup</code>，<code>onkeydown</code>）的，有如下：</p>
 <p><code>keyCode</code>存在很多，但<code>vue</code>为我们提供了别名，分为以下两种：</p>
 <ul>
 <li>普通键（enter、tab、delete、space、esc、up…）</li>
 <li>系统修饰键（ctrl、alt、meta、shift…）</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 只有按键为keyCode的时候才触发</span><br><span class="line">&lt;input type=&quot;text&quot; @keyup.keyCode=&quot;shout()&quot;&gt;</span><br></pre></td></tr></table></figure>
-
 <p>还可以通过以下方式自定义一些全局的键盘码别名</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Vue</span>.<span class="property">config</span>.<span class="property">keyCodes</span>.<span class="property">f2</span> = <span class="number">113</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="v-bind修饰符"><a href="#v-bind修饰符" class="headerlink" title="v-bind修饰符"></a>v-bind修饰符</h3><p>v-bind修饰符主要是为属性进行操作，用来分别有如下：</p>
+<h3 id="v-bind修饰符"><a class="markdownIt-Anchor" href="#v-bind修饰符"></a> v-bind修饰符</h3>
+<p>v-bind修饰符主要是为属性进行操作，用来分别有如下：</p>
 <ul>
 <li>async</li>
 <li>prop</li>
 <li>camel</li>
 </ul>
-<h4 id="async"><a href="#async" class="headerlink" title="async"></a>async</h4><p>能对<code>props</code>进行一个双向绑定</p>
+<h4 id="async"><a class="markdownIt-Anchor" href="#async"></a> async</h4>
+<p>能对<code>props</code>进行一个双向绑定</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//父组件</span></span><br><span class="line">&lt;comp :myMessage.<span class="property">sync</span>=<span class="string">&quot;bar&quot;</span>&gt;&lt;/comp&gt; </span><br><span class="line"><span class="comment">//子组件</span></span><br><span class="line"><span class="variable language_">this</span>.$emit(<span class="string">&#x27;update:myMessage&#x27;</span>,params);</span><br></pre></td></tr></table></figure>
-
 <p>以上这种方法相当于以下的简写</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//父亲组件</span></span><br><span class="line">&lt;comp :myMessage=<span class="string">&quot;bar&quot;</span> @<span class="attr">update</span>:myMessage=<span class="string">&quot;func&quot;</span>&gt;&lt;/comp&gt;</span><br><span class="line"><span class="title function_">func</span>(<span class="params">e</span>)&#123;</span><br><span class="line"> <span class="variable language_">this</span>.<span class="property">bar</span> = e;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//子组件js</span></span><br><span class="line"><span class="title function_">func2</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="variable language_">this</span>.$emit(<span class="string">&#x27;update:myMessage&#x27;</span>,params);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>使用<code>async</code>需要注意以下两点：</p>
 <ul>
 <li>使用<code>sync</code>的时候，子组件传递的事件名格式必须为<code>update:value</code>，其中<code>value</code>必须与子组件中<code>props</code>中声明的名称完全一致</li>
 <li>注意带有 <code>.sync</code> 修饰符的 <code>v-bind</code> 不能和表达式一起使用</li>
 <li>将 <code>v-bind.sync</code> 用在一个字面量的对象上，例如 <code>v-bind.sync=”&#123; title: doc.title &#125;”</code>，是无法正常工作的</li>
 </ul>
-<h4 id="props"><a href="#props" class="headerlink" title="props"></a>props</h4><p>设置自定义标签属性，避免暴露数据，防止污染HTML结构</p>
+<h4 id="props"><a class="markdownIt-Anchor" href="#props"></a> props</h4>
+<p>设置自定义标签属性，避免暴露数据，防止污染HTML结构</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input id=&quot;uid&quot; title=&quot;title1&quot; value=&quot;1&quot; :index.prop=&quot;index&quot;&gt;</span><br></pre></td></tr></table></figure>
-
-<h4 id="camel"><a href="#camel" class="headerlink" title="camel"></a>camel</h4><p>将命名变为驼峰命名法，如将<code>view-Box</code>属性名转换为 <code>viewBox</code></p>
+<h4 id="camel"><a class="markdownIt-Anchor" href="#camel"></a> camel</h4>
+<p>将命名变为驼峰命名法，如将<code>view-Box</code>属性名转换为 <code>viewBox</code></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;svg :viewBox=&quot;viewBox&quot;&gt;&lt;/svg&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="三、应用场景"><a href="#三、应用场景" class="headerlink" title="三、应用场景"></a>三、应用场景</h2><p>根据每一个修饰符的功能，我们可以得到以下修饰符的应用场景：</p>
+<h2 id="三-应用场景"><a class="markdownIt-Anchor" href="#三-应用场景"></a> 三、应用场景</h2>
+<p>根据每一个修饰符的功能，我们可以得到以下修饰符的应用场景：</p>
 <ul>
 <li>.stop：阻止事件冒泡</li>
 <li>.native：绑定原生事件</li>
